@@ -1,0 +1,13 @@
+/* @theme work-theme */
+
+@import "slides-theme";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+th,
+td {
+  background: rgba(var(--text-color), 1);
+  color: rgba(var(--bg-color), 1);
+  border: 3px solid rgba(var(--bg-color), 1) !important;
+  min-width: 350px;
+}

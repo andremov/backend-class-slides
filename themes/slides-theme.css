@@ -1,0 +1,100 @@
+/* @theme slides-theme */
+
+@import "default";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+section::after {
+  content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+}
+
+section {
+  --bg-color: 20, 20, 20;
+  --text-color: 230, 230, 230;
+  --gross-color: 150, 45, 43;
+  background: rgba(var(--bg-color), 1);
+  color: rgba(var(--text-color), 1);
+  font-family: "Inter", sans-serif;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: rgba(var(--text-color), 1);
+  font-size: 2.5rem;
+  font-weight: "bold";
+  margin: 0;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  color: rgba(var(--text-color), 1);
+  font-size: 2rem;
+  font-weight: "bold";
+  margin: 0;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  color: rgba(var(--text-color), 1);
+  font-size: 1.8rem;
+  font-weight: "bold";
+  margin: 0;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  color: rgba(var(--text-color), 1);
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+header,
+footer {
+  color: rgba(var(--text-color), 0.5);
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+section.invert {
+  background: rgba(var(--text-color), 1);
+  color: rgba(var(--bg-color), 1);
+}
+
+section.invert h1 {
+  color: rgba(var(--bg-color), 1);
+}
+
+section.title {
+  justify-content: center;
+  text-align: center;
+}
+
+section.body-center {
+  justify-content: space-between;
+}
+
+section.align-center {
+  text-align: center;
+}
+
+section.align-center h2 {
+  text-align: left;
+}
+
+table {
+  margin: 1rem auto;
+  font-size: 0.75rem;
+  overflow-y: none;
+  max-height: none;
+}
+
+table,
+th,
+td {
+  background: rgba(var(--bg-color), 0.9);
+}
+
+td {
+  min-width: 200px;
+}

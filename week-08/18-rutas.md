@@ -3,30 +3,32 @@ marp: true
 theme: slides-theme
 paginate: true
 _paginate: skip
-title: Endpoints
+title: Rutas
 _class: invert title
 class: body-center
-header: Semana 8: Endpoints
+header: Semana 8: Rutas
 _header: ""
 ---
 
- <style>
-    .star {
-      color: rgba(220, 140, 60, 1);
-    }
- </style>
-
-# Endpoints & Datos
+# Rutas
 
 ---
 
-## Que es un endpoint?
+## Como vamos?
 
-Un endpoint está conformado por 3 cosas:
+```js
+let express = require("express");
+let cors = require("cors");
+let app = express();
 
-1. Metodo HTTP
-2. Ruta
-3. Implementación
+app.use(cors());
+
+app.get("/products/:id", function (req, res, next) {
+  res.json({ msg: "This is CORS-enabled for all origins!" });
+});
+
+app.listen(3000);
+```
 
 ##
 

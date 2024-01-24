@@ -10,12 +10,6 @@ header: Semana 7: Node
 _header: ""
 ---
 
- <style>
-    .star {
-      color: rgba(220, 140, 60, 1);
-    }
- </style>
-
 # Node & NPM
 
 ---

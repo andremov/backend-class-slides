@@ -167,6 +167,17 @@ server.listen(8080);
 ---
 
 ## Nodemon
+---
+
+<!--
+_class: body-center align-center
+-->
+
+## Nodemon?
+
+node --watch index.js
+
+##
 
 ---
 
@@ -574,28 +585,6 @@ _class: body-center
 
 ```js
 $ npm i cors
-```
-
-##
-
----
-
-<!--
-_class: body-center
- -->
-
-## CORS - Solución
-
-```js
-let express = require("express");
-let cors = require("cors");
-let app = express();
-
-app.use(cors());
-
-app.get("/products/:id", function (req, res, next) {
-  res.json({ msg: "This is CORS-enabled for all origins!" });
-});
 ```
 
 ##

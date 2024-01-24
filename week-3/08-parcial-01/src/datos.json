@@ -1,0 +1,142 @@
+[
+  {
+    "_id": "asc5sde01",
+    "firstName": "Mariana",
+    "lastName": "Hernandez",
+    "height": 1.5,
+    "courses": [
+      {
+        "name": "Inglés",
+        "grade": 2.5
+      },
+      {
+        "name": "Matemáticas",
+        "grade": 3.6
+      },
+      {
+        "name": "Castellano",
+        "grade": 4.7
+      },
+      {
+        "name": "Química",
+        "grade": 5.0
+      },
+      {
+        "name": "Sociales",
+        "grade": 1.3
+      }
+    ]
+  },
+  {
+    "_id": "asc5sde02",
+    "firstName": "Alison",
+    "lastName": "Fernández",
+    "height": 1.6,
+    "courses": [
+      {
+        "name": "Inglés",
+        "grade": 2.1
+      },
+      {
+        "name": "Matemáticas",
+        "grade": 0.1
+      },
+      {
+        "name": "Castellano",
+        "grade": 3.8
+      },
+      {
+        "name": "Química",
+        "grade": 4.1
+      },
+      {
+        "name": "Sociales",
+        "grade": 0.6
+      }
+    ]
+  },
+  {
+    "_id": "asc5sde03",
+    "firstName": "Zahet",
+    "lastName": "Ramírez",
+    "height": 1.79,
+    "courses": [
+      {
+        "name": "Inglés",
+        "grade": 5.0
+      },
+      {
+        "name": "Matemáticas",
+        "grade": 2.3
+      },
+      {
+        "name": "Castellano",
+        "grade": 3.1
+      },
+      {
+        "name": "Química",
+        "grade": 1.4
+      },
+      {
+        "name": "Sociales",
+        "grade": 4.2
+      }
+    ]
+  },
+  {
+    "_id": "asc5sde04",
+    "firstName": "María",
+    "lastName": "Rodríguez",
+    "height": 1.65,
+    "courses": [
+      {
+        "name": "Inglés",
+        "grade": 0.4
+      },
+      {
+        "name": "Matemáticas",
+        "grade": 1.5
+      },
+      {
+        "name": "Castellano",
+        "grade": 2.8
+      },
+      {
+        "name": "Química",
+        "grade": 5.0
+      },
+      {
+        "name": "Sociales",
+        "grade": 4.0
+      }
+    ]
+  },
+  {
+    "_id": "asc5sde05",
+    "firstName": "Daniel",
+    "lastName": "Hoyos",
+    "height": 1.83,
+    "courses": [
+      {
+        "name": "Inglés",
+        "grade": 4.0
+      },
+      {
+        "name": "Matemáticas",
+        "grade": 5.0
+      },
+      {
+        "name": "Castellano",
+        "grade": 4.8
+      },
+      {
+        "name": "Química",
+        "grade": 4.5
+      },
+      {
+        "name": "Sociales",
+        "grade": 4.2
+      }
+    ]
+  }
+]

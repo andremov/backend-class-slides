@@ -23,64 +23,91 @@ En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
 
 ---
 
-1. Desarrolle una funcion llamada promedioFinal que reciba una lista de listas de números por parámetro, y retorne el promedio de todos los números.
+1. Desarrolle un endpoint en la ruta **/users/hobby** que retorne los usuarios que cuenten con el hobby enviado.
 
-| Entrada                          | Salida |
-| -------------------------------- | ------ |
-| [[4, 5], [2, 1], [0, 1], [7, 0]] | 2.5    |
-
-##
-
----
-
-2. Desarrolle una funcion llamada limpiarNombre que reciba un string del nombre de una persona por parámetro y retorne una lista de los nombres sin espacios.
-
-| Entrada           | Salida               |
-| ----------------- | -------------------- |
-| " Victor Garcez " | ["Victor", "Garcez"] |
+```js
+// DATOS:
+const users = [
+  { name: "John", hobbies: ["singing", "walking", "playing guitar"] },
+  { name: "Terry", hobbies: ["swimming", "playing guitar"] },
+  { name: "Anna", hobbies: ["walking", "swimming", "playing guitar"] },
+  { name: "Paul", hobbies: ["swimming", "singing"] },
+];
+```
 
 ##
 
 ---
 
-1. Desarrolle una funcion llamada sortObjects que reciba una lista de objetos y una key del objeto por parámetro y la lista ordenada ascendemente según el valor correspondiente a la key.
+2. Desarrolle un endpoint en la ruta **/users/exists** que retorne si el usuario con el id enviado existe.
 
-| Entrada                                                                                                        | Salida                                                                                               |
-| -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [<br/>{altura: 1.7, puntaje: 7},<br/>{altura: 1.3, puntaje: 10},<br/>{altura: 2.0, puntaje: 8}<br/>], “altura” | [<br/>{altura: 1.3, puntaje: 10},<br/>{altura: 1.7, puntaje: 7},<br/>{altura: 2.0, puntaje:8 }<br/>] |
+```js
+// DATOS:
+const users = [
+  { id: 20, name: "Captain Piett" },
+  { id: 24, name: "General Veers" },
+  { id: 56, name: "Admiral Ozzel" },
+  { id: 88, name: "Commander Jerjerrod" },
+];
+```
 
 ##
 
 ---
 
-<style scoped>
-    table {
-        font-size: 0.9rem;
-    }
-</style>
+3. Desarrolle un endpoint en la ruta **/pilots/team-experience** que retorne la experiencia total del equipo de pilotos enviado.
 
-4. Desarrolle una funcion llamada limpiarLista que reciba una string con formato CSV por parámetro y retorne una lista de objetos con los datos, y la nota final calculada.
+```js
+// DATOS:
+const pilots = [
+ { id: 10, name: "Poe Dameron", years: 14, team: ‘clscwe’},
+ { id: 2, name: "Temmin 'Snap' Wexley", years: 30, , team: ‘axvedw },
+ { id: 41, name: "Tallissan Lintra", years: 16, , team: ‘clscwe’},
+ { id: 99, name: "Ello Asty", years: 22, , team: ‘axvedw}
+];
+```
 
-   | Entrada (Un solo estudiante)           | Salida                                                                                                                                 |
-   | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-   | "Victor Garcez ,C,3.59,3.5,4.7,4.7,0;" | [<br/>{<br/>nombre: "Victor",<br/>apellido: "Garcez",<br/>curso: “C”,<br/>notas: [2.59, 2.1, 4.2, 4.7],<br/>final: 3.3975<br/>},<br/>] |
+##
 
 ---
 
-5. Desarrolle una funcion llamada bestInClass que reciba una string con formato CSV por parámetro, y un curso, y retorne una lista con el nombre y apellido de los 3 estudiantes de ese curso con nota final mas altap-8u [].
+4. Desarrolle un endpoint en la ruta **/factions/list** que retorne los pilotos de la facción enviada.
+
+```js
+// DATOS:
+const pilots = [
+  { id: 2, name: "Wedge Antilles", faction: "Rebels" },
+  { id: 8, name: "Ciena Ree", faction: "Empire" },
+  { id: 40, name: "Iden Versio", faction: "Empire" },
+  { id: 66, name: "Thane Kyrell", faction: "Rebels" },
+];
+```
+
+##
+
+---
+
+5. Desarrolle un endpoint en la ruta **/users** que realice el registro de un usuario nuevo a la "base de datos". La base de datos es el array.
+
+```js
+// DATOS:
+const users = [{ id: 1, name: "Robin Restrepo", carrera: "Psicologia" }];
+```
+
+##
 
 ---
 
 ## Rubrica Punto 1
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| La funcion esta correctamente nombrada. | 1      |
-| La funcion retorna el resultado.        | 1      |
-| La funcion compila.                     | 1      |
-| El resultado es el correcto.            | 1      |
-| El resultado tiene el formato correcto. | 1      |
-| Total                                   | 5      |
+| Criterio                             | Puntos |
+| ------------------------------------ | ------ |
+| La ruta tiene el formato correcto.   | 1      |
+| La ruta responde con el resultado.   | 1      |
+| La ruta compila.                     | 1      |
+| El resultado es el correcto.         | 1      |
+| El resultado tiene el tipo correcto. | 1      |
+| Total                                | 5      |
 
 ##
 
@@ -88,14 +115,14 @@ En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
 
 ## Rubrica Punto 2
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| La funcion esta correctamente nombrada. | 1      |
-| La funcion retorna el resultado.        | 1      |
-| La funcion compila.                     | 1      |
-| El resultado es el correcto.            | 1      |
-| El resultado tiene el formato correcto. | 1      |
-| Total                                   | 5      |
+| Criterio                             | Puntos |
+| ------------------------------------ | ------ |
+| La ruta tiene el formato correcto.   | 1      |
+| La ruta responde con el resultado.   | 1      |
+| La ruta compila.                     | 1      |
+| El resultado es el correcto.         | 1      |
+| El resultado tiene el tipo correcto. | 1      |
+| Total                                | 5      |
 
 ##
 
@@ -103,14 +130,14 @@ En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
 
 ## Rubrica Punto 3
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| La funcion esta correctamente nombrada. | 1      |
-| La funcion retorna el resultado.        | 1      |
-| La funcion compila.                     | 1      |
-| El resultado es el correcto.            | 1      |
-| El resultado tiene el formato correcto. | 1      |
-| Total                                   | 5      |
+| Criterio                             | Puntos |
+| ------------------------------------ | ------ |
+| La ruta tiene el formato correcto.   | 1      |
+| La ruta responde con el resultado.   | 1      |
+| La ruta compila.                     | 1      |
+| El resultado es el correcto.         | 1      |
+| El resultado tiene el tipo correcto. | 1      |
+| Total                                | 5      |
 
 ##
 
@@ -118,14 +145,29 @@ En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
 
 ## Rubrica Punto 4
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| La funcion esta correctamente nombrada. | 1      |
-| La funcion retorna el resultado.        | 1      |
-| La funcion compila.                     | 1      |
-| El resultado es el correcto.            | 1      |
-| El resultado tiene el formato correcto. | 1      |
-| Total                                   | 5      |
+| Criterio                             | Puntos |
+| ------------------------------------ | ------ |
+| La ruta tiene el formato correcto.   | 1      |
+| La ruta responde con el resultado.   | 1      |
+| La ruta compila.                     | 1      |
+| El resultado es el correcto.         | 1      |
+| El resultado tiene el tipo correcto. | 1      |
+| Total                                | 5      |
+
+##
+
+---
+
+## Rubrica Punto 5
+
+| Criterio                             | Puntos |
+| ------------------------------------ | ------ |
+| La ruta tiene el formato correcto.   | 1      |
+| La ruta responde con el resultado.   | 1      |
+| La ruta compila.                     | 1      |
+| El resultado es el correcto.         | 1      |
+| El resultado tiene el tipo correcto. | 1      |
+| Total                                | 5      |
 
 ##
 
@@ -133,14 +175,13 @@ En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
 
 ## Rubrica Taller
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| El archivo esta nombrado correctamente. | 1      |
-| Punto 1.                                | 5      |
-| Punto 2.                                | 5      |
-| Punto 3.                                | 5      |
-| Punto 4.                                | 5      |
-| Punto 5.                                | 5      |
-| Total                                   | 26     |
-
-##
+| Criterio                                       | Puntos |
+| ---------------------------------------------- | ------ |
+| El archivo esta nombrado correctamente.        | 1      |
+| Punto 1.                                       | 5      |
+| Punto 2.                                       | 5      |
+| Punto 3.                                       | 5      |
+| Punto 4.                                       | 5      |
+| Punto 5.                                       | 5      |
+| La implementacion sigue el estilo del proyecto | 4      |
+| Total                                          | 30     |

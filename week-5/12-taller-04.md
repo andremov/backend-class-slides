@@ -43,7 +43,7 @@ En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
 
 ---
 
-1. Desarrolle una funcion llamada sortObjects que reciba una lista de objetos y una key del objeto por parámetro y la lista ordenada ascendemente según el valor correspondiente a la key.
+3. Desarrolle una funcion llamada sortObjects que reciba una lista de objetos y una key del objeto por parámetro y la lista ordenada ascendemente según el valor correspondiente a la key.
 
 | Entrada                                                                                                        | Salida                                                                                               |
 | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -67,7 +67,7 @@ En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
 
 ---
 
-5. Desarrolle una funcion llamada bestInClass que reciba una string con formato CSV por parámetro, y un curso, y retorne una lista con el nombre y apellido de los 3 estudiantes de ese curso con nota final mas altap-8u [].
+5. Desarrolle una funcion llamada bestInClass que reciba una string con formato CSV por parámetro, y un curso, y retorne una lista con el nombre y apellido de los 3 estudiantes de ese curso con nota final mas alta.
 
 ---
 
@@ -117,6 +117,21 @@ En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
 ---
 
 ## Rubrica Punto 4
+
+| Criterio                                | Puntos |
+| --------------------------------------- | ------ |
+| La funcion esta correctamente nombrada. | 1      |
+| La funcion retorna el resultado.        | 1      |
+| La funcion compila.                     | 1      |
+| El resultado es el correcto.            | 1      |
+| El resultado tiene el formato correcto. | 1      |
+| Total                                   | 5      |
+
+##
+
+---
+
+## Rubrica Punto 5
 
 | Criterio                                | Puntos |
 | --------------------------------------- | ------ |

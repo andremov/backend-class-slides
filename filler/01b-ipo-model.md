@@ -10,12 +10,6 @@ header: Relleno: IPO Model
 _header: ""
 ---
 
- <style>
-    .star {
-      color: rgba(220, 140, 60, 1);
-    }
- </style>
-
 # IPO Model
 
 ---

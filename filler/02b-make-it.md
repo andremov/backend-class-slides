@@ -10,12 +10,6 @@ header: Relleno: Make It
 _header: ""
 ---
 
- <style>
-    .star {
-      color: rgba(220, 140, 60, 1);
-    }
- </style>
-
 # Make It
 
 ---

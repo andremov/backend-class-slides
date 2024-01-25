@@ -2,6 +2,7 @@
 {
   "markdown.marp.themes": [
     "./themes/work-theme.css",
-    "./themes/slides-theme.css"
+    "./themes/slides-theme.css",
+    "./themes/syllabus-theme.css"
   ]
 }

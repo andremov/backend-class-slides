@@ -15,6 +15,25 @@ _header: ""
 
 ---
 
+## Importancia del Inglés
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Importancia del Inglés
+
+1. Diferencia Salarial
+2. Actualización de Conocimiento
+
+##
+
+---
+
 <!--
 _class: body-center
 _footer: https://survey.stackoverflow.co/2023/#key-territories-all-countries

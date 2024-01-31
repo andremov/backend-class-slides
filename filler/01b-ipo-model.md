@@ -247,3 +247,187 @@ function suma(estudiantes) {
 ```
 
 ##
+
+---
+
+## Y si las entradas son invalidas?
+
+```js
+function suma(estudiantes) {
+  // ??
+  if (estudiantes.length === 0) {
+    return 0;
+  }
+
+  // input
+  const notasFinales = estudiantes.map((estudiante) => estudiante.notaFinal);
+  const mayorNota = Math.max(...notasFinales);
+
+  // process
+  const estudiantesConMayorNota = estudiantes.filter(
+    (estudiante) => estudiante.notaFinal === mayorNota
+  );
+
+  // output
+  return estudiantesConMayorNota.length;
+}
+```
+
+---
+
+## Y si las entradas son invalidas?
+
+```js
+function suma(estudiantes) {
+  // early return
+  if (estudiantes.length === 0) {
+    return 0;
+  }
+
+  // input
+  const notasFinales = estudiantes.map((estudiante) => estudiante.notaFinal);
+  const mayorNota = Math.max(...notasFinales);
+
+  // process
+  const estudiantesConMayorNota = estudiantes.filter(
+    (estudiante) => estudiante.notaFinal === mayorNota
+  );
+
+  // output
+  return estudiantesConMayorNota.length;
+}
+```
+
+---
+
+<!--
+_footer: https://wiki.c2.com/?ElseConsideredSmelly
+ -->
+
+## Early Return
+
+Los `else` son, hasta cierto punto, considerados "malos".
+
+Porque?
+
+1. Si la condicion del `if` es complicadita, es complicado entender cuando cae el `else`.
+2. Si el codigo dentro del `if` es considerable, es facil de olvidar cual era la condicion.
+
+##
+
+---
+
+## Alternativa?
+
+```js
+function suma(estudiantes) {
+  if (estudiantes.length !== 0) {
+    // input
+    const notasFinales = estudiantes.map((estudiante) => estudiante.notaFinal);
+    const mayorNota = Math.max(...notasFinales);
+
+    // process
+    const estudiantesConMayorNota = estudiantes.filter(
+      (estudiante) => estudiante.notaFinal === mayorNota
+    );
+
+    // output
+    return estudiantesConMayorNota.length;
+  } else {
+    return 0;
+  }
+}
+```
+
+---
+
+<!--
+_footer: https://wiki.c2.com/?ArrowAntiPattern
+ -->
+
+## Y si son varias condiciones?
+
+Terminamos con una flecha. (anti-patron)
+
+##
+
+---
+
+## Flecha
+
+```js
+function proceso(param1, param2) {
+  if (isValid(argument1)) {
+    if (isValid(argument2)) {
+      const otherVal1 = doSomeStuff(param1, param2);
+
+      if (isValid(otherVal1)) {
+        const otherVal2 = doAnotherStuff(otherVal1);
+
+        if (isValid(otherVal2)) {
+          return "Stuff";
+        } else {
+          throw new Error();
+        }
+      } else {
+        throw new Error();
+      }
+    } else {
+      throw new Error();
+    }
+  } else {
+    throw new Error();
+  }
+}
+```
+
+---
+
+```java
+public String returnStuff(SomeObject argument1, SomeObject argument2){
+  if (!argument1.isValid()) {
+    throw new Exception();
+  }
+
+  if (!argument2.isValid()) {
+    throw new Exception();
+  }
+
+  SomeObject otherVal1 = doSomeStuff(argument1, argument2);
+
+  if (!otherVal1.isValid()) {
+    throw new Exception();
+  }
+
+  SomeObject otherVal2 = doAnotherStuff(otherVal1);
+
+  if (!otherVal2.isValid()) {
+    throw new Exception();
+  }
+
+  return "Stuff";
+}
+```
+
+---
+
+## Early Return
+
+```js
+function suma(estudiantes) {
+  if (estudiantes.length === 0) {
+    return 0;
+  }
+
+  const notasFinales = estudiantes.map((estudiante) => estudiante.notaFinal);
+  const mayorNota = Math.max(...notasFinales);
+
+  const estudiantesConMayorNota = estudiantes.filter(
+    (estudiante) => estudiante.notaFinal === mayorNota
+  );
+
+  return estudiantesConMayorNota.length;
+}
+```
+
+##

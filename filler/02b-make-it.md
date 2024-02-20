@@ -86,7 +86,7 @@ Reduce el tiempo de ejecución.
 
 ---
 
-## Ejemplo, de nuevo
+## Ejemplo
 
 ```js
 function suma(a, b) {

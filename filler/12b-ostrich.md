@@ -3,10 +3,10 @@ marp: true
 theme: slides-theme
 paginate: true
 _paginate: skip
-title: XY problem
+title: Ostrich Algorithm
 _class: invert title
 class: body-center
-header: Relleno: XY problem
+header: Relleno: Ostrich Algorithm
 _header: ""
 ---
 

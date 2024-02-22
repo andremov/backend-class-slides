@@ -19,11 +19,10 @@ _header: ""
 _class: body-center
 _footer: https://survey.stackoverflow.co/2023/#key-territories-all-countries
 -->
-
 <style scoped>
-section {
-  color: rgba(var(--text-color), 0.4);
-}
+  section {
+    color: rgba(var(--text-color), 0.4);
+  }
 </style>
 
 ## Descargo de responsabilidad

@@ -68,7 +68,7 @@ _class: body-center align-center
 
 ## Proceso, de nuevo
 
-![img](../assets/auth-process.png)
+![img](../assets/week-10/auth-process.png)
 
 ##
 
@@ -458,7 +458,7 @@ Multi Factor Authentication
 
 ## Pin?
 
-![img](../assets/auth-pin.png)
+![img](../assets/week-10/auth-pin.png)
 
 ---
 

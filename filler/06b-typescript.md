@@ -183,7 +183,7 @@ _class: align-center body-center
 
 ## Configuracion de TypeScript
 
-![img](../assets/tsconfig.png)
+![img](../assets/filler/tsconfig.png)
 
 ---
 

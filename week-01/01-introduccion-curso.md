@@ -48,7 +48,7 @@ Senior Full Stack Web Developer / Tech Lead (2023)
 
 ---
 
-## Evaluaciones
+## Evaluaciones - Temas
 
 - (20%) Parcial 1 - Javascript + Algoritmia Basica
 - (20%) Parcial 2 - Javascript Avanzado
@@ -56,3 +56,14 @@ Senior Full Stack Web Developer / Tech Lead (2023)
 - (20%) Proyecto 1 - Backend individual
 - (20%) Proyecto 2 - Backend grupal
 - (10%) Quices, Talleres, etc.
+
+---
+
+## Evaluaciones - Horario
+
+- (20%) Parcial 1 - Semana 3
+- (20%) Parcial 2 - Semana 6
+- (10%) Parcial 3 - Semana 10
+- (20%) Proyecto 1 - Semana 10 - 13
+- (20%) Proyecto 2 - Semana 13 - 16
+- (10%) Quices, Talleres, etc. - Todas las otras semanas

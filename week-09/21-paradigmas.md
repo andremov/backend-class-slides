@@ -99,7 +99,7 @@ _class: align-center body-center
 
 ## Graph
 
-![img](../assets/neo4j-preview.png)
+![img](../assets/week-09/neo4j-preview.png)
 
 ##
 

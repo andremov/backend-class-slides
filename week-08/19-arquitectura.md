@@ -90,7 +90,7 @@ _class: body-center align-center
 
 ## Clean Architecture
 
-![img](../assets/clean-arch.png)
+![img](../assets/week-08/clean-arch.png)
 
 ---
 

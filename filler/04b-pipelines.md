@@ -198,7 +198,7 @@ de la Plataforma (github, gitlab, bitbucket) etc.
 
 ## Bitbucket
 
-![img](../assets/bitbucket-pipeline.png)
+![img](../assets/filler/bitbucket-pipeline.png)
 
 ##
 
@@ -214,7 +214,7 @@ Y, usualmente, las plataformas de hosting (planetscale, fly.io, railway), tienen
 
 ## Github + Railway
 
-![img](../assets/railway-pipeline.png)
+![img](../assets/filler/railway-pipeline.png)
 
 ##
 

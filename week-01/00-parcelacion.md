@@ -7,7 +7,7 @@ math: mathjax
 
 <div class="header">
 
-![img](../assets/uninorte.jpg)
+![img](../assets/week-01/uninorte.jpg)
 
 </div>
 

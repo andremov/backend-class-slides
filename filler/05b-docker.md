@@ -39,7 +39,7 @@ _class: body-center align-center
 
 ## "Un programa cliente, que maneja containers"
 
-![img](../assets/docker-software.png)
+![img](../assets/filler/docker-software.png)
 
 ---
 
@@ -172,7 +172,7 @@ No lo encuentra local, entonces lo descarga, y lo corre.
 Docker tiene un servidor basado en Linux (VM) que maneja cada
 container (tambien basado en Linux).
 
-![img](../assets/docker-server.png)
+![img](../assets/filler/docker-server.png)
 
 ---
 
@@ -368,7 +368,7 @@ _class: align-center body-center
 
 Docker Desktop y Comandos
 
-![img](../assets/docker-software.png)
+![img](../assets/filler/docker-software.png)
 
 `docker ps`
 

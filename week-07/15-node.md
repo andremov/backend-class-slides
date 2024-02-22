@@ -161,6 +161,7 @@ server.listen(8080);
 ---
 
 ## Nodemon
+
 ---
 
 <!--
@@ -478,7 +479,19 @@ _class: body-center align-center
 
 ## CORS
 
-![img](../assets/cors-diagram.png)
+![img](../assets/week-07/cors-log.png)
+
+##
+
+---
+
+<!--
+_class: body-center align-center
+ -->
+
+## CORS
+
+![img](../assets/week-07/cors-diagram.png)
 
 ##
 

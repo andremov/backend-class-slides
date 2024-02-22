@@ -56,7 +56,7 @@ _class: body-center align-center
 
 ## Porque nos interesa? - Privacidad
 
-![img](../assets/whatsapp-privacy.png)
+![img](../assets/week-12/whatsapp-privacy.png)
 
 ##
 
@@ -80,7 +80,7 @@ _class: body-center align-center
 
 ## Porque nos interesa? - Seguridad
 
-![img](../assets/whatsapp-security.png)
+![img](../assets/week-12/whatsapp-security.png)
 
 ##
 

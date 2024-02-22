@@ -581,7 +581,7 @@ _class: body-center align-center
 
 ## <span class="star">:star: Concepto 12:</span> Rebase
 
-![img](../assets/git-rebase-guide.png)
+![img](../assets/week-06/git-rebase-guide.png)
 
 ##
 

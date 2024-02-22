@@ -248,7 +248,7 @@ Controlador: ?
 _class: title
  -->
 
-![image](../assets/rest-api-mvc-model.png)
+![image](../assets/week-01/rest-api-mvc-model.png)
 
 ---
 
@@ -280,7 +280,7 @@ p:nth-child(5) {
 }
 </style>
 
-![image](../assets/rest-api-mvc-model.png)
+![image](../assets/week-01/rest-api-mvc-model.png)
 
 Front-end / Vista
 
@@ -311,7 +311,7 @@ p:nth-child(4) {
 }
 </style>
 
-![image](../assets/rest-api-mvc-model.png)
+![image](../assets/week-01/rest-api-mvc-model.png)
 
 Front-end / Vista
 
@@ -561,6 +561,6 @@ _paginate: false
 _header: ''
  -->
 
-![bg opacity:0.2](../assets/flame-dog.png)
+![bg opacity:0.2](../assets/week-01/flame-dog.png)
 
 1995: Nace JavaScript.

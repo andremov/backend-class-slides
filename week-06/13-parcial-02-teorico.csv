@@ -1,0 +1,85 @@
+﻿//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 02 > Pregunta 1,
+QuestionText,Parcial 02 > Pregunta 1,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,find
+Option,0,filter
+Option,0,search
+Option,0,map
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 02 > Pregunta 2,
+QuestionText,Parcial 02 > Pregunta 2,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,filter
+Option,0,map
+Option,0,reduce
+Option,0,find
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 02 > Pregunta 3,
+QuestionText,Parcial 02 > Pregunta 3,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,"filter, map"
+Option,0,"find, reduce"
+Option,0,"filter, sort, map"
+Option,0,"sort, findIndex"
+Option,0,"flat, sort, includes"
+Option,0,"find, flat, filter"
+Hint,,
+Feedback,,
+,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 02 > Pregunta 4,
+QuestionText,Parcial 02 > Pregunta 4,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,"find, reduce"
+Option,0,"find, filter"
+Option,100,"filter, sort"
+Option,0,"filter, reduce"
+Option,0,"find, sort"
+Option,0,"reduce, sort"
+Option,0,"find, organize"
+Option,0,"filter, organize"
+Hint,,
+Feedback,,
+,,
+,,
+//WRITTEN RESPONSE QUESTION TYPE,,
+//This sample question also shows how you can set a question caID for the question of format {Course Code}-{Question Number},,
+NewQuestion,WR,
+ID,,
+Title,Parcial 02 > Pregunta 5,
+QuestionText,Parcial 02 > Pregunta 5,
+Points,1,
+Difficulty,1,
+Image,,
+InitialText,,
+AnswerKey,,
+Hint,,
+Feedback,,

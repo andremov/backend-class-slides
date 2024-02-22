@@ -54,7 +54,7 @@ _class: body-center align-center
 Intellisense es lo que permite el autocompletado de cosas como
 nombres de metodos.
 
-![img](../assets/intellisense-preview.png)
+![img](../assets/filler/intellisense-preview.png)
 
 ##
 
@@ -68,7 +68,7 @@ _class: body-center align-center
 
 Informacion de parametros.
 
-![img](../assets/intellisense-preview-02.png)
+![img](../assets/filler/intellisense-preview-02.png)
 
 ##
 
@@ -267,7 +267,7 @@ _class: body-center align-center
 
 ## Lint
 
-![img](../assets/lint-01.png)
+![img](../assets/filler/lint-01.png)
 
 ---
 
@@ -277,7 +277,7 @@ _class: body-center align-center
 
 ## Lint
 
-![img](../assets/lint-02.png)
+![img](../assets/filler/lint-02.png)
 
 ---
 
@@ -287,7 +287,7 @@ _class: body-center align-center
 
 ## Lint
 
-![img](../assets/lint-03.png)
+![img](../assets/filler/lint-03.png)
 
 ---
 
@@ -344,7 +344,7 @@ background: rgba(var(--bg-color),1);
 
 | Estan los desarrolladores que ponen las llaves<br/> en la misma linea del if, | Y los desarrolladores que estan equivocados. |
 | ----------------------------------------------------------------------------- | -------------------------------------------- |
-| ![img](../assets/prettier-01.png)                                             | ![img](../assets/prettier-02.png)            |
+| ![img](../assets/filler/prettier-01.png)                                      | ![img](../assets/filler/prettier-02.png)     |
 
 ---
 
@@ -361,7 +361,7 @@ overflow-y: hidden;
 
 | Estan los desarrolladores que usan tabulacion, | Y los desarrolladores que estan equivocados. |
 | ---------------------------------------------- | -------------------------------------------- |
-| ![img](../assets/prettier-04.png)              | ![img](../assets/prettier-03.png)            |
+| ![img](../assets/filler/prettier-04.png)       | ![img](../assets/filler/prettier-03.png)     |
 
 ---
 

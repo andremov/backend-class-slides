@@ -31,9 +31,25 @@ En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
     }
 </style>
 
-1. Desarrolle una función llamada **resolvedor** que **retorne** el valor de x de la formula general cuadratica (negativa o positiva, **no ambas**).
+1. Desarrolle una función llamada **convertidorTemp** que reciba una temperatura en centigrados y **retorne** el la temperatura en fahrenheit.
 
 Utilicen la pagina https://jsfiddle.net/ para programar en JS sin entorno local.
+
+$$ F = C \times \frac{9}{5} + 32 $$
+
+##
+
+---
+
+<style scoped>
+    p:nth-child(5) {
+        text-align: center;
+        font-size: 0.8rem;
+        color: rgba(var(--text-color), 0.6);
+    }
+</style>
+
+2. Desarrolle una función llamada **resolvedor** que **retorne** el valor de x de la formula general cuadratica (negativa o positiva, **no ambas**).
 
 $$ x_1 = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
@@ -48,7 +64,7 @@ a=1, b=5, c=4 => -1 o -4
     }
 </style>
 
-2. Desarrolle una funcion llamada **mejorParidad** que, de la mejor manera posible, resuelva y **retorne** la paridad de un número.
+3. Desarrolle una funcion llamada **mejorParidad** que, de la mejor manera posible, resuelva y **retorne** la paridad de un número.
 
 Es decir, que retorne si un numero es par o no.
 
@@ -56,7 +72,7 @@ Es decir, que retorne si un numero es par o no.
 
 ---
 
-1. Desarrolle una funcion llamada **peorParidad** que, de la peor manera posible, resuelva y **retorne** la paridad de un numero.
+4. Desarrolle una funcion llamada **peorParidad** que, de la peor manera posible, resuelva y **retorne** la paridad de un numero.
 
 ---
 
@@ -66,7 +82,7 @@ Es decir, que retorne si un numero es par o no.
     }
 </style>
 
-4. Implementar una función llamada **fizzbuzz** que, al recibir un número n, **retorne** un vector 1..n, reemplazando:
+5. Implementar una función llamada **fizzbuzz** que, al recibir un número n, **retorne** un vector 1..n, reemplazando:
 
 Todo numero divisible por 3 con “Fizz”.
 Todo numero divisible por 5 con “Buzz”.

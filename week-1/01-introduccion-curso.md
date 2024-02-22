@@ -13,6 +13,15 @@ _header: ""
 
 ---
 
+<!--
+_class: body-center
+ -->
+<style scoped>
+h4 {
+  margin: 0;
+}
+</style>
+
 ## Quien soy?
 
 #### Andres Movilla
@@ -22,6 +31,8 @@ Junior Full Stack Web Developer (2021).
 Profesor de Backend (2022).
 Senior Full Stack Web Developer / Tech Lead (2023)
 ??? (2024)
+
+##
 
 ---
 

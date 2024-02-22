@@ -38,7 +38,7 @@ _class: title
 ---
 
 <!--
-_class: align-center
+_class: align-center body-center
  -->
 
 ## Front-end
@@ -50,7 +50,7 @@ Se considera "front-end" aquello que manipula el usuario, o el lado de la aplica
 ---
 
 <!--
-_class: align-center
+_class: align-center body-center
  -->
 
 ## Back-end
@@ -62,7 +62,7 @@ Se considera "back-end" aquello que **NO** manipula el usuario, o el lado de la 
 ---
 
 <!--
-_class: align-center
+_class: align-center body-center
  -->
 
 ## Back-end
@@ -77,7 +77,7 @@ El back-end es _el resto_.
 ---
 
 <!--
-_class: align-center
+_class: align-center body-center
  -->
 
 ## Back-end
@@ -92,7 +92,7 @@ El back-end es _todo lo otro_.
 ---
 
 <!--
-_class: align-center
+_class: align-center body-center
  -->
 
 ## Back-end
@@ -106,7 +106,7 @@ El back-end tambien es llamado "el servidor", o "server-side".
 ---
 
 <!--
-_class: align-center
+_class: align-center body-center
  -->
 
 <style scoped>
@@ -134,7 +134,7 @@ Controlador: ?
 ---
 
 <!--
-_class: align-center
+_class: align-center body-center
  -->
 
 <style scoped>
@@ -165,7 +165,7 @@ Controlador: ?
 ---
 
 <!--
-_class: align-center
+_class: align-center body-center
  -->
 
 <style scoped>
@@ -196,7 +196,7 @@ Controlador: ?
 ---
 
 <!--
-_class: align-center
+_class: align-center body-center
  -->
 
 <style scoped>
@@ -227,7 +227,7 @@ Controlador: ?
 ---
 
 <!--
-_class: align-center
+_class: align-center body-center
  -->
 
 ## Back-end
@@ -320,7 +320,7 @@ Back-end / Controlador + Modelo
 ---
 
 <!--
-_class: align-center
+_class: align-center body-center
  -->
 
 <style scoped>

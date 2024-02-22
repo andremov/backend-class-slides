@@ -242,6 +242,83 @@ console.log(F + one); // "Formula1"
 _class: title
  -->
 
+## Funciones
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Funciones
+
+```js
+function suma(a, b) {
+  return a + b;
+}
+
+console.log(suma(a, b)); // 3
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Declarar Funciones
+
+```js
+function suma1(a, b) {
+  return a + b;
+}
+
+const suma2 = function (a, b) {
+  return a + b;
+};
+
+const suma3 = (a, b) => {
+  return a + b;
+};
+```
+
+##
+
+---
+
+<!--
+_class: body-center align-center
+ -->
+
+<style scoped>
+    p:nth-child(6) {
+        text-align: center;
+        color: rgba(var(--text-color), 0.5);
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+        left: 0;
+    }
+</style>
+
+## Taller 1: Ejercicio 1
+
+Desarrolle una función llamada **convertidorTemp** que reciba una temperatura en centigrados y **retorne** el la temperatura en fahrenheit.
+
+Utilicen la pagina https://jsfiddle.net/ para programar en JS sin entorno local.
+
+$$ F = C \times \frac{9}{5} + 32 $$
+
+##
+
+---
+
+<!--
+_class: title
+ -->
+
 ## Condicionales y Ciclos
 
 ---
@@ -400,56 +477,6 @@ while (acelerando) {
 ---
 
 <!--
-_class: title
- -->
-
-## Funciones
-
----
-
-<!--
-_class: body-center
- -->
-
-## Funciones
-
-```js
-function suma(a, b) {
-  return a + b;
-}
-
-console.log(suma(a, b)); // 3
-```
-
-##
-
----
-
-<!--
-_class: body-center
- -->
-
-## Declarar Funciones
-
-```js
-function suma1(a, b) {
-  return a + b;
-}
-
-const suma2 = function (a, b) {
-  return a + b;
-};
-
-const suma3 = (a, b) => {
-  return a + b;
-};
-```
-
-##
-
----
-
-<!--
 _class: body-center align-center
  -->
 
@@ -464,7 +491,7 @@ _class: body-center align-center
     }
 </style>
 
-## Taller 1: Ejercicio 1
+## Taller 1: Ejercicio 2
 
 Desarrolle una función llamada **resolvedor** que **retorne** el valor de x de la formula general cuadratica (negativa o positiva, **no ambas**).
 
@@ -602,7 +629,7 @@ _class: title
 _class: body-center align-center
  -->
 
-## Taller 1 Ejercicio 2
+## Taller 1 Ejercicio 3
 
 Implementar, de la mejor manera posible, una función que retorne la paridad de un número.
 
@@ -614,7 +641,7 @@ Implementar, de la mejor manera posible, una función que retorne la paridad de 
 _class: body-center align-center
  -->
 
-## Taller 1 Ejercicio 3
+## Taller 1 Ejercicio 4
 
 Implementar, de la peor manera posible, la misma función.
 
@@ -632,7 +659,7 @@ _class: body-center align-center
  }
 </style>
 
-## Taller 1 Ejercicio 4
+## Taller 1 Ejercicio 5
 
 Implementar una función que, al recibir un número n, retorne un vector 1..n, reemplazando:
 

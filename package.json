@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "slide-pdf": "marp --pdf --html --allow-local-files --theme-set ./themes/ -p",
+    "cv-pdf": "marp --pdf --html --allow-local-files --theme-set ./themes/ -p"
   },
   "keywords": [],
   "author": "",

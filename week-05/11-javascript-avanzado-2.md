@@ -1331,7 +1331,7 @@ const user_1 = ["Ismael", "Cael"];
 const user_2 = "Rafael";
 const users = [user_2, ...user_1];
 
-console.log(users[0]); // "Rafael"
+console.log(users[0]); // ["Rafael"]
 ```
 
 ##

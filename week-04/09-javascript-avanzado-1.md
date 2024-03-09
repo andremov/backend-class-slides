@@ -854,11 +854,11 @@ _class: body-center
 ## Object.keys()
 
 ```js
-const object = {
+const obj = {
   key: "value",
 };
 
-console.log(Object.keys(user)); // ["key"]
+console.log(Object.keys(obj)); // ["key"]
 ```
 
 ##

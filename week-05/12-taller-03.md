@@ -23,7 +23,7 @@ En un archivo llamado [codigoEstudiante].js reali*c*e los siguientes puntos:
 
 ---
 
-1. Desarrolle una funcion llamada desglosarString que reciba una string, y la string "vo*c*ales" o "consonantes", y retorne la cantidad de vocales o consonantes de la string re*c*ibida.
+1. Desarrolle una funcion llamada desglosarString que reciba una string, y la string "vo*c*ales" o "*c*onsonantes", y retorne la cantidad de vocales o consonantes de la string re*c*ibida.
 
 | Entrada                      | Salida |
 | ---------------------------- | ------ |
@@ -56,7 +56,7 @@ No se permite utilizar el mismo numero dos ve*c*es.
 
 ## :stars: Punto Shiny :stars:
 
-|               | papa    | brocoli | lechuga  | pimenton  |
+|               | papa    | brocoli | pimenton | lechuga   |
 | ------------- | ------- | ------- | -------- | --------- |
 | **apio**      | manzana | mango   | maracuya | coco      |
 | **maiz**      | pera    | piña    | patilla  | guayaba   |

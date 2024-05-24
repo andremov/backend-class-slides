@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "slide-pdf": "marp --pdf --html --allow-local-files --theme-set ./themes/ -p",
-    "cv-pdf": "marp --pdf --html --allow-local-files --theme-set ./themes/ -p"
+    "doc-pdf": "marp --pdf --html --allow-local-files --theme-set ./themes/ -p"
   },
   "keywords": [],
   "author": "",

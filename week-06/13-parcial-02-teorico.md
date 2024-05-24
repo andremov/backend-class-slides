@@ -57,7 +57,7 @@ const student = students.____((s) => s.id === parameter_id);
 El metodo no definido en el siguiente codigo es:
 
 ```js
-const student = students.____((s) => `${s.first_name} ${s.last_name}`);
+const studentNames = students.____((s) => `${s.first_name} ${s.last_name}`);
 ```
 
 - filter

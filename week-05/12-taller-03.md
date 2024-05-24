@@ -78,6 +78,8 @@ No se permite utilizar el mismo numero dos ve*c*es.
 | El resultado tiene el formato correcto. | 1      |
 | Total                                   | 5      |
 
+'
+
 ##
 
 ---

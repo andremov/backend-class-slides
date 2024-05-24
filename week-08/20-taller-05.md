@@ -19,7 +19,7 @@ header: Taller 05
 
 ## Desarollo Web Backend
 
-En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
+En un archivo comprimido llamado [codigoEstudiante].zip realice los siguientes puntos en el proyecto, siguiendo la estructura de la implementación:
 
 ---
 
@@ -100,14 +100,11 @@ const users = [{ id: 1, name: "Robin Restrepo", carrera: "Psicologia" }];
 
 ## Rubrica Punto 1
 
-| Criterio                             | Puntos |
-| ------------------------------------ | ------ |
-| La ruta tiene el formato correcto.   | 1      |
-| La ruta responde con el resultado.   | 1      |
-| La ruta compila.                     | 1      |
-| El resultado es el correcto.         | 1      |
-| El resultado tiene el tipo correcto. | 1      |
-| Total                                | 5      |
+| Criterio                           | Puntos |
+| ---------------------------------- | ------ |
+| Los datos se reciben correctamente | 1      |
+| El resultado es correcto.          | 1      |
+| Total                              | 2      |
 
 ##
 
@@ -115,14 +112,11 @@ const users = [{ id: 1, name: "Robin Restrepo", carrera: "Psicologia" }];
 
 ## Rubrica Punto 2
 
-| Criterio                             | Puntos |
-| ------------------------------------ | ------ |
-| La ruta tiene el formato correcto.   | 1      |
-| La ruta responde con el resultado.   | 1      |
-| La ruta compila.                     | 1      |
-| El resultado es el correcto.         | 1      |
-| El resultado tiene el tipo correcto. | 1      |
-| Total                                | 5      |
+| Criterio                           | Puntos |
+| ---------------------------------- | ------ |
+| Los datos se reciben correctamente | 1      |
+| El resultado es correcto.          | 1      |
+| Total                              | 2      |
 
 ##
 
@@ -130,14 +124,11 @@ const users = [{ id: 1, name: "Robin Restrepo", carrera: "Psicologia" }];
 
 ## Rubrica Punto 3
 
-| Criterio                             | Puntos |
-| ------------------------------------ | ------ |
-| La ruta tiene el formato correcto.   | 1      |
-| La ruta responde con el resultado.   | 1      |
-| La ruta compila.                     | 1      |
-| El resultado es el correcto.         | 1      |
-| El resultado tiene el tipo correcto. | 1      |
-| Total                                | 5      |
+| Criterio                           | Puntos |
+| ---------------------------------- | ------ |
+| Los datos se reciben correctamente | 1      |
+| El resultado es correcto.          | 1      |
+| Total                              | 2      |
 
 ##
 
@@ -145,14 +136,11 @@ const users = [{ id: 1, name: "Robin Restrepo", carrera: "Psicologia" }];
 
 ## Rubrica Punto 4
 
-| Criterio                             | Puntos |
-| ------------------------------------ | ------ |
-| La ruta tiene el formato correcto.   | 1      |
-| La ruta responde con el resultado.   | 1      |
-| La ruta compila.                     | 1      |
-| El resultado es el correcto.         | 1      |
-| El resultado tiene el tipo correcto. | 1      |
-| Total                                | 5      |
+| Criterio                           | Puntos |
+| ---------------------------------- | ------ |
+| Los datos se reciben correctamente | 1      |
+| El resultado es correcto.          | 1      |
+| Total                              | 2      |
 
 ##
 
@@ -160,28 +148,34 @@ const users = [{ id: 1, name: "Robin Restrepo", carrera: "Psicologia" }];
 
 ## Rubrica Punto 5
 
-| Criterio                             | Puntos |
-| ------------------------------------ | ------ |
-| La ruta tiene el formato correcto.   | 1      |
-| La ruta responde con el resultado.   | 1      |
-| La ruta compila.                     | 1      |
-| El resultado es el correcto.         | 1      |
-| El resultado tiene el tipo correcto. | 1      |
-| Total                                | 5      |
+| Criterio                           | Puntos |
+| ---------------------------------- | ------ |
+| Los datos se reciben correctamente | 1      |
+| El resultado es correcto.          | 1      |
+| Total                              | 2      |
 
 ##
 
 ---
 
+<style scoped>
+  table {
+    font-size: 0.5rem;
+  }
+</style>
+
 ## Rubrica Taller
 
-| Criterio                                       | Puntos |
-| ---------------------------------------------- | ------ |
-| El archivo esta nombrado correctamente.        | 1      |
-| Punto 1.                                       | 5      |
-| Punto 2.                                       | 5      |
-| Punto 3.                                       | 5      |
-| Punto 4.                                       | 5      |
-| Punto 5.                                       | 5      |
-| La implementacion sigue el estilo del proyecto | 4      |
-| Total                                          | 30     |
+| Criterio                                  | Puntos  |
+| ----------------------------------------- | ------- |
+| El archivo esta nombrado incorrectamente. | -1      |
+| El proyecto no compila.                   | -1      |
+| La implementación no sigue la estructura. | -1      |
+| Punto 1.                                  | 2       |
+| Punto 2.                                  | 2       |
+| Punto 3.                                  | 2       |
+| Punto 4.                                  | 2       |
+| Punto 5.                                  | 2       |
+| Total                                     | 10 (-3) |
+
+##

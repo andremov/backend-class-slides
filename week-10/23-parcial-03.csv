@@ -463,7 +463,7 @@ Feedback,,
 NewQuestion,MS,
 ID,,
 Title,Parcial 3 > Pregunta 29,
-QuestionText,"Si un endpoint es un metodo POST, que se espera que haga el endpoint?",
+QuestionText,Que cosas juntas forman un endpoint?,
 Points,1,
 Difficulty,1,
 Image,,
@@ -473,6 +473,7 @@ Option,0,Operacion basica de almacenamiento
 Option,0,Direccion a base de datos
 Option,0,Nombre de modelo de base de datos
 Option,0,Credenciales a servidor de API
+Option,1,Implementación
 Option,0,URL de la API
 Hint,,
 Feedback,,

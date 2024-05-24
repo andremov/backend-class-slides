@@ -1,4 +1,4 @@
-const datos = require('./datos.json');
+const datos = require("./datos.json");
 
 function puntoUno(estudiantes) {
   // CODIGO DE PUNTO 1 AQUI
@@ -12,10 +12,14 @@ function puntoDos(products, filters) {
   for (let i = 0; i < products.length; i++) {
     if ((filters.id && products[i].id === filters.id) || !filters.id) {
       if (
-        (filters.organization && products[i].organization === filters.organization) ||
+        (filters.organization &&
+          products[i].organization === filters.organization) ||
         !filters.organization
       ) {
-        if ((filters.owner && products[i].owner === filters.owner) || !filters.owner) {
+        if (
+          (filters.owner && products[i].owner === filters.owner) ||
+          !filters.owner
+        ) {
           filteredProducts = [filteredProducts, products[i]];
         }
       }
@@ -44,15 +48,15 @@ function puntoCuatro(user, items) {
   const numNotifs = activeltems.length;
   const userName = user.first_name;
   if (userName === undefined) {
-    response.push('Bienvenido');
+    response.push("Bienvenido");
   } else {
-    response.push('Bienvenido, ' + userName);
+    response.push("Bienvenido, " + userName);
   }
 
   if (numNotifs === 0) {
-    response.push('No tiene notificaciones. ');
+    response.push("No tiene notificaciones. ");
   } else {
-    response.push('Tiene ' + numNotifs + ' notificaciones pendientes. ');
+    response.push("Tiene " + numNotifs + " notificaciones pendientes. ");
   }
   return response;
 }

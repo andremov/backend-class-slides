@@ -23,8 +23,8 @@ QuestionText,Parcial 02 > Pregunta 2,
 Points,1,
 Difficulty,1,
 Image,,
-Option,100,filter
-Option,0,map
+Option,0,filter
+Option,100,map
 Option,0,reduce
 Option,0,find
 Hint,,

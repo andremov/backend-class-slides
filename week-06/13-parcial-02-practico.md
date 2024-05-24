@@ -18,7 +18,7 @@ header: "Parcial #2"
 
 ## Puntos
 
-1. Implemente una funcion que reciba los datos de estudiantes y retorne la informacion personal de los estudiantes "estrella" (promedio mayor a 2.5 y menor a 3.0).
+1. Implemente una funcion que reciba los datos de estudiantes y retorne la informacion personal de los estudiantes "estrellados" (promedio mayor a 2.5 y menor a 3.0).
 
 2. Su compañero de trabajo, Julian, desarrolló el punto dos. Utilizando los conceptos aprendidos en JS Avanzado, mejore la función.
 

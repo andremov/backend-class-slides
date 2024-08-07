@@ -10,7 +10,9 @@ _header: ""
 math: mathjax
 ---
 
-# Javascript Basico
+# Javascript Básico
+
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 20 min.
 
 ---
 
@@ -37,7 +39,7 @@ lineas
 _class: body-center
  -->
 
-## Declaracion
+## Declaración
 
 ```js
 
@@ -101,10 +103,10 @@ _class: body-center
 
 ```js
 let variable1 = 1;
-typeof variable1; // "number"
+console.log(typeof variable1); // "number"
 
 let variable2 = "1";
-typeof variable2; // "string"
+console.log(typeof variable2); // "string"
 ```
 
 ##
@@ -118,11 +120,29 @@ _class: body-center
 ## Sencillo
 
 ```js
-const hoursInDay = 24;
+const horasEnDia = 24;
 
-let hoursSleeping = 8;
+let horasDurmiendo = 8;
 
-hoursInDay = hoursInDay - hoursSleeping;
+horasEnDia = horasEnDia - horasDurmiendo; // ?
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Sencillo
+
+```js
+const horasEnDia = 24;
+
+let horasDurmiendo = 8;
+
+horasEnDia = horasEnDia - horasDurmiendo; // ⚠️
 ```
 
 ##
@@ -136,11 +156,11 @@ _class: body-center
 ## Asignacion & Operacion
 
 ```js
-let hoursInDay = 24;
+let horasEnDia = 24;
 
-let hoursSleeping = 8;
+let horasDurmiendo = 8;
 
-hoursInDay = hoursInDay - hoursSleeping;
+horasEnDia = horasEnDia - horasDurmiendo; // 16
 ```
 
 ##
@@ -157,7 +177,7 @@ _class: body-center align-center
 | -------- | --------- | ------------ |
 | +=       | x += y    | x = x + y    |
 | -=       | x -= y    | x = x - y    |
-| \_=      | x \_= y   | x = x \* y   |
+| \*=      | x \*= y   | x = x \* y   |
 | /=       | x /= y    | x = x / y    |
 | %=       | x %= y    | x = x % y    |
 | \*\*=    | x \*\*= y | x = x \*\* y |
@@ -194,10 +214,10 @@ _class: body-center
 ## Strings
 
 ```js
-let firstName = "Andres";
-let lastName = "Movilla";
+let nombre = "Andres";
+let apellido = "Movilla";
 
-console.log(firstName + lastName); // "AndresMovilla"
+console.log(nombre + apellido); // ?
 ```
 
 ##
@@ -211,10 +231,27 @@ _class: body-center
 ## Strings
 
 ```js
-let firstName = "Andres";
-let lastName = "Movilla";
+let nombre = "Andres";
+let apellido = "Movilla";
 
-console.log(firstName + " " + lastName); // "Andres Movilla"
+console.log(nombre + apellido); // "AndresMovilla"
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Strings
+
+```js
+let nombre = "Andres";
+let apellido = "Movilla";
+
+console.log(nombre + " " + apellido); // "Andres Movilla"
 ```
 
 ##
@@ -229,9 +266,46 @@ _class: body-center
 
 ```js
 let F = "Formula";
-let one = 1;
+let uno = 1;
 
-console.log(F + one); // "Formula1"
+console.log(F + uno); // ?
+console.log(uno + F); // ?
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Strings
+
+```js
+let F = "Formula";
+let uno = 1;
+
+console.log(F + uno); // "Formula1"
+console.log(uno + F); // ?
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Strings
+
+```js
+let F = "Formula";
+let uno = 1;
+
+console.log(F + uno); // "Formula1"
+console.log(uno + F); // "1Formula"
 ```
 
 ##
@@ -257,7 +331,7 @@ function suma(a, b) {
   return a + b;
 }
 
-console.log(suma(a, b)); // 3
+console.log(suma(1, 2)); // 3
 ```
 
 ##
@@ -293,7 +367,7 @@ _class: body-center align-center
  -->
 
 <style scoped>
-    p:nth-child(6) {
+    p:nth-child(4) {
         text-align: center;
         color: rgba(var(--text-color), 0.5);
         position: absolute;
@@ -303,9 +377,9 @@ _class: body-center align-center
     }
 </style>
 
-## Taller 1: Ejercicio 1
+## Taller 1: Punto 1
 
-Desarrolle una función llamada **convertidorTemp** que reciba una temperatura en centigrados y **retorne** el la temperatura en fahrenheit.
+Desarrolle una función llamada **convertidorTemp** que reciba una temperatura en centigrados y **retorne** la temperatura en fahrenheit.
 
 Utilicen la pagina https://jsfiddle.net/ para programar en JS sin entorno local.
 
@@ -351,11 +425,15 @@ _class: body-center
 
 ## Sintaxis If
 
+Que dice este codigo?
+
 ```js
 let cedula = 114284195;
 
 if (cedula == "114284195") {
   console.log("Acceso permitido.");
+} else {
+  console.log("Acceso denegado.");
 }
 ```
 
@@ -369,13 +447,19 @@ _class: body-center
 
 ## Sintaxis If
 
+Dice **acceso permitido**.
+
 ```js
 let cedula = 114284195;
 
-if (cedula === "114284195") {
-  console.log("Acceso permitido.");
+if (cedula == "114284195") {
+  console.log("Acceso permitido."); // ✅
+} else {
+  console.log("Acceso denegado.");
 }
 ```
+
+##
 
 ##
 
@@ -422,14 +506,14 @@ _class: body-center
 ## Sintaxis If
 
 ```js
-
 let cedula = 1140879129;
 let accesoPermitido = cedula === 1140879129;
 
 if (accesoPermitido) {
-    console.log(“Acceso permitido.”);
+  console.log("Acceso permitido."); // ✅
+} else {
+  console.log("Acceso denegado.");
 }
-
 ```
 
 ##
@@ -480,29 +564,26 @@ while (acelerando) {
 _class: body-center align-center
  -->
 
-<style scoped>
-    p:nth-child(6) {
-        text-align: center;
-        color: rgba(var(--text-color), 0.5);
-        position: absolute;
-        bottom: 5%;
-        width: 100%;
-        left: 0;
-    }
-</style>
+## Taller 1: Punto 2
 
-## Taller 1: Ejercicio 2
+Desarrolle una función llamada **resolvedor** que **retorne** el valor de x de la formula general cuadratica.
 
-Desarrolle una función llamada **resolvedor** que **retorne** el valor de x de la formula general cuadratica (negativa o positiva, **no ambas**).
-
-Utilicen la pagina https://jsfiddle.net/ para programar en JS sin entorno local.
+La función debe permitir, con el uso de parametros, elegir si se quiere el resultado negativo o positivo.
 
 $$ x_1 = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
-¿ Que es una raiz, si no es a^(1/2) ?
-a=1, b=5, c=4 => -1 o -4
+$a=1, b=5, c=4 \rightarrow -1$
+$a=1, b=5, c=4 \rightarrow -4$
 
 ##
+
+---
+
+<!--
+_class: title
+ -->
+
+# Objetos
 
 ---
 
@@ -513,6 +594,7 @@ _class: body-center
 ## Objetos
 
 ```js
+// esto es un objeto
 const perro = {
   raza: "Labrador",
   edad: 4,
@@ -521,7 +603,7 @@ const perro = {
   juzga: true,
 };
 
-console.log(perro.nombre); // “Tequila”
+console.log(perro.nombre); // "Tequila"
 console.log(perro["muerde"]); // false
 ```
 
@@ -543,8 +625,8 @@ const perro = {
   muerde: false,
   juzga: true,
 };
-const campo = "juzga";
 
+const campo = "juzga";
 console.log(perro[campo]); // true
 ```
 
@@ -570,7 +652,7 @@ const perro = {
 perro.nombre = "Whiskey";
 perro["muerde"] = true;
 
-console.log(perro.nombre); // Whiskey
+console.log(perro.nombre); // "Whiskey"
 console.log(perro.muerde); // true
 ```
 
@@ -610,7 +692,7 @@ _class: body-center
 ```js
 console.log(estudiantes[0].velocidad); // 9001
 
-console.log(estudiantes[“1”].numHijos); // 9002
+console.log(estudiantes["1"].numHijos); // 9002
 ```
 
 ##
@@ -629,10 +711,12 @@ _class: title
 _class: body-center align-center
  -->
 
-## Taller 1 Ejercicio 3
+## Taller 1: Punto 3
 
 Implementar, de la mejor manera posible, una función que retorne la paridad de un número.
 
+Es decir, si el numero es par o no.
+
 ##
 
 ---
@@ -641,30 +725,8 @@ Implementar, de la mejor manera posible, una función que retorne la paridad de 
 _class: body-center align-center
  -->
 
-## Taller 1 Ejercicio 4
+## Taller 1: Punto 4
 
 Implementar, de la peor manera posible, la misma función.
-
-##
-
----
-
-<!--
-_class: body-center align-center
- -->
-
-<style scoped>
- p {
-  padding: 0 7rem;
- }
-</style>
-
-## Taller 1 Ejercicio 5
-
-Implementar una función que, al recibir un número n, retorne un vector 1..n, reemplazando:
-
-Todo numero divisible por 3 con “Fizz”.
-Todo numero disible por 5 con “Buzz”
-O “FizzBuzz” si aplican ambos.
 
 ##

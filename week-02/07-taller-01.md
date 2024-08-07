@@ -19,19 +19,26 @@ header: Taller 01
 
 ## Desarollo Web Backend
 
-En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
+Cree archivo llamado taller-01.js, realice los siguientes puntos, y súbalo a su repositorio de talleres.
+
+:pencil: 2024-03
 
 ---
 
 <style scoped>
-    p:nth-child(5) {
+    p:nth-child(4) {
         text-align: center;
-        font-size: 0.8rem;
-        color: rgba(var(--text-color), 0.6);
+        color: rgba(var(--text-color), 0.5);
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+        left: 0;
     }
 </style>
 
-1. Desarrolle una función llamada **convertidorTemp** que reciba una temperatura en centigrados y **retorne** el la temperatura en fahrenheit.
+## Punto 1
+
+Desarrolle una función llamada **convertidorTemp** que reciba una temperatura en centigrados y **retorne** la temperatura en fahrenheit.
 
 Utilicen la pagina https://jsfiddle.net/ para programar en JS sin entorno local.
 
@@ -41,52 +48,34 @@ $$ F = C \times \frac{9}{5} + 32 $$
 
 ---
 
-<style scoped>
-    p:nth-child(5) {
-        text-align: center;
-        font-size: 0.8rem;
-        color: rgba(var(--text-color), 0.6);
-    }
-</style>
+## Punto 2
 
-2. Desarrolle una función llamada **resolvedor** que **retorne** el valor de x de la formula general cuadratica (negativa o positiva, **no ambas**).
+Desarrolle una función llamada **resolvedor** que **retorne** el valor de x de la formula general cuadratica.
+
+La función debe permitir, con el uso de parametros, elegir si se quiere el resultado negativo o positivo.
 
 $$ x_1 = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
-¿ Que es una raiz, si no es a^(1/2) ?
-a=1, b=5, c=4 => -1 o -4
+$$a=1, b=5, c=4 \rightarrow -1$$
+$$a=1, b=5, c=4 \rightarrow -4$$
 
 ---
 
-<style scoped>
-    p:nth-child(3) {
-        text-align: center;
-    }
-</style>
+## Punto 3
 
-3. Desarrolle una funcion llamada **mejorParidad** que, de la mejor manera posible, resuelva y **retorne** la paridad de un número.
+Desarrolle una funcion llamada **mejorParidad** que, de la mejor manera posible, resuelva y **retorne** la paridad de un número.
 
-Es decir, que retorne si un numero es par o no.
+Es decir, que retorne si un numero es par o no, para utilizar en un condicional correctamente.
 
 ##
 
 ---
 
-4. Desarrolle una funcion llamada **peorParidad** que, de la peor manera posible, resuelva y **retorne** la paridad de un numero.
+## Punto 4
 
----
+Desarrolle una funcion llamada **peorParidad** que, de la peor manera posible, resuelva y **retorne** la paridad de un numero.
 
-<style scoped>
-    p:nth-child(3) {
-        text-align: center;
-    }
-</style>
-
-5. Implementar una función llamada **fizzbuzz** que, al recibir un número n, **retorne** un vector 1..n, reemplazando:
-
-Todo numero divisible por 3 con “Fizz”.
-Todo numero divisible por 5 con “Buzz”.
-O “FizzBuzz” si aplican ambos.
+Solo es necesario "resolver" hasta el numero 10.
 
 ##
 
@@ -154,13 +143,12 @@ O “FizzBuzz” si aplican ambos.
 
 ## Rubrica Taller
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| El archivo esta nombrado correctamente. | 1      |
-| Punto 1.                                | 5      |
-| Punto 2.                                | 5      |
-| Punto 3.                                | 5      |
-| Punto 4.                                | 5      |
-| Total                                   | 21     |
+| Criterio | Puntos |
+| -------- | ------ |
+| Punto 1. | 5      |
+| Punto 2. | 5      |
+| Punto 3. | 5      |
+| Punto 4. | 5      |
+| Total    | 20     |
 
 ##

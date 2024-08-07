@@ -80,14 +80,14 @@ La asignatura se desarrollará con la explicación teórica por parte del profes
 
 Las 3 primeras evaluaciones serán realizadas en el salón de clase de manera virtual a través de la plataforma, mientras que las ultimas 2 evaluaciones serán entregables con un mes de plazo para realizarse y entregarse.
 
-| Evaluación       | %   | Fecha            | Descripción                                 |
-| ---------------- | --- | ---------------- | ------------------------------------------- |
-| Evaluación 1     | 20  | 16 Febrero 2024  | Evaluación de Javascript Basico             |
-| Evaluación 2     | 20  | 8 Marzo 2024     | Evaluación de Javascript Avanzado           |
-| Evaluación 3     | 10  | 5 Octubre 2023   | Evaluación Teórica Git, Node, NPM           |
-| Evaluación 4     | 20  | 1 Noviembre 2023 | Construcción de REST API desplegada sin BD  |
-| Evaluación final | 20  | 1 Diciembre 2023 | Construcción de REST API desplegada con BD  |
-| Talleres         | 10  | N/A              | Talleres realizados a lo largo del semestre |
+| Evaluación       | %   | Fecha                           | Descripción                                 |
+| ---------------- | --- | ------------------------------- | ------------------------------------------- |
+| Evaluación 1     | 20  | 16 Agosto 2024                  | Evaluación de Javascript Basico             |
+| Evaluación 2     | 20  | 6 Septiembre 2024               | Evaluación de Javascript Avanzado           |
+| Evaluación 3     | 10  | 4 Octubre 2024                  | Evaluación Teórica Git, Node, NPM           |
+| Evaluación 4     | 20  | 25 Octubre - 15 Noviembre 2024  | Construcción de REST API desplegada sin BD  |
+| Evaluación final | 20  | 15 Noviembre - 6 Diciembre 2024 | Construcción de REST API desplegada con BD  |
+| Talleres         | 10  | N/A                             | Talleres realizados a lo largo del semestre |
 
 ---
 

@@ -24,7 +24,7 @@ h4 {
 
 ## Quien soy?
 
-#### Andres Movilla
+#### Andrés Movilla
 
 Egresado de la Universidad del Norte (2020).
 Junior Full Stack Web Developer (2021).

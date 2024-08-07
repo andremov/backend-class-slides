@@ -3,13 +3,49 @@ marp: true
 theme: slides-theme
 paginate: true
 _paginate: skip
+_class: title
 title: Informacion Previa del Campo
-_class: invert title
 header: Semana 1: Introduccion
 _header: ""
 ---
 
-<!-- _footer: https://survey.stackoverflow.co/2023/ -->
+# Que es dificil?
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Que es dificil?
+
+- Que es dificil en backend?
+- Que es dificil en desarrollo web?
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Que es dificil?
+
+- Es dificil hacer...
+  - Rappi?
+  - Amazon/Mercado Libre?
+  - Twitter?
+  - Instagram?
+
+##
+
+---
+
+<!--
+_class: invert title
+_footer: https://survey.stackoverflow.co/2023/
+-->
 
 # Informacion previa del campo
 

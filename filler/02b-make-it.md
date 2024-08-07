@@ -12,6 +12,8 @@ _header: ""
 
 # Make It
 
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 5 min.
+
 ---
 
 <!--
@@ -219,7 +221,7 @@ La mediana es el dato en toda la mitad de una lista ordenada de datos. O el prom
 
 ---
 
-## Dado **un arreglo ordenados**, retorne la mediana **del arreglo**.
+## Dado **un arreglo ordenado**, retorne la mediana **del arreglo**.
 
 1. Ordenar un arreglo de numeros desordenados
 2. Juntar dos arreglos ordenados en uno solo ordenado

@@ -5,11 +5,13 @@ paginate: true
 _paginate: skip
 title: Javascript Intermedio
 _class: invert title
-header: Semana 3: Javascript Intermedio
+header: Semana 2: Javascript Intermedio
 _header: ""
 ---
 
 # Javascript Intermedio
+
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 0 min.
 
 ---
 
@@ -24,7 +26,9 @@ const meQuieroIr = true;
 const mePuedoIr = true;
 
 if (meQuieroIr && mePuedoIr) {
-console.log(“Me voy”);
+  console.log("Me voy");
+} else {
+  console.log("Me quedo");
 }
 ```
 
@@ -39,11 +43,13 @@ _class: body-center
 ## Operador O (or)
 
 ```js
-const meQuieroIr = true;
+const meQuieroIr = false;
 const mePuedoIr = true;
 
 if (meQuieroIr || mePuedoIr) {
-console.log(“Me voy”);
+  console.log("Me voy");
+} else {
+  console.log("Me quedo");
 }
 ```
 
@@ -55,15 +61,17 @@ console.log(“Me voy”);
 _class: body-center
  -->
 
-## Conversion a number
+## Conversión a number
 
 ```js
 const numberString = "123.15";
 
-console.log(numberString); // "123"
+console.log(numberString); // "123.15"
 console.log(parseInt(numberString)); // 123
 console.log(parseFloat(numberString)); // 123.15
 console.log(+numberString); // 123.15
+
+// Todos los 3 son de tipo "number".
 ```
 
 ##
@@ -74,7 +82,7 @@ console.log(+numberString); // 123.15
 _class: body-center
  -->
 
-## Conversion a number
+## Conversión a number
 
 ```js
 const booleanString = true;
@@ -111,9 +119,9 @@ _class: body-center
 
 ## Truthy & Falsy
 
-Truthy es cualquier valor que es considerado **true**, cuando interpretado como booleano.
+**Truthy** es cualquier valor que es considerado **true**, cuando interpretado como booleano.
 
-Falsy es cualquier valor que es considerado **false**, cuando interpretado como booleano.
+**Falsy** es cualquier valor que es considerado **false**, cuando interpretado como booleano.
 
 ##
 
@@ -132,14 +140,14 @@ Todo valor es truthy, a menos que sea falsy.
 ---
 
 <style scoped>
-    li {
-        margin: 0;
-    }
+  li {
+    margin: 0;
+  }
 </style>
 
 ## Falsy
 
-Son falsy los siguientes valores:
+Los siguientes valores son falsy:
 
 - false
 - 0 ó -0
@@ -252,11 +260,11 @@ _class: body-center
 
 ```js
 function isEven(number) {
-    if (number % 2 === 0) {
-        return true;
-    } else if (number % 2 !=== 0) {
-        return false;
-    }
+  if (number % 2 === 0) {
+    return true;
+  } else if (number % 2 === 1) {
+    return false;
+  }
 }
 ```
 
@@ -272,7 +280,14 @@ _class: body-center
 
 ```js
 function isEven(number) {
-  return number % 2 === 0;
+  // number % 2 es 1 ó 0
+  // si es 0, el numero es par
+  // si es 1, el numero es impar
+  if (number % 2) {
+    return false;
+  } else {
+    return true;
+  }
 }
 ```
 
@@ -288,7 +303,68 @@ _class: body-center
 
 ```js
 function isEven(number) {
+  // el valor que se retorna es *lo opuesto*
+  // del condicional del if, aprovechemos
+  if (number % 2) {
+    return !(number % 2);
+  } else {
+    return true;
+  }
+}
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Brevedad & Funciones
+
+```js
+function isEven(number) {
+  // tambien en el else
+  if (number % 2) {
+    return !(number % 2);
+  } else {
+    return !(number % 2);
+  }
+}
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Brevedad & Funciones
+
+```js
+function isEven(number) {
+  // entonces el if sobra...
   return !(number % 2);
+}
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Brevedad & Funciones
+
+```js
+function isEven(number) {
+  // alternativamente...
+  return number % 2 === 0;
 }
 ```
 

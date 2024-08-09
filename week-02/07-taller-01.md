@@ -133,7 +133,7 @@ Solo es necesario "resolver" hasta el numero 10.
 | La funcion esta correctamente nombrada. | 1      |
 | La funcion retorna el resultado.        | 1      |
 | La funcion compila.                     | 1      |
-| El resultado es el correcto.            | 1      |
+| Creatividad.                            | 1      |
 | El resultado tiene el formato correcto. | 1      |
 | Total                                   | 5      |
 

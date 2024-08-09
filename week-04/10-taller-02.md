@@ -19,21 +19,13 @@ header: Taller 02
 
 ## Desarollo Web Backend
 
-En un archivo llamado [codigoEstudiante].js realice los siguientes puntos:
+Cree archivo llamado taller-02.js, realice los siguientes puntos, y súbalo a su repositorio de talleres.
+
+:pencil: 2024-03
 
 ---
 
-1. Desarrolle una funcion llamada invertirString que reciba una string por parámetro y retorne la string invertida.
-
-| Entrada     | Salida      |
-| ----------- | ----------- |
-| onomatopeia | aiepotamono |
-
-Tip: Los caracteres en una string se pueden acceder como elementos en una lista. No es permitido utilizar el reverse que trae Javascript por defecto.
-
----
-
-2. Desarrolle una funcion llamada findMax que reciba una lista de números por parámetro y retorne el mayor valor.
+1. Desarrolle una funcion llamada **findMax** que reciba una lista de números por parámetro y retorne el mayor valor.
 
 | Entrada             | Salida |
 | ------------------- | ------ |
@@ -43,7 +35,7 @@ No es permitido utilizar el Math.max que trae Javascript por defecto.
 
 ---
 
-3. Desarrolle una funcion llamada includes que reciba una lista de números y un numero por parámetro y retorne un booleano representando si el numero se encuentra en la lista.
+2. Desarrolle una funcion llamada **includes** que reciba una lista de números y un numero por parámetro y retorne un booleano representando si el numero se encuentra en la lista.
 
 | Entrada                | Salida |
 | ---------------------- | ------ |
@@ -54,7 +46,7 @@ No es permitido utilizar el includes que trae Javascript por defecto.
 
 ---
 
-4. Desarrolle una funcion llamada sum que reciba una lista de números y retorne la suma de los elementos de la lista.
+3. Desarrolle una funcion llamada **sum** que reciba una lista de números y retorne la suma de los elementos de la lista.
 
 | Entrada             | Salida |
 | ------------------- | ------ |
@@ -64,7 +56,7 @@ No es permitido utilizar el includes que trae Javascript por defecto.
 
 ---
 
-5. Desarrolle una funcion llamada missingNumbers que reciba una lista de números y retorne una lista de los números faltantes entre el menor y mayor de la lista.
+4. Desarrolle una funcion llamada **missingNumbers** que reciba una lista de números y retorne una lista de los números faltantes entre el menor y mayor de la lista.
 
 | Entrada            | Salida |
 | ------------------ | ------ |
@@ -76,14 +68,12 @@ No es permitido utilizar el includes que trae Javascript por defecto.
 
 ## Rubrica Punto 1
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| La funcion esta correctamente nombrada. | 1      |
-| La funcion retorna el resultado.        | 1      |
-| La funcion compila.                     | 1      |
-| El resultado es el correcto.            | 1      |
-| El resultado tiene el formato correcto. | 1      |
-| Total                                   | 5      |
+| Criterio                                         | Puntos |
+| ------------------------------------------------ | ------ |
+| La funcion no está correctamente nombrada.       | -1     |
+| La funcion compila y retorna el resultado.       | 1      |
+| El resultado es el correcto en formato correcto. | 3      |
+| Total                                            | 4      |
 
 ##
 
@@ -91,14 +81,12 @@ No es permitido utilizar el includes que trae Javascript por defecto.
 
 ## Rubrica Punto 2
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| La funcion esta correctamente nombrada. | 1      |
-| La funcion retorna el resultado.        | 1      |
-| La funcion compila.                     | 1      |
-| El resultado es el correcto.            | 1      |
-| El resultado tiene el formato correcto. | 1      |
-| Total                                   | 5      |
+| Criterio                                         | Puntos |
+| ------------------------------------------------ | ------ |
+| La funcion no está correctamente nombrada.       | -1     |
+| La funcion compila y retorna el resultado.       | 1      |
+| El resultado es el correcto en formato correcto. | 3      |
+| Total                                            | 4      |
 
 ##
 
@@ -106,14 +94,12 @@ No es permitido utilizar el includes que trae Javascript por defecto.
 
 ## Rubrica Punto 3
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| La funcion esta correctamente nombrada. | 1      |
-| La funcion retorna el resultado.        | 1      |
-| La funcion compila.                     | 1      |
-| El resultado es el correcto.            | 1      |
-| El resultado tiene el formato correcto. | 1      |
-| Total                                   | 5      |
+| Criterio                                         | Puntos |
+| ------------------------------------------------ | ------ |
+| La funcion no está correctamente nombrada.       | -1     |
+| La funcion compila y retorna el resultado.       | 1      |
+| El resultado es el correcto en formato correcto. | 3      |
+| Total                                            | 4      |
 
 ##
 
@@ -121,14 +107,12 @@ No es permitido utilizar el includes que trae Javascript por defecto.
 
 ## Rubrica Punto 4
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| La funcion esta correctamente nombrada. | 1      |
-| La funcion retorna el resultado.        | 1      |
-| La funcion compila.                     | 1      |
-| El resultado es el correcto.            | 1      |
-| El resultado tiene el formato correcto. | 1      |
-| Total                                   | 5      |
+| Criterio                                         | Puntos |
+| ------------------------------------------------ | ------ |
+| La funcion no está correctamente nombrada.       | -1     |
+| La funcion compila y retorna el resultado.       | 1      |
+| El resultado es el correcto en formato correcto. | 3      |
+| Total                                            | 4      |
 
 ##
 
@@ -136,14 +120,12 @@ No es permitido utilizar el includes que trae Javascript por defecto.
 
 ## Rubrica Taller
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| El archivo esta nombrado correctamente. | 1      |
-| Punto 1.                                | 5      |
-| Punto 2.                                | 5      |
-| Punto 3.                                | 5      |
-| Punto 4.                                | 5      |
-| Punto 5.                                | 5      |
-| Total                                   | 26     |
+| Criterio | Puntos |
+| -------- | ------ |
+| Punto 1. | 4      |
+| Punto 2. | 4      |
+| Punto 3. | 4      |
+| Punto 4. | 4      |
+| Total    | 16     |
 
 ##

@@ -1,2 +1,2 @@
 
-tar -acf 08-parcial-01.zip 08-parcial-01
+tar -acf 10-parcial-01.zip 10-parcial-01

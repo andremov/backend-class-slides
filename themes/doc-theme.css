@@ -67,6 +67,13 @@ header {
   text-align: right;
 }
 
+footer {
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 6rem;
+  right: 5rem;
+}
+
 img {
   margin: -50px 0 -150px;
   width: 800px;

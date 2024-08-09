@@ -19,11 +19,13 @@ header: Taller 03
 
 ## Desarollo Web Backend
 
-En un archivo llamado [codigoEstudiante].js reali*c*e los siguientes puntos:
+Cree archivo llamado taller-03.js, realice los siguientes puntos, y súbalo a su repositorio de talleres.
+
+:pencil: 2024-03
 
 ---
 
-1. Desarrolle una funcion llamada desglosarString que reciba una string, y la string "vo*c*ales" o "*c*onsonantes", y retorne la cantidad de vocales o consonantes de la string re*c*ibida.
+1. Desarrolle una funcion llamada **desglosarString** que reciba una string, y la string "vocales" o "consonantes", y retorne la cantidad de vocales o consonantes de la string recibida.
 
 | Entrada                      | Salida |
 | ---------------------------- | ------ |
@@ -34,49 +36,39 @@ En un archivo llamado [codigoEstudiante].js reali*c*e los siguientes puntos:
 
 ---
 
-2. Desarrolle una fun*c*ion llamada twoSum que reciba una lista de numero enteros y otro numero entero y retorne los indi*c*es de los numeros del arreglo que sumados sean el otro numero.
+2. Desarrolle una funcion llamada **twoSum** que reciba una lista de numero enteros y otro numero entero y retorne los indices de los numeros del arreglo que sumados sean el otro numero.
 
 | Entrada           | Salida |
 | ----------------- | ------ |
 | [2, 7, 11, 15], 9 | [0, 1] |
 | [3, 4, 2], 6      | [1, 2] |
 
-No se permite utilizar el mismo numero dos ve*c*es.
+No se permite utilizar el mismo numero dos veces.
 
 ---
 
-<style scoped>
-    th,td {
-        min-width: 100px;
-    }
-    h2 {
-        color: rgba(250, 200, 100, 1) !important;
-    }
-</style>
+3. Desarrolle una funcion llamada **conversionRomana** que reciba una string de cifras romanos y retorne el equivalente en cifras arábigas.
 
-## :stars: Punto Shiny :stars:
+| Entrada  | Salida |
+| -------- | ------ |
+| "III"    | 3      |
+| "XIV"    | 14     |
+| "MMXXIV" | 2024   |
+| "MXMVII" | 1997   |
 
-|               | papa    | brocoli | pimenton | lechuga   |
-| ------------- | ------- | ------- | -------- | --------- |
-| **apio**      | manzana | mango   | maracuya | coco      |
-| **maiz**      | pera    | piña    | patilla  | guayaba   |
-| **cebolla**   | fresa   | mora    | aceituna | mandarina |
-| **zanahoria** | naranja | tomate  | kiwi     | cereza    |
-
-:arrow_down: C :arrow_right: node
+No se permite utilizar el mismo numero dos veces.
 
 ---
 
 ## Rubrica Punto 1
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| La funcion esta correctamente nombrada. | 1      |
-| La funcion retorna el resultado.        | 1      |
-| La funcion compila.                     | 1      |
-| El resultado es el correcto.            | 1      |
-| El resultado tiene el formato correcto. | 1      |
-| Total                                   | 5      |
+| Criterio                                         | Puntos |
+| ------------------------------------------------ | ------ |
+| La funcion no está correctamente nombrada.       | -1     |
+| La funcion no compila.                           | -1     |
+| La funcion no retorna el resultado.              | -1     |
+| El resultado es el correcto en formato correcto. | 2      |
+| Total                                            | 2      |
 
 '
 
@@ -86,14 +78,27 @@ No se permite utilizar el mismo numero dos ve*c*es.
 
 ## Rubrica Punto 2
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| La funcion esta correctamente nombrada. | 1      |
-| La funcion retorna el resultado.        | 1      |
-| La funcion compila.                     | 1      |
-| El resultado es el correcto.            | 1      |
-| El resultado tiene el formato correcto. | 1      |
-| Total                                   | 5      |
+| Criterio                                         | Puntos |
+| ------------------------------------------------ | ------ |
+| La funcion no está correctamente nombrada.       | -1     |
+| La funcion no compila.                           | -1     |
+| La funcion no retorna el resultado.              | -1     |
+| El resultado es el correcto en formato correcto. | 2      |
+| Total                                            | 2      |
+
+##
+
+---
+
+## Rubrica Punto 3
+
+| Criterio                                         | Puntos |
+| ------------------------------------------------ | ------ |
+| La funcion no está correctamente nombrada.       | -1     |
+| La funcion no compila.                           | -1     |
+| La funcion no retorna el resultado.              | -1     |
+| El resultado es el correcto en formato correcto. | 2      |
+| Total                                            | 2      |
 
 ##
 
@@ -101,12 +106,11 @@ No se permite utilizar el mismo numero dos ve*c*es.
 
 ## Rubrica Taller
 
-| Criterio                                | Puntos |
-| --------------------------------------- | ------ |
-| El archivo esta nombrado correctamente. | 1      |
-| Punto 1.                                | 5      |
-| Punto 2.                                | 5      |
-| Punto Shiny.                            | Bono   |
-| Total                                   | 11     |
+| Criterio | Puntos |
+| -------- | ------ |
+| Punto 1. | 2      |
+| Punto 2. | 2      |
+| Punto 3. | 2      |
+| Total    | 6      |
 
 ##

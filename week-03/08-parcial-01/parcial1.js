@@ -13,6 +13,8 @@ const datos = require("./datos.json");
  * Implemente una funcion que reciba los datos de estudiantes y
  * retorne la cantidad de estudiantes en matricula condicional
  * (promedio por debajo de 3.3).
+ * 
+ * Los 'estudiantes' vienen del archivo 'datos.json', que ya fue importado para ustedes.
  */
 function puntoUno(estudiantes) {
   // CODIGO DE PUNTO 1 AQUI
@@ -23,6 +25,8 @@ function puntoUno(estudiantes) {
 /**
  * Implemente una funcion que reciba los datos de estudiantes y
  * retorne una lista con el nombre completo de cada estudiante.
+ * 
+ * Los 'estudiantes' vienen del archivo 'datos.json', que ya fue importado para ustedes.
  */
 function puntoDos(estudiantes) {
   // CODIGO DE PUNTO 2 AQUI
@@ -34,6 +38,8 @@ function puntoDos(estudiantes) {
  * Implemente una funcion que reciba los datos de estudiantes y
  * retorne una lista con los id de cada estudiante unicamente, y tras
  * ser ordenados ascendentemente por altura.
+ * 
+ * Los 'estudiantes' vienen del archivo 'datos.json', que ya fue importado para ustedes.
  */
 function puntoTres(estudiantes) {
   // CODIGO DE PUNTO 3 AQUI

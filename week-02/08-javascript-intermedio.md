@@ -11,7 +11,7 @@ _header: ""
 
 # Javascript Intermedio
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 0 min.
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 10 min.
 
 ---
 
@@ -369,3 +369,135 @@ function isEven(number) {
 ```
 
 ##
+
+---
+
+<!--
+_class: title
+ -->
+
+# Objetos
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Objetos
+
+```js
+// esto es un objeto
+const perro = {
+  raza: "Labrador",
+  edad: 4,
+  nombre: "Tequila",
+  muerde: false,
+  juzga: true,
+};
+
+console.log(perro.nombre); // "Tequila"
+console.log(perro["muerde"]); // false
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Objetos
+
+```js
+const perro = {
+  raza: "Labrador",
+  edad: 4,
+  nombre: "Tequila",
+  muerde: false,
+  juzga: true,
+};
+
+const campo = "juzga";
+console.log(perro[campo]); // true
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Objetos
+
+```js
+const perro = {
+  raza: "Labrador",
+  edad: 4,
+  nombre: "Tequila",
+  muerde: false,
+  juzga: true,
+};
+
+perro.nombre = "Whiskey";
+perro["muerde"] = true;
+
+console.log(perro.nombre); // "Whiskey"
+console.log(perro.muerde); // true
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Vectores / Arrays
+
+```js
+const estudiantes = [
+  {
+    nombre: "Martin Elias",
+    velocidad: 9001,
+  },
+  {
+    nombre: "Diomedes",
+    numHijos: 9002,
+  },
+];
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Vectores / Arrays
+
+```js
+console.log(estudiantes.length); // 2
+
+console.log(estudiantes[0].velocidad); // 9001
+
+console.log(estudiantes["1"].numHijos); // 9002
+```
+
+##
+
+---
+
+<!--
+_class: title
+ -->
+
+# :tada:
+
+# Están listos para el parcial!

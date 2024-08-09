@@ -2,10 +2,13 @@
 
 > ## Instrucciones:
 >
+> - Abrir carpeta del parcial usando VSCode.
+> - Para realizar pruebas, puede ejecutar el archivo usando el comando `node [nombre-de-archivo]`
 > - Leer detenidamente cada punto, desarrollar en el orden deseado.
 > - Utilizar el archivo parcial1.js, renombrar el archivo a [codigo de estudiante].js.
 > - No renombrar las funciones de los puntos.
-> - El codigo por fuera de las funciones de los puntos es valido, pueden desarrollar funciones auxiliares.
+> - Pueden desarrollar funciones auxiliares.
+> - Cualquier codigo por fuera de funciones no será tomado en cuenta.
 > - Solo se envía el archivo parcial1.js (con el nombre modificado).
 > - Buena suerte!
 

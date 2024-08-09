@@ -373,3 +373,13 @@ Docker Desktop y Comandos
 `docker ps`
 
 ##
+
+---
+
+<!--
+_class: title
+ -->
+
+# :tada:
+
+# Son expertos en Docker!

@@ -45,7 +45,7 @@ _class: body-center align-center
 
 ---
 
-## Container?
+## Que es un container?
 
 "Un software empaquetado y autonomo, con Linux, y todo lo que
 este requiere para correr el software o servicio."
@@ -70,6 +70,7 @@ Como seria un backend container?
 
 - Node + NPM
 
+##
 ---
 
 ## Como seria un backend container?
@@ -77,6 +78,7 @@ Como seria un backend container?
 - Node + NPM
 - Los packages requeridos
 
+##
 ---
 
 ## Como seria un backend container?
@@ -85,6 +87,7 @@ Como seria un backend container?
 - Los packages requeridos
 - Mi codigo fuente
 
+##
 ---
 
 ## Como seria un backend container?
@@ -93,6 +96,8 @@ Como seria un backend container?
 - Node + NPM
 - Los packages requeridos
 - Mi codigo fuente
+
+##
 
 ---
 
@@ -129,18 +134,12 @@ Como seria un backend container?
 
 ---
 
-## `docker run hello-world`
+## Un comando
 
-Intenta correr el container “hello-world”.
+Por ejemplo, `docker run hello-world`
+
+Este comando intenta correr el container "hello-world"
 No lo encuentra local, entonces lo descarga, y lo corre.
-
-##
-
----
-
-## Container?
-
-"Un software empaquetado y autonomo, con Linux, y todo lo que este requiere para correr el software o servicio."
 
 ##
 
@@ -178,7 +177,7 @@ container (tambien basado en Linux).
 
 ---
 
-## Docker Desktop + Docker cmd + Docker server
+## Docker server + Docker cmd + Docker Desktop
 
 El programa servidor de docker maneja todos los containers
 
@@ -223,7 +222,7 @@ Como se construye un container?
 ---
 
 <!--
-  _class: body-center align-center
+  _class: body-center
  -->
 
 ## Como se construye un container?
@@ -232,11 +231,13 @@ Un docker container se construye con un docker image.
 
 `docker run hello-world`
 
-Intenta correr un docker container basado en la docker image "hello-world"
+Este comando intenta correr un docker container basado en la docker image "hello-world"
 
 ##
 
 ---
+
+## Como se construye un container?
 
 | Image                                        | Container                                              |
 | -------------------------------------------- | ------------------------------------------------------ |
@@ -245,6 +246,8 @@ Intenta correr un docker container basado en la docker image "hello-world"
 | Puede ser "montado" varias veces.            |                                                        |
 |                                              |                                                        |
 | `docker run` ->                              | <- `docker commit`                                     |
+
+##
 
 ---
 
@@ -267,21 +270,17 @@ Intenta correr un docker container basado en la docker image "hello-world"
 
 ---
 
-## `docker run hello-world`
+## Un servicio que distribuye containers
 
-Intenta correr el container “hello-world”.
+`docker run hello-world`
 
-No lo encuentra local, entonces lo descarga, y lo corre.
+Intenta correr el container "hello-world".
+
+1. No lo encuentra localmente.
+2. **Entonces lo descarga**.
+3. Lo corre.
 
 ##
-
----
-
-## `docker run hello-world`
-
-Intenta correr el container “hello-world”.
-
-No lo encuentra local, entonces lo **descarga**, y lo corre.
 
 ---
 
@@ -289,7 +288,7 @@ No lo encuentra local, entonces lo **descarga**, y lo corre.
 _class: body-center align-center
 -->
 
-## `docker run helloworld`
+## Un servicio que distribuye containers
 
 https://hub.docker.com/
 
@@ -316,7 +315,11 @@ https://hub.docker.com/
 
 ---
 
-## ~docker run helloworld~
+<!--
+_class: body-center align-center
+-->
+
+## Una empresa que crea containers
 
 https://hub.docker.com/
 

@@ -6,7 +6,7 @@ header: Ejercicios de Practica 01
 footer: :pencil: 2024-03
 ---
 
-# Ejericios de Practica 01
+# Ejercicios de Practica 01
 
 1. Desarrolle una función que reciba una lista de strings, y retorne la cantidad de strings con longitud mayor a 25 caracteres.
 

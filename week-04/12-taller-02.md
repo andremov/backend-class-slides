@@ -8,7 +8,7 @@ header: Taller 02
 ---
 
 <style>
-    p:nth-child(4) {
+    p:nth-child(5) {
         text-align: center;
         font-size: 0.8rem;
         color: rgba(var(--text-color), 0.6);
@@ -19,13 +19,17 @@ header: Taller 02
 
 ## Desarollo Web Backend
 
+##
+
 Cree archivo llamado taller-02.js, realice los siguientes puntos, y súbalo a su repositorio de talleres.
 
 :pencil: 2024-03
 
 ---
 
-1. Desarrolle una funcion llamada **findMax** que reciba una lista de números por parámetro y retorne el mayor valor.
+## Punto 1
+
+Desarrolle una funcion llamada **findMax** que reciba una lista de números por parámetro y retorne el mayor valor.
 
 | Entrada             | Salida |
 | ------------------- | ------ |
@@ -35,7 +39,9 @@ No es permitido utilizar el Math.max que trae Javascript por defecto.
 
 ---
 
-2. Desarrolle una funcion llamada **includes** que reciba una lista de números y un numero por parámetro y retorne un booleano representando si el numero se encuentra en la lista.
+## Punto 2
+
+Desarrolle una funcion llamada **includes** que reciba una lista de números y un numero por parámetro y retorne un booleano representando si el numero se encuentra en la lista.
 
 | Entrada                | Salida |
 | ---------------------- | ------ |
@@ -46,7 +52,9 @@ No es permitido utilizar el includes que trae Javascript por defecto.
 
 ---
 
-3. Desarrolle una funcion llamada **sum** que reciba una lista de números y retorne la suma de los elementos de la lista.
+## Punto 3
+
+Desarrolle una funcion llamada **sum** que reciba una lista de números y retorne la suma de los elementos de la lista.
 
 | Entrada             | Salida |
 | ------------------- | ------ |
@@ -56,7 +64,9 @@ No es permitido utilizar el includes que trae Javascript por defecto.
 
 ---
 
-4. Desarrolle una funcion llamada **missingNumbers** que reciba una lista de números y retorne una lista de los números faltantes entre el menor y mayor de la lista.
+## Punto 4
+
+Desarrolle una funcion llamada **missingNumbers** que reciba una lista de números y retorne una lista de los números faltantes entre el menor y mayor de la lista.
 
 | Entrada            | Salida |
 | ------------------ | ------ |

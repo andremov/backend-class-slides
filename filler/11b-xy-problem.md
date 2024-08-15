@@ -12,11 +12,13 @@ _header: ""
 
 # XY problem
 
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 5 min.
+
 ---
 
-## XY Problem
+## XY Problem - Que es?
 
-El problema XY es cuando una persona tiene un problema, se le ocurrió una solución, y pide ayuda para completar esa solución en vez de para resolver el problema inicial.
+El problema XY es cuando una persona tiene un problema, se le ocurrió una solución, y pide ayuda para completar _esa_ solución en vez de para resolver el problema inicial.
 
 "Porque quieres resolver (Y), si para resolver (X) puedes hacer esto?"
 
@@ -32,7 +34,7 @@ Si estabas resolviendo algo, y terminaste borrando todo y con una solución much
 
 ---
 
-## XY Problem
+## XY Problem - Porque lo vemos?
 
 1. Sepan que existe.
 2. Si van a pedir ayuda, comienza con _porque_ estás haciendo lo que estás haciendo.
@@ -42,11 +44,11 @@ Si estabas resolviendo algo, y terminaste borrando todo y con una solución much
 
 ---
 
-## El Tipico Ejemplo
+## Un Ejemplo
 
 > **Alejandro:** Como saco los ultimos 3 caracteres de una string?
 >
-> **Paola:** Le puedes hacer [str].slice(-3).
+> **Paola:** Le puedes hacer str.slice(-3).
 >
 > **Alejandro:** Listo, gracias!
 
@@ -62,11 +64,13 @@ function getFileExtension(filename) {
 }
 ```
 
+Esto está bien?
+
 ##
 
 ---
 
-## Resultado
+## Analisis
 
 ```js
 function getFileExtension(filename) {
@@ -81,7 +85,7 @@ Cual es el problema Y?
 
 ---
 
-## Resultado
+## Analisis
 
 ```js
 function getFileExtension(filename) {

@@ -11,6 +11,8 @@ _header: ""
 
 # Javascript Avanzado I
 
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 25 min.
+
 ---
 
 <!--
@@ -134,7 +136,7 @@ function saludos(user) {
   console.log("Hola " + user.name);
 }
 
-saludos(); // Error.
+saludos(); // ⚠️
 ```
 
 ##
@@ -159,15 +161,39 @@ saludos(); // "Hola undefined"
 
 ---
 
+ <style scoped>
+  div {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  pre {
+    flex: 1;
+  }
+ </style>
+
 <!--
 _class: body-center
  -->
 
 ## Optional Chaining
 
-| Antes                                                      | Despues             |
-| ---------------------------------------------------------- | ------------------- |
-| `if (user) { return user.name } else { return undefined }` | `return user?.name` |
+<div>
+<pre>
+<code>
+if (user !== undefined) {
+  return user.name
+} else { 
+  return undefined 
+}
+</code>
+</pre>
+<pre>
+<code>
+return user?.name
+</code>
+</pre>
+</div>
 
 ##
 
@@ -236,7 +262,7 @@ function saludos(name) {
 
 let user = undefined;
 
-saludos(user.name); // Error.
+saludos(user.name); // ⚠️
 ```
 
 ##
@@ -402,10 +428,10 @@ function saludo(nombre1, nombre2) {
   if (nombre2) {
     return "Hola " + nombre2;
   } else if (nombre1) {
-   return "Hola " + nombre1;
+    return "Hola " + nombre1;
   }
 
-  return "Hola abominacion;
+  return "Hola abominacion";
 }
 
 console.log(saludo("Experimento 626", "Stitch")); // ??
@@ -568,7 +594,7 @@ console.log(saludo()); // ??
 _class: title
  -->
 
-## Intermision
+## Intermisión
 
 ---
 
@@ -576,7 +602,7 @@ _class: title
 _class: title
  -->
 
-## Manipulacion de Strings
+## Manipulación de Strings
 
 ---
 
@@ -586,7 +612,7 @@ _class: body-center align-center
 
 ## Nota
 
-Los metodos de manipulacion de string **retornan** la string modificada.
+Los metodos de manipulación de string **retornan** la string modificada.
 
 ##
 
@@ -644,6 +670,7 @@ _class: body-center
 
 ```js
 let text = "Apple, Banana, Kiwi";
+
 // el segundo parametro es la posicion de fin
 console.log(text.substring(7)); // "Banana, Kiwi"
 console.log(text.substring(7, 13)); // "Banana"
@@ -662,6 +689,7 @@ _class: body-center
 
 ```js
 let text = "Apple, Banana, Kiwi";
+
 // el segundo parametro es la cantidad de caracteres
 console.log(text.substr(7)); // "Banana, Kiwi"
 console.log(text.substr(7, 6)); // "Banana"
@@ -680,7 +708,8 @@ _class: body-center
 
 ```js
 let text = "Apple, Banana, Kiwi";
-// el segundo parametro es la cantidad de caracteres
+
+// el segundo parametro es la posicion de fin
 console.log(text.slice(7)); // "Banana, Kiwi"
 console.log(text.slice(7, 13)); // "Banana"
 console.log(text.slice(7).slice(0, 6)); // "Banana"
@@ -698,7 +727,8 @@ _class: body-center
 
 ```js
 let text = "Apple, Banana, Kiwi";
-// el segundo parametro es la cantidad de caracteres
+
+// el segundo parametro es la posicion de fin
 console.log(text.slice(-12)); // "Banana, Kiwi"
 console.log(text.slice(-12, 13)); // "Banana"
 console.log(text.slice(-12, -6)); // "Banana"

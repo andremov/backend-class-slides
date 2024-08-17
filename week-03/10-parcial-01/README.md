@@ -1,4 +1,4 @@
-# Parcial #1
+# Parcial 01
 
 > ## Instrucciones:
 >

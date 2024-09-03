@@ -14,41 +14,83 @@
 
 ## Puntos
 
-1. Implemente una funcion que reciba los datos de estudiantes y retorne la informacion personal de los estudiantes "estrella" (promedio mayor a 2.5 y menor a 3.0).
+1. Implemente una función que reciba los datos de estudiantes y retorne los correos de los estudiantes que han estado involucrados en la extra curricular INNOVA.
 
-2. Su compañero de trabajo, Julian, desarrolló el punto dos. Utilizando los conceptos aprendidos en JS Avanzado, mejore la función.
+2. Implemente una función que reciba los datos de estudiantes y retorne el nombre completo del estudiante de mayor promedio de cada semestre.
 
-3. Desarrolle una funcion que reciba los datos de estudiantes y retorne los estudiantes que cumplan con los filtros y los datos "arreglados".
+3. Implemente una función que reciba los datos de estudiantes y retorne la información personal de los estudiantes de primer semestre modificados para tener el siguiente formato:
 
-- FIX: Juntar nombres en campo "name".
-- FIX: No incluir actividades extra curriculares.
-- FIX: Solo incluir clases del semestre mas reciente.
-- FILTER: Usuarios menores a 20 años
-- FIX: Adicionar campo "title" segun genero (Sr. o Sra.)
-- FIX: Sacar la informacion personal de su campo.
-
-4. Mejore el punto cuatro utilizando los conceptos aprendidos en JS Avanzado.
+```js
+{
+  "gender":"M",
+  "titulo": "Sr.",
+  "nombreCompleto" : "Luis Molina",
+  "primerNombre":"Luis",
+  "primerApellido":"Molina",
+  "altura": 182,
+  "edad": 19,
+  "nacimiento": "2004-10-14",
+  "correo":"lmolina@uninorte.edu.co",
+  "usuario":"lmolina"
+},
+```
 
 ## Información Adicional
+
+- Todos los cursos de un estudiante tienen el mismo peso sobre su promedio actual.
 
 - El archivo datos.json contiene datos de estudiantes para que realicen pruebas. A continuación pueden ver un ejemplo de un estudiante:
 
 ```js
 {
-  "_id":"par01estid001",
-  "nombre":"Alison",
-  "apellido":"Gonzalez",
-  "altura":1.7,
-  "cursos": [
-    {"nota":0.6,"nombre":"Matemáticas II"},
-    {"nota":5.1,"nombre":"Sociales III"},
-    {"nota":4.8,"nombre":"Química I"},
-    {"nota":4.8,"nombre":"Castellano III"},
-    {"nota":0.8,"nombre":"Química II"},
-    {"nota":1.5,"nombre":"Historia III"},
-    {"nota":1.3,"nombre":"Sociales III"}
+  "_id": "par02estid001",
+  "info_personal": {
+    "gender":"M",
+    "nombre":"Luis",
+    "apellido":"Molina",
+    "altura": 1.82,
+    "nacimiento": "2004-10-14",
+    "correo":"lmolina@uninorte.edu.co"
+  },
+  "info_matricula": [
+    {
+      "name": "Inglés I",
+      "notas": [
+        {
+          "nota": 1.4,
+          "peso": 0.2
+        },
+        {
+          "nota": 4.7,
+          "peso": 0.2
+        },
+        {
+          "nota": 0.2,
+          "peso": 0.2
+        },
+        {
+          "nota": 4,
+          "peso": 0.2
+        },
+        {
+          "nota": 3.9,
+          "peso": 0.2
+        }
+      ],
+      "semestre": 1
+    }
+  ],
+  "info_extra_curriculares": [
+    {
+      "nombre": "Fotografía",
+      "semestre": 1
+    },
+    {
+      "nombre": "Voleibol",
+      "semestre": 2
+    }
   ]
 }
 ```
 
-- Los estudiantes tienen una cantidad variable de cursos.
+- Los estudiantes tienen una cantidad variable de cursos, y extra curriculares.

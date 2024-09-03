@@ -10,7 +10,7 @@ const firstnames = [
   "Cristian",
   "Luis",
   "Veronica",
-  "Alejanda",
+  "Alejandra",
 ];
 const lastnames = [
   "Martinez",

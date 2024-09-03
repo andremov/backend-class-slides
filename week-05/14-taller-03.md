@@ -8,7 +8,7 @@ header: Taller 03
 ---
 
 <style>
-    p:nth-child(4) {
+    p:nth-child(5) {
         text-align: center;
         font-size: 0.8rem;
         color: rgba(var(--text-color), 0.6);
@@ -19,13 +19,17 @@ header: Taller 03
 
 ## Desarollo Web Backend
 
+##
+
 Cree archivo llamado taller-03.js, realice los siguientes puntos, y súbalo a su repositorio de talleres.
 
 :pencil: 2024-03
 
 ---
 
-1. Desarrolle una funcion llamada **desglosarString** que reciba una string, y la string "vocales" o "consonantes", y retorne la cantidad de vocales o consonantes de la string recibida.
+## Punto 1
+
+Desarrolle una funcion llamada **desglosarString** que reciba una string, y la string "vocales" o "consonantes", y retorne la cantidad de vocales o consonantes de la string recibida.
 
 | Entrada                      | Salida |
 | ---------------------------- | ------ |
@@ -36,7 +40,9 @@ Cree archivo llamado taller-03.js, realice los siguientes puntos, y súbalo a su
 
 ---
 
-2. Desarrolle una funcion llamada **twoSum** que reciba una lista de numero enteros y otro numero entero y retorne los indices de los numeros del arreglo que sumados sean el otro numero.
+## Punto 2
+
+Desarrolle una funcion llamada **twoSum** que reciba una lista de numero enteros y otro numero entero y retorne los indices de los numeros del arreglo que sumados sean el otro numero.
 
 | Entrada           | Salida |
 | ----------------- | ------ |
@@ -47,7 +53,9 @@ No se permite utilizar el mismo numero dos veces.
 
 ---
 
-3. Desarrolle una funcion llamada **conversionRomana** que reciba una string de cifras romanos y retorne el equivalente en cifras arábigas.
+## Punto 3
+
+Desarrolle una funcion llamada **conversionRomana** que reciba una string de cifras romanas y retorne el equivalente en cifras arábigas.
 
 | Entrada  | Salida |
 | -------- | ------ |
@@ -55,8 +63,6 @@ No se permite utilizar el mismo numero dos veces.
 | "XIV"    | 14     |
 | "MMXXIV" | 2024   |
 | "MXMVII" | 1997   |
-
-No se permite utilizar el mismo numero dos veces.
 
 ---
 
@@ -69,8 +75,6 @@ No se permite utilizar el mismo numero dos veces.
 | La funcion no retorna el resultado.              | -1     |
 | El resultado es el correcto en formato correcto. | 2      |
 | Total                                            | 2      |
-
-'
 
 ##
 

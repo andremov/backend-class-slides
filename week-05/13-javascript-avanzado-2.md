@@ -11,6 +11,8 @@ _header: ""
 
 # Javascript Avanzado II
 
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 45 min.
+
 ---
 
 <!--
@@ -60,12 +62,14 @@ _class: body-center
 ## .find()
 
 ```js
+// función de busqueda que retorna true para el elemento que queremos
 function findFunction(item) {
   return item === 4;
 }
 
 const numbers = [4, 5, 2, 1, 7];
 
+// se le pasa la función de busqueda a .find
 console.log(numbers.find(findFunction)); // 4
 ```
 
@@ -80,12 +84,14 @@ _class: body-center
 ## .find()
 
 ```js
+// función de busqueda que retorna true para el elemento que queremos
 function findFunction(item) {
   return !(item % 2);
 }
 
 const numbers = [4, 5, 2, 1, 7];
 
+// se le pasa la función de busqueda a .find
 console.log(numbers.find(findFunction)); // ??
 ```
 
@@ -100,12 +106,14 @@ _class: body-center
 ## .find()
 
 ```js
+// función de busqueda que retorna true para el elemento que queremos
 function findFunction(item) {
   return !(item % 2);
 }
 
 const numbers = [4, 5, 2, 1, 7];
 
+// se le pasa la función de busqueda a .find
 console.log(numbers.find(findFunction)); // 4
 ```
 
@@ -171,7 +179,7 @@ _class: body-center
 
 ## .findIndex()
 
-Le pasas una funcion de busqueda, y retorna el indice del primer elemento para el que la funcion retorne true.
+Le pasas una funcion de busqueda, y retorna el **indice** del primer elemento para el que la funcion retorne true.
 
 ##
 
@@ -275,7 +283,7 @@ _class: body-center
 
 ## .map()
 
-Le pasas una funcion de "mappeo", y retorna los elementos resultantes de la funcion de "mappeo".
+Le pasas una funcion de "mappeo", o mutación, y retorna los elementos tras ser "mappeados" o mutados con esa función.
 
 ##
 
@@ -338,9 +346,9 @@ _class: body-center
 
 ## .map()
 
-Le pasas una funcion de "mappeo", y retorna los elementos resultantes de la funcion de "mappeo".
+Le pasas una funcion de "mappeo", o mutación, y retorna los elementos tras ser "mappeados" o mutados con esa función.
 
-**No puede ser utilizada para filtrar.**
+**No filtra.**
 
 ##
 
@@ -353,7 +361,91 @@ _class: body-center
 ## .sort()
 
 ```js
-function sortFunction(item1, item2) {
+const numbers = [41, 5, 2, 19, 7];
+
+console.log(numbers.sort()); // ??
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## .sort()
+
+```js
+const numbers = [41, 5, 2, 19, 7];
+
+console.log(numbers.sort()); // [19, 2, 41, 5, 7]
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## .sort()
+
+```js
+function sortAscFunction(item1, item2) {
+  if (item1 < item2) {
+    return 1;
+  } else if (item2 > item1) {
+    return -1;
+  } else {
+    return 0;
+  }
+}
+
+const numbers = [4, 5, 2, 1, 7];
+
+console.log(numbers.sort(sortFunction)); // ??
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## .sort()
+
+```js
+function sortAscFunction(item1, item2) {
+  if (item1 < item2) {
+    return 1;
+  } else if (item2 > item1) {
+    return -1;
+  } else {
+    return 0;
+  }
+}
+
+const numbers = [4, 5, 2, 1, 7];
+
+console.log(numbers.sort(sortFunction)); // [1, 2, 4, 5, 7]
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## .sort()
+
+```js
+function sortAscFunction(item1, item2) {
   return item1 - item2;
 }
 
@@ -373,7 +465,7 @@ _class: body-center
 ## .sort()
 
 ```js
-function sortFunction(item1, item2) {
+function sortAscFunction(item1, item2) {
   return item1 - item2;
 }
 
@@ -396,7 +488,7 @@ Le pasas una funcion de "ordenamiento", y retorna los elementos ordenados segun 
 
 La funcion de "ordenamiento" debe retornar numero negativo, positivo, o cero, segun el orden relativo de los elementos a comparar.
 
-No es que le vayas a pasar burbuja, o insercion.
+No es que le vayas a pasar burbuja, o inserción.
 
 ##
 
@@ -448,7 +540,7 @@ _class: body-center
 
 ## .reduce()
 
-Le pasas una funcion de reduccion, y retorna el resultado de reducir el array usando la funcion.
+Le pasas una funcion de reducción, y retorna el resultado de reducir el array usando la función.
 
 ##
 
@@ -460,11 +552,11 @@ _class: body-center
 
 ## .reduce()
 
-Le pasas una funcion de reduccion, y retorna el resultado de reducir el array usando la funcion.
+Le pasas una funcion de reducción, y retorna el resultado de reducir el array usando la función.
 
 El primer valor del acumulado es el primer elemento del array.
 
-Alternativamente, se le puede pasar un primer valor como segundo parametro del reduce.
+Alternativamente, se le puede pasar un valor inicial como segundo parametro del reduce.
 
 ##
 
@@ -483,6 +575,7 @@ function reduceFunction(acumulado, actual) {
 
 const numbers = [4, 5, 2, 1, 7];
 
+// 1 es el valor inicial
 console.log(numbers.reduce(reduceFunction, 1)); // 20
 ```
 
@@ -494,7 +587,7 @@ console.log(numbers.reduce(reduceFunction, 1)); // 20
 _class: title
  -->
 
-## Intermision
+## Intermisión
 
 ---
 
@@ -502,7 +595,7 @@ _class: title
 _class: body-center
  -->
 
-## Destructuracion Objetos
+## Destructuración Objetos
 
 ```js
 const user = {
@@ -525,7 +618,7 @@ console.log(user.nombre); // ??
 _class: body-center
  -->
 
-## Destructuracion Objetos
+## Destructuración Objetos
 
 ```js
 const user = {
@@ -548,7 +641,7 @@ console.log(user.nombre); // "Ismael"
 _class: body-center
  -->
 
-## Destructuracion Objetos
+## Destructuración Objetos
 
 ```js
 const user = {
@@ -571,7 +664,7 @@ console.log(altura); // 1.75
 _class: body-center
  -->
 
-## Destructuracion Objetos
+## Destructuración Objetos
 
 ```js
 const user = {
@@ -594,7 +687,7 @@ console.log(altura); // undefined
 _class: body-center
  -->
 
-## Destructuracion Objetos
+## Destructuración Objetos
 
 ```js
 const user = {
@@ -669,7 +762,7 @@ console.log(name); // "Ismael"
 _class: body-center
  -->
 
-## Renombrar variable
+## Renombrar + Predeterminado
 
 ```js
 const user = {
@@ -756,36 +849,10 @@ console.log(user.altura); // 1.75
 ---
 
 <!--
-_class: body-center
- -->
-
-## Destructuracion Objetos
-
-```js
-const user = {
-  nombre: "Ismael",
-  altura: 1.75,
-  puntaje: 3,
-};
-```
-
-```js
-const { nombre, ...otrosDatos } = user;
-```
-
-```js
-// ??
-```
-
-##
-
----
-
-<!--
 _class: title
  -->
 
-## Intermision
+## Intermisión
 
 ---
 
@@ -793,7 +860,7 @@ _class: title
 _class: body-center
  -->
 
-## Destructuracion Listas
+## Destructuración Listas
 
 ```js
 const users = ["Ismael", "Rafael", "Otroel"];
@@ -814,7 +881,7 @@ console.log(users[1]); // "Rafael"
 _class: body-center
  -->
 
-## Destructuracion
+## Destructuración
 
 Para destructurar un objeto, se usan { **llaves** }.
 
@@ -828,9 +895,9 @@ Para destructurar un array, se usan [ **corchetes** ].
 _class: body-center
  -->
 
-## Destructuracion
+## Destructuración
 
-Esto sigue la nocion que un objeto se crea con { **llaves** }, mientras que un array se crea con [ **corchetes** ].
+Esto sigue la noción que un objeto se crea con { **llaves** }, mientras que un array se crea con [ **corchetes** ].
 
 ##
 
@@ -840,7 +907,7 @@ Esto sigue la nocion que un objeto se crea con { **llaves** }, mientras que un a
 _class: body-center
  -->
 
-## Destructuracion
+## Destructuración
 
 ```js
 const users = ["Ismael", "Rafael", "Otroel"]; // array
@@ -855,7 +922,7 @@ const user = { nombre: "Ismael", altura: 1.75 }; // objeto
 _class: body-center
  -->
 
-## Destructuracion Listas
+## Destructuración Listas
 
 ```js
 const users = ["Ismael", "Rafael", "Otroel"];
@@ -971,7 +1038,7 @@ _class: title
 _class: body-center
  -->
 
-## Asignacion Avanzada - Objetos
+## Asignación Avanzada - Objetos
 
 ```js
 const nombre = "Ismael";
@@ -991,7 +1058,7 @@ const user1 = {
 _class: body-center
  -->
 
-## Asignacion Avanzada - Brevedad
+## Asignación Avanzada - Brevedad
 
 ```js
 const nombre = "Ismael";
@@ -1011,7 +1078,7 @@ const user1 = {
 _class: body-center
  -->
 
-## Asignacion Avanzada - Renombrar
+## Asignación Avanzada - Renombrar
 
 ```js
 const nombre = "Ismael";
@@ -1031,7 +1098,7 @@ const user1 = {
 _class: body-center
  -->
 
-## Asignacion Avanzada - Spread Op.
+## Asignación Avanzada - Spread Op.
 
 ```js
 const userDefault = {
@@ -1053,7 +1120,7 @@ const user1 = {
 _class: body-center
  -->
 
-## Asignacion Avanzada - Spread Op.
+## Asignación Avanzada - Spread Op.
 
 ```js
 const userDefault = {
@@ -1076,17 +1143,17 @@ const user1 = {
 _class: body-center
  -->
 
-## Asignacion Avanzada - Sobreescritura
+## Asignación Avanzada - Sobreescritura
 
 ```js
-const userDefault = {
+const userPredeterminado = {
   nombre: "Usuario",
   altura: 1.75,
   puntaje: 0,
 };
 
 const user1 = {
-  ...userDefault,
+  ...userPredeterminado,
   nombre: "Rafael",
 };
 ```
@@ -1099,10 +1166,10 @@ const user1 = {
 _class: body-center
  -->
 
-## Asignacion Avanzada - Sobreescritura
+## Asignación Avanzada - Sobreescritura
 
 ```js
-const userDefault = {
+const userPredeterminado = {
   nombre: "Usuario",
   altura: 1.75,
   puntaje: 0,
@@ -1110,7 +1177,7 @@ const userDefault = {
 
 const user1 = {
   nombre: "Rafael",
-  ...userDefault,
+  ...userPredeterminado,
 };
 ```
 
@@ -1122,10 +1189,10 @@ const user1 = {
 _class: body-center
  -->
 
-## Asignacion Avanzada - Sobreescritura
+## Asignación Avanzada - Sobreescritura
 
 ```js
-const userDefault = {
+const userPredeterminado = {
   nombre: "Usuario",
   altura: 1.75,
   puntaje: 0,
@@ -1133,7 +1200,7 @@ const userDefault = {
 const nombre = "Rafael";
 
 const user1 = {
-  ...userDefault,
+  ...userPredeterminado,
   nombre: nombre,
 };
 ```
@@ -1146,10 +1213,10 @@ const user1 = {
 _class: body-center
  -->
 
-## Asignacion Avanzada - Sobreescritura
+## Asignación Avanzada - Sobreescritura
 
 ```js
-const userDefault = {
+const userPredeterminado = {
   nombre: "Usuario",
   altura: 1.75,
   puntaje: 0,
@@ -1157,7 +1224,7 @@ const userDefault = {
 const nombre = "Rafael";
 
 const user1 = {
-  ...userDefault,
+  ...userPredeterminado,
   nombre,
 };
 ```
@@ -1170,22 +1237,22 @@ const user1 = {
 _class: body-center
  -->
 
-## Asignacion Avanzada - Multi Spread
+## Asignación Avanzada - Multi Spread
 
 ```js
-const userDefault = {
+const userPredeterminado = {
   nombre: "Usuario",
   altura: 1.75,
   puntaje: 0,
 };
-const adminDefault = {
+const adminPredeterminado = {
   nombre: "Admin",
 };
 const nombre = "Rafael";
 
 const user1 = {
-  ...userDefault,
-  ...adminDefault,
+  ...userPredeterminado,
+  ...adminPredeterminado,
   nombre,
 };
 ```
@@ -1198,7 +1265,7 @@ const user1 = {
 _class: body-center
  -->
 
-## Asignacion Avanzada - Listas
+## Asignación Avanzada - Listas
 
 ```js
 const user_1 = "Ismael";
@@ -1216,7 +1283,7 @@ console.log(users[0]); // ??
 _class: body-center
  -->
 
-## Asignacion Avanzada - Listas
+## Asignación Avanzada - Listas
 
 ```js
 const user_1 = "Ismael";
@@ -1234,7 +1301,7 @@ console.log(users[0]); // "Ismael"
 _class: body-center
  -->
 
-## Asignacion Avanzada - Listas
+## Asignación Avanzada - Listas
 
 ```js
 const user_1 = ["Ismael", "Cael"];
@@ -1252,7 +1319,7 @@ console.log(users[0]); // ??
 _class: body-center
  -->
 
-## Asignacion Avanzada - Listas
+## Asignación Avanzada - Listas
 
 ```js
 const user_1 = ["Ismael", "Cael"];
@@ -1270,7 +1337,7 @@ console.log(users[0]); // ["Ismael", "Cael"]
 _class: body-center
  -->
 
-## Asignacion Avanzada - Spread Op
+## Asignación Avanzada - Spread Op.
 
 ```js
 const user_1 = ["Ismael", "Cael"];
@@ -1288,7 +1355,7 @@ console.log(users[0]); // ??
 _class: body-center
  -->
 
-## Asignacion Avanzada - Spread Op
+## Asignación Avanzada - Spread Op.
 
 ```js
 const user_1 = ["Ismael", "Cael"];
@@ -1306,7 +1373,7 @@ console.log(users[0]); // "Ismael"
 _class: body-center
  -->
 
-## Asignacion Avanzada - Sobreescritura
+## Asignación Avanzada - Sobreescritura
 
 ```js
 const user_1 = ["Ismael", "Cael"];
@@ -1324,7 +1391,7 @@ console.log(users[0]); // ??
 _class: body-center
  -->
 
-## Asignacion Avanzada - Sobreescritura
+## Asignación Avanzada - Sobreescritura
 
 ```js
 const user_1 = ["Ismael", "Cael"];
@@ -1342,7 +1409,7 @@ console.log(users[0]); // ["Rafael"]
 _class: body-center
  -->
 
-## Asignacion Avanzada - Sobreescritura
+## Asignación Avanzada - Sobreescritura
 
 ```js
 const user_1 = ["Ismael", "Cael"];
@@ -1353,3 +1420,13 @@ console.log(users[0]); // "Rafael"
 ```
 
 ##
+
+---
+
+<!--
+_class: title
+ -->
+
+# :tada:
+
+# Son expertos en JS!

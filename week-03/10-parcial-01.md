@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: doc-theme
-title: Propuesta Consultoría
+title: Parcial 01
 header: "Parcial 01"
 ---
 

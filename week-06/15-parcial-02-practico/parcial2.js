@@ -60,10 +60,3 @@ function puntoCuatro(user, items) {
   }
   return response;
 }
-
-module.exports = {
-  puntoUno,
-  puntoDos,
-  puntoTres,
-  puntoCuatro,
-};

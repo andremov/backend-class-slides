@@ -12,6 +12,8 @@ _header: ""
 
 # Happy Path
 
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 7 min.
+
 ---
 
 ## Como visualizan un algoritmo?
@@ -196,7 +198,7 @@ Es cuando todo va bien, todos los datos son correctos y el algoritmo va de inici
 
 ## Happy Path & Fail-fast System
 
-Un sistema "fail-fast" es un sistema que detiene o cancela la operación en vez de intentar continuar con la operación de manera posiblemente incorrecta.
+Un sistema "fail-fast" (falla rapido) es un sistema que detiene o cancela la operación en vez de intentar continuar con la operación de manera posiblemente incorrecta.
 
 ##
 
@@ -237,5 +239,7 @@ Saca su nombre de los "bouncers", el guardia de seguridad presente en las entrad
 ## Fail-fast System & Bouncer Pattern
 
 Entonces un _fail-fast system_ está usando el _bouncer pattern_.
+
+Comúnmente en backend se utiliza el _bouncer pattern_, se construye un _fail-fast system_.
 
 ##

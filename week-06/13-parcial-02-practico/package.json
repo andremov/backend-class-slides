@@ -1,9 +1,0 @@
-{
-  "name": "parcial2-dllo-backend",
-  "version": "1.0.0",
-  "scripts": {
-    "zip": "./zip_it.cmd"
-  },
-  "license": "ISC",
-  "dependencies": {}
-}

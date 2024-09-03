@@ -12,6 +12,8 @@ _header: ""
 
 # Ostrich Algorithm
 
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 5 min.
+
 ---
 
 <!--

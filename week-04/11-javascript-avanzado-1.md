@@ -11,7 +11,7 @@ _header: ""
 
 # Javascript Avanzado I
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 25 min.
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 35 min.
 
 ---
 
@@ -918,4 +918,6 @@ console.log(Object.keys(user)); // ["firstname", "lastname"]
 _class: title
  -->
 
-## Inserte Disco 2
+# :cd:
+
+# Inserte Disco 2

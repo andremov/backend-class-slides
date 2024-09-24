@@ -2,7 +2,7 @@
 marp: true
 theme: doc-theme
 title: Propuesta Consultoría
-header: "Parcial #2"
+header: "Parcial 02"
 ---
 
 # Parcial 02

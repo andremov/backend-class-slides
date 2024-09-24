@@ -12,6 +12,8 @@ _header: ""
 
 # Node & NPM
 
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 30 min.
+
 ---
 
 <!--
@@ -20,7 +22,7 @@ _header: ""
 
 ## Que es NodeJS?
 
-Un runtime environment para JS.
+Un _runtime environment_ para JS.
 
 ##
 
@@ -30,7 +32,7 @@ Un runtime environment para JS.
  _class: align-center body-center
   -->
 
-## Que es un Runtime Environment?
+## Que es un _Runtime Environment_ ?
 
 Coloquialmente, es donde corre un programa.
 
@@ -44,7 +46,7 @@ Coloquialmente, es donde corre un programa.
 
 ## Que es NPM?
 
-Node Package Manager
+**N**ode **P**ackage **M**anager
 
 ##
 
@@ -75,14 +77,6 @@ Todos los packages están listados en https://www.npmjs.com/
 ---
 
 <!--
- _class: align-center body-center
-  -->
-
-## Que es un package?
-
----
-
-<!--
  _class: body-center
   -->
 
@@ -100,7 +94,7 @@ $ npm init
  _class: body-center
   -->
 
-## Creando un proyecto de Node
+## Creando un proyecto de Node - Rapido
 
 ```
 $ npm init --y
@@ -147,10 +141,10 @@ _class: title
 ```js
 const http = require("http");
 
-const requestListener = function (req, res) {
+function requestListener(req, res) {
   res.writeHead(200);
   res.end("Hello, World!");
-};
+}
 
 const server = http.createServer(requestListener);
 server.listen(8080);
@@ -162,15 +156,25 @@ server.listen(8080);
 
 ## Nodemon
 
+Un package que nos permite hacer "hot reloading", es decir, que al realizar cambios el servidor automaticamente se reinicie.
+
+##
+
 ---
 
 <!--
-_class: body-center align-center
+_class: body-center
 -->
 
 ## Nodemon?
 
-node --watch index.js
+Node ya implementó una manera de hacer esto sin instalar packages externos:
+
+```
+$ node --watch index.js
+```
+
+Sin embargo, Nodemon tiene otras funcionalidades.
 
 ##
 
@@ -202,7 +206,7 @@ npm install nodemon
 
 ---
 
-## JSON
+## Responder con JSON
 
 ```js
 const requestListener = function (req, res) {
@@ -220,6 +224,23 @@ const requestListener = function (req, res) {
 _class: body-center align-center
 -->
 
+## JSON
+
+**J**ava **S**cript **O**bject **N**otation
+
+O, Notación de Objeto de JavaScript.
+
+Es una manera de representar (en una string) un objeto de JavaScript.
+Tipicamente se espera enviar y recibir datos usando JSON.
+
+##
+
+---
+
+<!--
+_class: body-center align-center
+-->
+
 ## Express
 
 npm i express
@@ -228,7 +249,7 @@ npm i express
 
 ---
 
-## Express
+## Inicialización de un servidor de Express
 
 ```js
 const express = require("express");
@@ -239,7 +260,7 @@ const app = express();
 
 ---
 
-## Express
+## Un Endpoint en Express
 
 ```js
 app.get("/", async function (req, res) {
@@ -251,7 +272,16 @@ app.get("/", async function (req, res) {
 
 ---
 
-## Operaciones basicas de almacenamiento
+## Escuchar por peticiones en Express
+
+```js
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
+```
+
+##
 
 ---
 
@@ -292,10 +322,10 @@ _class: body-center
 
 ## Operaciones basicas de almacenamiento
 
-1. ## Create
+1. ## C
 2. ## R
 3. ## U
-4. ## D
+4. ## creaDo
 
 ---
 
@@ -305,10 +335,10 @@ _class: body-center
 
 ## Operaciones basicas de almacenamiento
 
-1. ## Create
-2. ## Read
-3. ## U
-4. ## D
+1. ## C
+2. ## R
+3. ## hUsmear
+4. ## creaDo
 
 ---
 
@@ -318,10 +348,23 @@ _class: body-center
 
 ## Operaciones basicas de almacenamiento
 
-1. ## Create
-2. ## Read
-3. ## Update
-4. ## D
+1. ## aCtualizar
+2. ## R
+3. ## hUsmear
+4. ## creaDo
+
+---
+
+<!--
+_class: body-center
+-->
+
+## Operaciones basicas de almacenamiento
+
+1. ## aCtualizar
+2. ## borRar
+3. ## hUsmear
+4. ## creaDo
 
 ---
 
@@ -350,29 +393,9 @@ _class: body-center
 
 ## Metodos HTTP
 
-| GET     | HEAD   | POST    |
+|         |        |         |
 | ------- | ------ | ------- |
-| PUT     | DELETE | CONNECT |
-| OPTIONS | TRACE  | PATCH   |
-
-##
-
----
-
-<!--
-_class: body-center
- -->
-
- <style scoped>
-  table {
-    text-align: center;
-  }
- </style>
-
-## Metodos HTTP
-
 | GET     | HEAD   | POST    |
-| ------- | ------ | ------- |
 | PUT     | DELETE | CONNECT |
 | OPTIONS | TRACE  | PATCH   |
 
@@ -414,13 +437,10 @@ _class: body-center
 
 ## Metodos HTTP => CRUD
 
-| GET  | PUT    | POST   | PATCH  | DELETE |
-| ---- | ------ | ------ | ------ | ------ |
-|      |        |        |        |        |
-| READ | UPDATE | CREATE | UPDATE | DELETE |
-
-| OPTIONS | TRACE | HEAD | CONNECT |
-| ------- | ----- | ---- | ------- |
+| GET  | PUT           | POST   | PATCH  | DELETE |
+| ---- | ------------- | ------ | ------ | ------ |
+|      |               |        |        |        |
+| READ | UPDATE/CREATE | CREATE | UPDATE | DELETE |
 
 ##
 
@@ -434,7 +454,7 @@ _class: body-center align-center
 
 Put sobre-escribe (o crea) un recurso.
 
-Patch modifica un recurso.
+Patch modifica un recurso ya existente.
 
 ##
 
@@ -450,9 +470,6 @@ _class: body-center align-center
 | ---- | ------------- | ------ | ------ | ------ |
 |      |               |        |        |        |
 | READ | UPDATE/CREATE | CREATE | UPDATE | DELETE |
-
-| OPTIONS | TRACE | HEAD | CONNECT |
-| ------- | ----- | ---- | ------- |
 
 ##
 
@@ -515,18 +532,6 @@ _class: body-center align-center
 
 ## CORS
 
-El metodo OPTIONS tiene como proposito preguntar los permisos de CORS al origen del recurso previo a solicitar el recurso.
-
-##
-
----
-
-<!--
-_class: body-center align-center
- -->
-
-## CORS
-
 Un problema de CORS 99% de las veces es un problema de backend.
 
 ##
@@ -542,6 +547,8 @@ _class: body-center align-center
 Un navegador hace un metodo OPTIONS para saber los permisos.
 
 Un cliente REST NO.
+
+Clientes REST como Postman, ThunderClient, Insomnia, etc.
 
 ##
 
@@ -580,6 +587,8 @@ app.use(function (req, res, next) {
 });
 ```
 
+Agregar este endpoint al inicio del server responde toda petición de OPTIONS con accesso permitido para todo.
+
 ##
 
 ---
@@ -594,6 +603,8 @@ _class: body-center
 $ npm i cors
 ```
 
+Este package hace todo lo que hace el endpoint anterior.
+
 ##
 
 ---
@@ -602,7 +613,7 @@ $ npm i cors
 _class: body-center
  -->
 
-## CORS - Solución
+## CORS - Solución 2
 
 ```js
 let express = require("express");
@@ -631,5 +642,7 @@ app.use(async function (req, res) {
   res.status(404).json({ message: "Not found." });
 });
 ```
+
+Este endpoint va al final, para recibir toda petición que no fue servida por otros endpoints.
 
 ##

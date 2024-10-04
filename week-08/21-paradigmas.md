@@ -6,13 +6,13 @@ _paginate: skip
 title: Paradigmas
 _class: invert title
 class: body-center
-header: Semana 9: Paradigmas
+header: Semana 8: Paradigmas
 _header: ""
 ---
 
 # Paradigmas de Bases de Datos
 
-y Mongo
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 25 min.
 
 ---
 

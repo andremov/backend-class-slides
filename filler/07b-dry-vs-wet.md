@@ -6,7 +6,7 @@ _paginate: skip
 title: WET vs DRY
 _class: invert title
 class: body-center
-header: Relleno: WET vs DRY
+header: Relleno: DRY vs WET
 _header: ""
 ---
 
@@ -16,7 +16,8 @@ _header: ""
   }
 </style>
 
-# WET vs DRY
+# DRY vs WET
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 15 min.
 
 ---
 

@@ -12,6 +12,8 @@ _header: ""
 
 # Equipo de Desarrollo
 
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 15 min.
+
 ---
 
 <style scoped>

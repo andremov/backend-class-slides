@@ -3,14 +3,16 @@ marp: true
 theme: slides-theme
 paginate: true
 _paginate: skip
-title: Documentos Embedidos
+title: Documentos Embebidos
 _class: invert title
 class: body-center
-header: Semana 10: Documentos Embedidos
+header: Semana 9: Documentos Embebidos
 _header: ""
 ---
 
 # Documentos Embebidos
+
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 10 min.
 
 ---
 
@@ -21,25 +23,6 @@ _class: body-center align-center
 ## Que es un documento embebido?
 
 Un "documento" u "objeto" dentro de otro.
-
-##
-
----
-
-## Ejemplo
-
-```js
-{
-  "_id": 1,
-  "name": "Ashley Peacock",
-  "address": {
-    "address_line_1": "10 Downing Street",
-    "address_line_2": "Westminster",
-    "city": "London",
-    "postal_code": "SW1A 2AA"
-  }
-}
-```
 
 ##
 
@@ -79,7 +62,7 @@ Documento referenciado.
 ## Documento referenciado
 
 ```js
-// en la collection de users
+// en la collection de usuarios
 {
 "_id": 1,
 "name": "Ashley Peacock",
@@ -88,7 +71,7 @@ Documento referenciado.
 ```
 
 ```js
-// en la collection de addresses
+// en la collection de direcciones
 {
 "_id": 1000,
 "address_line_1": "10 Downing Street",
@@ -104,7 +87,7 @@ Documento referenciado.
 
 ```js
 
-// en la collection de users
+// en la collection de usuarios
 {
   "_id": 1,
   "name": "Ashley Peacock",
@@ -113,7 +96,7 @@ Documento referenciado.
 ```
 
 ```js
-// en la collection de addresses
+// en la collection de direcciones
 {
   "id": 1000,
   "user_id": 1, // se agrega el user_id
@@ -136,7 +119,7 @@ Documento referenciado.
 
 ## Referenciados vs Embebidos
 
-- SQL tiene joins con buen performance, MongoDB no ($lookup).
+- SQL tiene _joins_ con buen performance, MongoDB no.
 - Por eso, referenciados puede traer problemas de performance.
 
 ##
@@ -172,8 +155,6 @@ Documento referenciado.
 
 Para tener la info de un usuario (incluidas sus direcciones), habría que hacer 2 queries distintas y separadas.
 
-(Aggregate hace las queries necesarias de manera interna)
-
 ##
 
 ---
@@ -182,7 +163,11 @@ Para tener la info de un usuario (incluidas sus direcciones), habría que hacer 
 
 Cuando uso uno o el otro?
 
-Si ambos datos son leidos/modificados al mismo tiempo siempre o la mayoria del tiempo, entonces embebido.
+##
+
+Se considera bueno usar embebidos cuando:
+
+- Ambos datos son leidos/modificados al mismo tiempo siempre o casi siempre
 
 ##
 
@@ -190,9 +175,9 @@ Si ambos datos son leidos/modificados al mismo tiempo siempre o la mayoria del t
 
 ## Referenciados vs Embebidos
 
-Si son, o serian, muchos documentos embebidos, mejor es que sean referenciados.
+Si son, o serían, muchos documentos embebidos, mejor es que sean referenciados.
 
-Esto es para reducir el tamaño del documento, y el tiempo de ejecucion de la query.
+Esto es para reducir el tamaño del documento, y el tiempo de ejecución de una query.
 
 ##
 
@@ -203,7 +188,7 @@ Esto es para reducir el tamaño del documento, y el tiempo de ejecucion de la qu
 Un tamaño de documentos agrandado haría modificar el
 documento mas costoso (en recursos y tiempo).
 
-Esto es debido a que lees todo el documento, y re-escribes todo el
+Esto es debido a que en MongoDB se lee todo el documento, y se re-escribe todo el
 documento.
 
 ##

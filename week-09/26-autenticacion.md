@@ -3,16 +3,16 @@ marp: true
 theme: slides-theme
 paginate: true
 _paginate: skip
-title: Documentos Embedidos
+title: Autenticación
 _class: invert title
 class: body-center
-header: Semana 10: Documentos Embedidos
+header: Semana 9: Autenticación
 _header: ""
 ---
 
-# Autenticacion
+# Autenticacion y JWT
 
-y JWT
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 35 min.
 
 ---
 
@@ -34,8 +34,8 @@ _class: body-center align-center
 
 ## En nuestro caso,
 
-Tipicamente, se refiere a “probar que eres un usuario en
-especifico”.
+Tipicamente, se refiere a "probar que eres un usuario en
+especifico".
 
 ##
 
@@ -45,7 +45,7 @@ especifico”.
 
 1. Usuario provee credenciales.
 2. Los credenciales son verificados.
-3. Usuario es autenticado,
+3. Usuario es autenticado.
 
 ##
 
@@ -66,79 +66,17 @@ especifico”.
 _class: body-center align-center
  -->
 
-## Proceso, de nuevo
-
-![img](../assets/week-10/auth-process.png)
-
-##
-
----
-
-<!--
-_class: title
- -->
-
-## Auth0
-
----
-
-## Auth0
-
-Auth0 es un servidor de autorizacion externo, un servicio de
-autorizacion.
-
-##
-
----
-
-## Auth0?
-
-Nosotros no usaremos Auth0.
-
-##
-
----
-
-## Auth0 vs. …
-
-Cual es la diferencia entre Auth0 y…
-• Login con Google?
-• Login con Facebook?
-• Login con Github?
-• Login con Apple?
-
-##
-
----
-
-<!--
-_class: body-center align-center
- -->
-
-## Auth0 vs. Otros proveedores de Auth
-
-Para el usuario, ninguna.
-Para ti, control.
-
-##
-
----
-
-<!--
-_class: body-center align-center
- -->
-
 <style scoped>
   p:nth-child(5){
     color: rgba(var(--text-color),0.6)
   }
 </style>
 
-## Token de Autorizacion
+## Token de Autorización
 
 ##
 
-Los servicios de autenticacion devuelven un token de autorizacion.
+Los servicios de autenticación devuelven un token de autorización.
 Tipicamente, en web dev, estos son **JWT**.
 
 JSON Web Tokens
@@ -273,7 +211,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9 // 1
 ```js
 {
   "sub": "1234567890",
-  "name": "John Doe",
+  "name": "Sancho Panza",
   "admin": true
 }
 ```
@@ -320,7 +258,7 @@ Y ahora que?
 _class: body-center align-center
  -->
 
-## Autorizacion
+## Autorización
 
 Al recibir el JWT, el cliente debería acompañar toda request siguiente con el header de Authorization.
 
@@ -332,9 +270,9 @@ Al recibir el JWT, el cliente debería acompañar toda request siguiente con el 
 _class: body-center align-center
  -->
 
-## Autorizacion
+## Autorización
 
-Authorization: Bearer [token]
+Authorization: Bearer \<token>
 
 ##
 
@@ -352,7 +290,7 @@ _class: body-center align-center
 
 ## Ojo
 
-Como los JWT se envian por encabezado para autorizacion, se debe tomar en cuenta que a veces hay un limite de 8 KB.
+Como los JWT se envian por encabezado para autorización, se debe tomar en cuenta que hay un limite de aprox. 8 KB.
 
 8 KB es bastante, pero yo aviso.
 
@@ -364,7 +302,7 @@ Como los JWT se envian por encabezado para autorizacion, se debe tomar en cuenta
 _class: body-center align-center
  -->
 
-## Autorizacion
+## Autorización
 
 Finalmente, recae en nosotros recibir el header de Authorization, validar la informacion, y permitir o denegar acceso según sea el caso.
 
@@ -373,26 +311,12 @@ Finalmente, recae en nosotros recibir el header de Authorization, validar la inf
 ---
 
 <!--
-_class: title
+_class: title invert
  -->
-
-# Intermision
-
----
-
-<!--
-_class: title
- -->
-
-<style scoped>
-  p {
-    color: rgba(var(--text-color), 0.6);
-  }
-</style>
 
 # MFA
 
-Multi Factor Authentication
+"Multi Factor Authentication"
 
 ##
 

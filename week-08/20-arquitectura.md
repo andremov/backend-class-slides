@@ -12,6 +12,8 @@ _header: ""
 
 # Arquitectura
 
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 20 min.
+
 ---
 
 ## Arquitectura del Backend
@@ -26,7 +28,7 @@ _header: ""
 
 ## Monolito
 
-Todo el codigo de la aplicación está en un solo proyecto, una sola app.
+Todo el codigo de la aplicación está en un solo proyecto, una sola app, un solo repo.
 
 La app se despliega completa, y si se necesita mayor capacidad, se despliega una mayor cantidad.
 
@@ -94,31 +96,8 @@ _class: body-center align-center
 
 ---
 
-## Clean Architecture
-
-1. Capa 1 > Web, Dispositivos
-2. Capa 2 > Controladores
-3. Capa 3 > Casos de Uso
-4. Capa 4 > Entidad
-
-##
-
----
-
-<!--
-_class: body-center align-center
- -->
-
-## Capas
-
-Las capas son una guía. De hecho, no usamos esas capas.
-
-##
-
----
-
 <style scoped>
-  p:nth-child(4) {
+  p:nth-child(5) {
     color: rgba(var(--text-color), 0.6);
     text-align: center;
     margin: auto;
@@ -127,7 +106,9 @@ Las capas son una guía. De hecho, no usamos esas capas.
   }
 </style>
 
-## Capas
+## Capas Clean Architecture
+
+##
 
 1. Capa 1 > Frontend
 2. Capa 2 > Rutas
@@ -135,7 +116,7 @@ Las capas son una guía. De hecho, no usamos esas capas.
 4. Capa 4 > Casos de Uso / Acciones
 5. Capa 5 > Base de Datos
 
-Esto es distinto, tambien, al diagrama porque el diagrama ubica la DB en las afueras.
+Esto es un poco distinto al diagrama porque el diagrama ubica la DB en las afueras.
 
 ##
 
@@ -174,7 +155,7 @@ Es donde se define la ruta del endpoint y que función de la **capa 3** se ejecu
 
 Adicionalmente, podría ser responsable de extraer los datos del request (body, query, params).
 
-Existe un archivo para cada modelo.
+**Existe un archivo para cada modelo.**
 
 ##
 
@@ -197,7 +178,7 @@ Esta capa es ejecutada por la **capa 2** con todos los datos necesarios para su 
 
 Esta capa ejecuta todas las funciones de la **capa 4** que considere necesario para realizar su labor.
 
-Existe un archivo para cada modelo.
+**Existe un archivo para cada modelo.**
 
 ##
 
@@ -213,7 +194,7 @@ Esta capa es ejecutada por la **capa 3** con todos los datos necesarios para su 
 
 Esta capa realiza llamados a la **capa 5** y retorna el resultado.
 
-Existe un archivo para cada accion de cada modelo.
+**Existe un archivo para cada accion de cada modelo.**
 
 ##
 
@@ -249,19 +230,19 @@ Cada capa está representada en un archivo distinto, siguiendo esta estructura:
 
 ---
 
-## Estructura de proyecto
+## Servicio de Usuarios
 
-Entonces, para el modelo user, tendríamos los siguientes archivos:
+Entonces, para el servicio de users, tendríamos los siguientes archivos:
 
-| Archivo              | Capa        |
-| -------------------- | ----------- |
-| user.route.js        | Ruta        |
-| user.controller.js   | Controlador |
-| createUser.action.js | Acción      |
-| readUser.action.js   | Acción      |
-| updateUser.action.js | Acción      |
-| deleteUser.action.js | Acción      |
-| user.model.js        | BD          |
+| Archivo               | Capa        |
+| --------------------- | ----------- |
+| user.route.js         | Ruta        |
+| user.controller.js    | Controlador |
+| create.user.action.js | Acción      |
+| read.user.action.js   | Acción      |
+| update.user.action.js | Acción      |
+| delete.user.action.js | Acción      |
+| user.model.js         | BD          |
 
 ---
 
@@ -271,7 +252,7 @@ Juntamos todas la rutas en una carpeta de rutas, todos los controladores en una 
 
 O
 
-Juntamos todo lo involucrado a un modelo en su propia carpeta?
+Juntamos todo lo involucrado a un servicio en su propia carpeta?
 
 ##
 
@@ -284,5 +265,94 @@ Capas juntas o modelo junto?
 Eso ya es preferencia propia.
 
 Yo prefiero modelo junto.
+
+##
+
+---
+
+## Ejemplo Archivo de Rutas
+
+```js
+// INIT ROUTES
+const userRoutes = Router();
+
+// DECLARE ENDPOINT FUNCTIONS
+async function GetUsers(request: Request, response: Response) {
+  const users = await readUsers();
+
+  response.status(200).json({
+    message: "Success.",
+    users: users,
+  });
+}
+
+// DECLARE ENDPOINTS
+userRoutes.get("/", GetUsers);
+```
+
+##
+
+---
+
+## Ejemplo Archivo Controlador
+
+```js
+// DECLARE CONTROLLER FUNCTIONS
+async function readUsers(): Promise<UserType[]> {
+  const users = await readUserAction();
+
+  return users;
+}
+
+// EXPORT CONTROLLER FUNCTIONS
+export { readUsers };
+```
+
+##
+
+---
+
+## Ejemplo Archivo Acción Read
+
+```js
+import { UserModel, UserType } from "./user.model";
+
+// DECLARE ACTION FUNCTION
+async function readUserAction(): Promise<UserType[]> {
+  const results = await UserModel.find();
+
+  return results;
+}
+
+// EXPORT ACTION FUNCTION
+export default readUserAction;
+```
+
+##
+
+---
+
+## Ejemplo Archivo Modelo
+
+```js
+// DECLARE MODEL TYPE
+type UserType = {
+  // USER FIELDS
+};
+
+// DECLARE MONGOOSE SCHEMA
+const UserSchema =
+  new Schema() <
+  UserType >
+  {
+    // USER FIELDS
+  };
+
+// DECLARE MONGO MODEL
+const UserModel = model < UserType > ("User", UserSchema);
+
+// EXPORT ALL
+export { UserModel, UserSchema, UserType };
+```
 
 ##

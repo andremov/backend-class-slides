@@ -10,11 +10,11 @@ header: Semana 2: Git
 _header: ""
 ---
 
- <style>
-    .star {
-      color: rgba(220, 140, 60, 1);
-    }
- </style>
+<style>
+  .star {
+    color: rgba(220, 140, 60, 1);
+  }
+</style>
 
 # Git Basico
 

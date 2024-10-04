@@ -6,11 +6,13 @@ _paginate: skip
 title: Mongoose
 _class: invert title
 class: body-center
-header: Semana 9: Mongoose
+header: Semana 8: Mongoose
 _header: ""
 ---
 
 # Mongoose
+
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 25 min.
 
 ---
 

@@ -12,6 +12,8 @@ _header: ""
 
 # Supertest
 
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 10 min.
+
 ---
 
 <!--
@@ -145,10 +147,10 @@ _class: body-center align-center
 
 ## Como probamos una ruta?
 
-|             |     |      |     |                    |
-| ----------- | --- | ---- | --- | ------------------ |
-| Front       | ->  | Ruta | ->  | Metodo controlador |
-| _Supertest_ | ->  | Ruta | ->  | Metodo controlador |
+| Envía       | Ruta | Recibe      |
+| ----------- | ---- | ----------- |
+| Front       | Ruta | Controlador |
+| _Supertest_ | Ruta | Controlador |
 
 ##
 
@@ -160,10 +162,10 @@ _class: body-center align-center
 
 ## Como probamos una ruta?
 
-|             |     |      |     |                    |
-| ----------- | --- | ---- | --- | ------------------ |
-| Front       | ->  | Ruta | ->  | Metodo controlador |
-| _Supertest_ | ->  | Ruta | ->  | _Mock Function_    |
+| Envía       | Ruta | Recibe      |
+| ----------- | ---- | ----------- |
+| Front       | Ruta | Controlador |
+| _Supertest_ | Ruta | _Mock_      |
 
 ##
 

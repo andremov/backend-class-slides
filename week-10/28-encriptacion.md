@@ -6,13 +6,13 @@ _paginate: skip
 title: Encriptación
 _class: invert title
 class: body-center
-header: Week 12: Encriptación
+header: Semana 10: Encriptación
 _header: ""
 ---
 
 # Hqfulswdflrq
 
-y sensitive data
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 60 min.
 
 ---
 
@@ -58,16 +58,6 @@ _class: body-center align-center
 
 ![img](../assets/week-12/whatsapp-privacy.png)
 
-##
-
----
-
-<!--
-_class: body-center align-center
--->
-
-## Porque nos interesa? - Privacidad
-
 Mensajes, informacion personal, etc.
 
 ##
@@ -82,23 +72,11 @@ _class: body-center align-center
 
 ![img](../assets/week-12/whatsapp-security.png)
 
-##
-
----
-
-<!--
-_class: body-center align-center
--->
-
 <style scoped>
   p:nth-child(5) {
     color: rgba(var(--text-color), 0.6)
   }
 </style>
-
-## Porque nos interesa? - Seguridad
-
-##
 
 En los mensajes puede haber informacion sensible o de seguridad.
 
@@ -257,87 +235,50 @@ El proceso de desencriptado es del mismo modo, en sentido contrario.
 
 ## Tipos de encriptación
 
-Simetrica y Asimetrica
+1. Asimetrica
+2. Simetrica
 
 ##
 
 ---
 
-## Encriptacion Asimetrica
+## Encriptación Asimetrica
 
-Se tiene una llave publica, y una privada.
-
-La llave publica es “publica”.
-
-La llave privada es privada.
-
-###
-
----
-
-## Encriptacion Asimetrica
+Se tiene una llave publica, y una llave privada.
 
 La llave publica se utiliza para encriptar.
-
 La llave privada se utiliza para desencriptar.
 
-“No pasa nada” si la llave publica se “filtra”.
+Ventaja: "No pasa nada" si la llave publica se "filtra".
 
-Igual no es el deber ser.
-
-##
-
----
-
-## Encriptacion Simetrica
-
-En vez de tener una llave publica y otra privada, la encriptacion simetrica usa una misma llave privada que comparten ambos lados de la transferencia.
+Desventaja: Es mas lento que el encriptado simetrico.
+Desventaja: Requiere mas poder computacional.
 
 ##
 
 ---
 
-## Encriptacion Simetrica
+## Encriptación Simetrica
 
-Como ambas son la misma llave (literalmente), si se filtra cualquiera, es grave.
+Se usa una sola llave privada, compartida en ambos lados.
 
-Ambas se usan tanto para encriptar como desencriptar.
+Esa llave se usa para encriptar y desencriptar.
 
-##
+Ventaja: Es mas rapido que el encriptado asimetrico.
+Ventaja: Requiere poco poder computacional.
 
----
-
-## Encriptacion Simetrica
-
-"Y como se ponen de acuerdo ambos lados para tener la misma llave?"
-
-Se la mandan entre si.
+Desventaja: Como distribuyes la llave de manera segura?
+Desventaja: Para cada par de usuarios unicos, necesitas una llave.
 
 ##
 
 ---
 
-## Encriptacion Simetrica
+## Encriptación Hibrida
 
-"Pero entonces la llave no es vulnerable cuando se transfiere?"
+Se utiliza encriptación asimetrica para enviar la llave de la encripación simetrica.
 
-Si.
-
-##
-
----
-
-## Encriptacion Simetrica
-
-"Y entonces?"
-
-Entonces, la encriptacion simetrica requiere que la llave privada sea encriptada de alguna forma durante la transferencia.
-
-Y asi se protegen las contraseñas?
-
-Podrían.
-
-Pero no.
+Para el intercambio de información, se utiliza la encriptación simetrica.
 
 ##
 
@@ -367,12 +308,6 @@ y sensitive data
 
 Si se usa encriptacion para proteger contraseñas, estas son vulnerables.
 
-##
-
----
-
-## Encriptacion para contraseñas
-
 Con la llave, se desencripta la contraseña.
 
 ##
@@ -383,12 +318,6 @@ Con la llave, se desencripta la contraseña.
 
 Cual llave? No hay llave.
 
-##
-
----
-
-## Hashing para contraseñas
-
 "No sé cual es la contraseña, pero esa no es."
 
 ##
@@ -397,7 +326,7 @@ Cual llave? No hay llave.
 
 ## Como funciona la encriptacion?
 
-Se toma el texto original, llamado “texto plano” o “plaintext”, se usa un algoritmo de cifrado con una llave y este retorna el texto cifrado, o "cyphertext".
+Se toma el texto original, llamado "texto plano" o "plaintext", se usa un algoritmo de cifrado con una llave y este retorna el texto cifrado, o "cyphertext".
 
 El proceso de desencriptado es del mismo modo, en sentido contrario.
 
@@ -407,7 +336,7 @@ El proceso de desencriptado es del mismo modo, en sentido contrario.
 
 ## Como funciona el hashing?
 
-Se toma el texto original, llamado “texto plano” o “plaintext”, se usa un algoritmo de hashing y este retorna el hash.
+Se toma el texto original, llamado "texto plano" o "plaintext", se usa un algoritmo de hashing y este retorna el hash.
 
 No hay manera real de saber que texto original era el hash.
 
@@ -431,6 +360,8 @@ Esto significa que aunque no sepas que texto era un hash, si te dicen un texto t
 
 Por esto, se considera el hashing una mejor medida de seguridad para las contraseñas y datos similares.
 
+Si no se utiliza hashing, cualquier persona con acceso a la base de datos tiene acceso a estos datos.
+
 ##
 
 ---
@@ -439,14 +370,7 @@ Por esto, se considera el hashing una mejor medida de seguridad para las contras
 
 Que pasa si dos usuarios tienen la misma contraseña?
 
-##
-
----
-
-## Salt
-
-Salt es una string generada aleatoriamente que es agregada a un
-texto previo al proceso de hash.
+Si la contraseña de uno de los dos usuarios es comprometida, ambos usuarios se ven afectados.
 
 ##
 
@@ -454,8 +378,9 @@ texto previo al proceso de hash.
 
 ## Salt
 
-La salt se puede almacenar junto al password sin ser encriptada ni
-nada, asi en plaintext.
+Salt es una string generada aleatoriamente que es agregada a un texto previo al proceso de hash.
+
+La salt se puede almacenar junto al password sin ser encriptada ni nada, asi en plaintext.
 
 ##
 
@@ -463,7 +388,9 @@ nada, asi en plaintext.
 
 ## Salt
 
-Si decifran la contraseña de usuario1, y ven el resultado del hash en la DB, no encontrarán (en teoría) otro hash igual, indiferente de si es o no la misma contraseña.
+Si decifran la contraseña de un usuario, y ven el resultado del hash en la DB, no encontrarán (en teoría) otro hash igual, indiferente de si es o no la misma contraseña.
+
+Es decir, protege ante **brute-force attacks**.
 
 ##
 
@@ -471,7 +398,7 @@ Si decifran la contraseña de usuario1, y ven el resultado del hash en la DB, no
 
 ## Salt
 
-Tambien protege ante rainbow tables, que son tablas precomputadas de cualquier texto possible ante un proceso de hashing especifico.
+Tambien protege ante **rainbow tables**, que son tablas precomputadas de cualquier texto posible ante un proceso de hashing especifico.
 
 ##
 
@@ -506,7 +433,7 @@ _class: body-center align-center
 Según la Competencia de Hashing de Contraseñas, el mejor
 algoritmo actualmente, y desde el 2017, es:
 
-Argon2.
+**Argon2**
 
 Previamente, era bcrypt.
 

@@ -348,7 +348,7 @@ Donde estan los datos para filtros y paginacion?
 
 ## Pregunta 28
 
-"Si un endpoint es un metodo POST, que se espera que haga el endpoint?"
+Si un endpoint es un metodo POST, que se espera que haga el endpoint?
 
 - Busque un elemento
 - Actualice un elemento
@@ -359,7 +359,7 @@ Donde estan los datos para filtros y paginacion?
 
 ## Pregunta 29
 
-"Si un endpoint es un metodo POST, que se espera que haga el endpoint?"
+Que cosas juntas forman un endpoint?
 
 - Metodo HTTP
 - Ruta
@@ -395,7 +395,7 @@ Cuales son los metodos HTTP?
 
 ## Pregunta 32
 
-"Que codigo significa ""OK""?"
+Que codigo significa ""OK""?
 
 - 200
 - 400

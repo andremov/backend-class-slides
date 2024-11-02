@@ -12,20 +12,7 @@ _header: ""
 
 # Pruebas
 
----
-
-<!--
-  _class: body-center align-center
- -->
-
-## Formato de archivos test
-
-Usualmente, se utiliza la nomenclatura
-[nombre de lo que se va a probar].test.js
-
-##
-
-##
+:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 30 min.
 
 ---
 
@@ -64,20 +51,6 @@ user.controller.test.js
   _class: body-center align-center
  -->
 
-## Pruebas unitarias
-
-Prueban las unidades mas pequeñas de un software
-
-##
-
-##
-
----
-
-<!--
-  _class: body-center align-center
- -->
-
 <style scoped>
   p:nth-child(4) {
     color: rgba(var(--text-color), 0.6);
@@ -98,20 +71,6 @@ Por ej. funciones
   _class: body-center align-center
  -->
 
-## Pruebas de integracion
-
-Prueban varias unidades pequeñas trabajando en conjunto
-
-##
-
-##
-
----
-
-<!--
-  _class: body-center align-center
- -->
-
 <style scoped>
   p:nth-child(4) {
     color: rgba(var(--text-color), 0.6);
@@ -123,19 +82,6 @@ Prueban varias unidades pequeñas trabajando en conjunto
 Prueban varias unidades pequeñas trabajando en conjunto
 
 Por ej., el proceso completo (ruta → controlador → base de datos)
-
-##
-
----
-
-<!--
-  _class: body-center align-center
- -->
-
-## Pruebas end to end
-
-Prueban la aplicacion completa en funcionamiento en un
-ambiente similar al de produccion
 
 ##
 
@@ -166,7 +112,7 @@ Por ej., realizan requests desde el frontend al backend
   _class: body-center align-center
  -->
 
-## Recontextualizacion
+## Recontextualización
 
 Las pruebas e2e (end to end) requieren del frontend y el backend.
 
@@ -176,9 +122,9 @@ Por esto, es normal tener dos grupos de e2e distintos.
 
 ---
 
-## Recontextualizacion de pruebas
+## Recontextualización de pruebas
 
-1. E2E de aplicacion
+1. E2E de aplicación
 2. E2E de backend
 3. Integracion
 4. Unitarias
@@ -219,7 +165,7 @@ Por ej. Funciones especificas
 
 ## Pruebas de integracion
 
-Prueban varias unidades pequeñas trabajando en conjunto
+Prueban dos unidades pequeñas trabajando en conjunto
 
 Por ej., dos controladores que interactuan (users → products)
 

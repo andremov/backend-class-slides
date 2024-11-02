@@ -288,10 +288,10 @@ QuestionText,Que funcion tiene las acciones push y pull?,
 Points,1,
 Difficulty,1,
 Image,,
-Option,0,"Push empuja los cambios de remote a localPull hala los cambios a remote, desde local"
-Option,100,Push empuja los cambios de local a remotePull hala los cambios de remote a local
-Option,0,"Push mueve cambios de dev a staging, o de staging a mainPull mueve cambios de main a staging, o de staging a dev"
-Option,0,Push manda una notificacion al lider del equipo para realizar revisionPull busca y recibe los comentarios de una revision
+Option,0,"Push empuja los cambios de remote a local Pull hala los cambios a remote, desde local"
+Option,100,Push empuja los cambios de local a remote Pull hala los cambios de remote a local
+Option,0,"Push mueve cambios de dev a staging, o de staging a main Pull mueve cambios de main a staging, o de staging a dev"
+Option,0,Push manda una notificacion al lider del equipo para realizar revision Pull busca y recibe los comentarios de una revision
 Hint,,
 Feedback,,
 ,,
@@ -317,11 +317,11 @@ Feedback,,
 NewQuestion,MC,
 ID,,
 Title,Parcial 3 > Pregunta 20,
-QuestionText,Que significa cuando alguien hace referencia a una remote branch?,
+QuestionText,Que es una remote branch?,
 Points,1,
 Difficulty,1,
 Image,,
-Option,0,"Una branch controlada de manera automatizada, o remota"
+Option,0,Una branch controlada de manera automatizada
 Option,0,"Una branch a la que no se accede directamente, como staging o main"
 Option,100,Una branch presente en la nube
 Option,0,Una branch que cuenta con los controles del repositorio

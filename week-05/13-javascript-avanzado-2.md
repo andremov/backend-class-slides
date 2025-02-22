@@ -19,7 +19,7 @@ _header: ""
 _class: title
  -->
 
-## Metodos de listas/vectores/arrays/etc
+## Some y Every
 
 ---
 
@@ -27,12 +27,17 @@ _class: title
 _class: body-center
  -->
 
-## .flat()
+## Some y Every
 
 ```js
-const numbers = [[4, 5], [2, 1], [1], [7]];
+function muyPeque(item, index, array) {
+  return item < 3;
+}
 
-console.log(numbers.flat()); // [4, 5, 2, 1, 7]
+const numeros = [0, 1, 2, 3, 4, 5];
+
+console.log(numeros.some(muyPeque)); // ?
+console.log(numeros.every(muyPeque)); // ?
 ```
 
 ##
@@ -43,12 +48,17 @@ console.log(numbers.flat()); // [4, 5, 2, 1, 7]
 _class: body-center
  -->
 
-## .join()
+## Some y Every
 
 ```js
-const numbers = [4, 5, 2, 1, 7];
+function muyPeque(item, index, array) {
+  return item < 3;
+}
 
-console.log(numbers.join(", ")); // "4, 5, 2, 1, 1, 7"
+const numeros = [1, 2, 3, 4, 5];
+
+console.log(numeros.some(muyPeque)); // true
+console.log(numeros.every(muyPeque)); // false
 ```
 
 ##
@@ -180,6 +190,74 @@ _class: body-center
 ## .findIndex()
 
 Le pasas una funcion de busqueda, y retorna el **indice** del primer elemento para el que la funcion retorne true.
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Pregunta Ejemplo
+
+Para retornar si en una lista de estudiantes se encuentra un estudiante con una cedula dada, que función se utilizaría?
+
+1. Some
+1. Every
+1. Find
+1. FindIndex
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Pregunta Ejemplo
+
+Para retornar si en una lista de estudiantes se encuentra un estudiante con una cedula dada, que función se utilizaría?
+
+1. **Some**
+1. Every
+1. Find
+1. FindIndex
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Pregunta Ejemplo
+
+Para retornar la información del estudiante de una lista de estudiantes con una cedula dada, que función se utilizaría?
+
+1. Some
+1. Every
+1. Find
+1. FindIndex
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## Pregunta Ejemplo
+
+Para retornar la información del estudiante de una lista de estudiantes con una cedula dada, que función se utilizaría?
+
+1. Some
+1. Every
+1. **Find**
+1. FindIndex
 
 ##
 

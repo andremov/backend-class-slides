@@ -5,6 +5,7 @@ title: Taller 01
 _class: title
 class: body-center
 header: Taller 01
+math: mathjax
 ---
 
 <style scoped>

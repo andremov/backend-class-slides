@@ -11,6 +11,8 @@ _header: ""
 
 # Introduccion al desarrollo back-end
 
+:pencil: 2025-01 :heavy_minus_sign: :stopwatch: 15 min.
+
 ---
 
 <!--

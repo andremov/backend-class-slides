@@ -11,6 +11,8 @@ _header: ""
 
 # Introduccion a Javascript
 
+:pencil: 2025-01 :heavy_minus_sign: :stopwatch: 8 min.
+
 ---
 
 ## Javascript

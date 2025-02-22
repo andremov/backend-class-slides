@@ -9,7 +9,9 @@ header: Semana 1: Introduccion
 _header: ""
 ---
 
-# Introduccion al curso
+# Introducción al curso
+
+:pencil: 2025-01 :heavy_minus_sign: :stopwatch: 3 min.
 
 ---
 
@@ -30,7 +32,8 @@ Egresado de la Universidad del Norte (2020).
 Junior Full Stack Web Developer (2021).
 Profesor de Backend (2022).
 Senior Full Stack Web Developer / Tech Lead (2023)
-??? (2024)
+Plata en Valorant :cry: (2024)
+??? (2025)
 
 ##
 

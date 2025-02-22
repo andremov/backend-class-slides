@@ -11,6 +11,8 @@ _header: ""
 
 # Que es dificil?
 
+:pencil: 2025-01 :heavy_minus_sign: :stopwatch: 8 min.
+
 ---
 
 <!--
@@ -96,30 +98,11 @@ La siguiente informacion viene mayormente de desarrolladores ubicados en Estados
 
 ---
 
-## Info previa: Experiencia
-
-1. La mayor cantidad de profesionales (26%) tienen entre 5 a 9 años de experiencia.
-2. La mayor cantidad de profesionales (49%) tienen entre 1 a 9 años de experiencia profesional.
-3. Los desarrolladores web (front-end, back-end, full-stack) tienen en promedio entre 8 a 11 años de experiencia.
-
-##
-
----
-
 ## Info previa: Roles de Desarrollador
 
 1. El 33% de los desarrolladores son full-stack.
 2. El 17% de los desarrolladores son back-end.
 3. El 6% de los desarrolladores son front-end.
-
-##
-
----
-
-## Info previa: Demografia
-
-1. La mayor cantidad de profesionales (43%) tienen entre 25 a 34 años.
-2. La mayor cantidad de aprendices (55%) tienen entre 18 a 24 años.
 
 ##
 

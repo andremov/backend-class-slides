@@ -915,6 +915,55 @@ console.log(Object.keys(user)); // ["firstname", "lastname"]
 ---
 
 <!--
+_class: body-center
+ -->
+
+## .flat()
+
+```js
+const numbers = [[4, 5], [2, 1], [1], [7]];
+
+console.log(numbers.flat()); // [4, 5, 2, 1, 7]
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## .join()
+
+```js
+const numbers = [4, 5, 2, 1, 7];
+
+console.log(numbers.join(", ")); // "4, 5, 2, 1, 1, 7"
+```
+
+##
+
+---
+
+<!--
+_class: body-center
+ -->
+
+## .includes()
+
+```js
+const numbers = [4, 5, 2, 1, 7];
+
+console.log(numbers.includes(3)); // false
+console.log(numbers.includes(7)); // true
+```
+
+##
+
+---
+
+<!--
 _class: title
  -->
 

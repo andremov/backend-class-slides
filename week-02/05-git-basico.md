@@ -6,7 +6,7 @@ _paginate: skip
 title: Git Básico
 _class: invert title
 class: body-center
-header: Semana 2: Git
+header: Semana 2: Git Basico
 _header: ""
 ---
 
@@ -18,7 +18,7 @@ _header: ""
 
 # Git Basico
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 10 min.
+:pencil: 2025-01 :heavy_minus_sign: :stopwatch: 10 min.
 
 ---
 
@@ -267,17 +267,7 @@ _class: body-center align-center
 
 Remote es el repositorio (y branches) que están en la nube.
 
-##
-
----
-
-<!--
-_class: body-center align-center
- -->
-
-## <span class="star">:star: Concepto 5:</span> Remote
-
-Como pueden estar las branches en la nube?
+**Como pueden estar las branches en la nube?**
 
 ##
 
@@ -290,22 +280,9 @@ _class: body-center align-center
 ## <span class="star">:star: Concepto 6:</span> Push + Pull
 
 **Push**: Enviar cambios de una branch local a la versión remota de la branch.
+_Si la branch remota no existe, **push** la crearía en el repo remote._
 
 **Pull**: Bajar los cambios de una branch remota a la versión local de la branch.
-
-##
-
----
-
-<!--
-_class: body-center align-center
- -->
-
-## <span class="star">:star: Concepto 6:</span> Push + Pull
-
-Si la branch remota no existe, **push** la crearía en el repo remote.
-
-Si la branch local no existe, **pull** la crearía en el repo local.
 
 ##
 

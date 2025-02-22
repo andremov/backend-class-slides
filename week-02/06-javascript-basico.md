@@ -12,7 +12,7 @@ math: mathjax
 
 # Javascript Básico
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 15 min.
+:pencil: 2025-01 :heavy_minus_sign: :stopwatch: 15 min.
 
 ---
 
@@ -69,7 +69,7 @@ Es opcional.
 _class: body-center
  -->
 
-## Inicializacion
+## Inicialización
 
 ```js
 variable1 = 1;
@@ -83,7 +83,7 @@ variable1 = 1;
 _class: body-center
  -->
 
-## Declaracion e Inicializacion
+## Declaración e Inicialización
 
 ```js
 let variable1 = 1;
@@ -326,6 +326,8 @@ _class: body-center
 
 ## Funciones
 
+Una funcion es una variable.
+
 ```js
 function suma(a, b) {
   return a + b;
@@ -538,4 +540,5 @@ _class: title
  -->
 
 # :tada:
+
 # Hora del Taller 1!

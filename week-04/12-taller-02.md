@@ -23,7 +23,24 @@ header: Taller 02
 
 Cree archivo llamado taller-02.js, realice los siguientes puntos, y súbalo a su repositorio de talleres.
 
-:pencil: 2024-03
+:pencil: 2025-01
+
+---
+
+## Para este Taller no están permitidas
+
+- Math.max
+- Math.min
+- Some
+- Every
+- Includes
+- Sort
+- Reduce
+- Find
+- FindIndex
+- Filter
+
+##
 
 ---
 
@@ -35,7 +52,7 @@ Desarrolle una funcion llamada **findMax** que reciba una lista de números por 
 | ------------------- | ------ |
 | [3, 17, -1, 4, -19] | 17     |
 
-No es permitido utilizar el Math.max que trae Javascript por defecto.
+##
 
 ---
 
@@ -48,7 +65,7 @@ Desarrolle una funcion llamada **includes** que reciba una lista de números y u
 | [3, 17, -1, 4, -19], 2 | false  |
 | [3, 17, -1, 4, -19], 4 | true   |
 
-No es permitido utilizar el includes que trae Javascript por defecto.
+##
 
 ---
 

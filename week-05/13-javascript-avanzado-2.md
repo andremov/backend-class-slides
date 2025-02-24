@@ -1,35 +1,42 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
 title: Javascript Avanzado II
-_class: invert title
-header: Semana 5: Javascript Avanzado II
-_header: ""
+theme: ../theme
+transition: none
+layout: cover
+exportFilename: 13-javascript-avanzado-2
 ---
+
 
 # Javascript Avanzado II
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 45 min.
+✏️ 2025-01 ➖ ⏱️ 45 min.
+
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: title
- -->
-
-## Some y Every
-
+layout: center
 ---
 
-<!--
-_class: body-center
- -->
+# Some y Every
 
-## Some y Every
+::header::
+Semana 5: Javascript Avanzado II
 
-```js
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Some y Every
+
+::contents::
+```js {*}{lines:true}
 function muyPeque(item, index, array) {
   return item < 3;
 }
@@ -40,17 +47,20 @@ console.log(numeros.some(muyPeque)); // ?
 console.log(numeros.every(muyPeque)); // ?
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Some y Every
 
-## Some y Every
-
-```js
+::contents::
+```js {*}{lines:true}
 function muyPeque(item, index, array) {
   return item < 3;
 }
@@ -61,17 +71,20 @@ console.log(numeros.some(muyPeque)); // true
 console.log(numeros.every(muyPeque)); // false
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .find()
 
-## .find()
-
-```js
+::contents::
+```js {*}{lines:true}
 // función de busqueda que retorna true para el elemento que queremos
 function findFunction(item) {
   return item === 4;
@@ -83,17 +96,20 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.find(findFunction)); // 4
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .find()
 
-## .find()
-
-```js
+::contents::
+```js {*}{lines:true}
 // función de busqueda que retorna true para el elemento que queremos
 function findFunction(item) {
   return !(item % 2);
@@ -105,17 +121,20 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.find(findFunction)); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .find()
 
-## .find()
-
-```js
+::contents::
+```js {*}{lines:true}
 // función de busqueda que retorna true para el elemento que queremos
 function findFunction(item) {
   return !(item % 2);
@@ -127,29 +146,35 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.find(findFunction)); // 4
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .find()
 
-## .find()
-
+::contents::
 Le pasas una funcion de busqueda, y retorna el primer elemento para el que la funcion retorne true.
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .findIndex()
 
-## .findIndex()
-
-```js
+::contents::
+```js {*}{lines:true}
 function findFunction(item) {
   return !(item % 2);
 }
@@ -159,17 +184,20 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.findIndex(findFunction)); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .findIndex()
 
-## .findIndex()
-
-```js
+::contents::
+```js {*}{lines:true}
 function findFunction(item) {
   return !(item % 2);
 }
@@ -179,97 +207,114 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.findIndex(findFunction)); // 0
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
+# .findIndex()
 
-<!--
-_class: body-center
- -->
-
-## .findIndex()
-
+::contents::
 Le pasas una funcion de busqueda, y retorna el **indice** del primer elemento para el que la funcion retorne true.
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center
- -->
+# Pregunta Ejemplo #1
 
-## Pregunta Ejemplo
-
+::contents::
 Para retornar si en una lista de estudiantes se encuentra un estudiante con una cedula dada, que función se utilizaría?
 
-1. Some
-1. Every
-1. Find
-1. FindIndex
+|  |  |
+|--|--|
+| Some | Every |
+| Find | FindIndex|
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center
- -->
+# Pregunta Ejemplo #1
 
-## Pregunta Ejemplo
-
+::contents::
 Para retornar si en una lista de estudiantes se encuentra un estudiante con una cedula dada, que función se utilizaría?
 
-1. **Some**
-1. Every
-1. Find
-1. FindIndex
+|  |  |
+|--|--|
+| **Some** | Every |
+| Find | FindIndex|
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center
- -->
+# Pregunta Ejemplo #2
 
-## Pregunta Ejemplo
-
+::contents::
 Para retornar la información del estudiante de una lista de estudiantes con una cedula dada, que función se utilizaría?
 
-1. Some
-1. Every
-1. Find
-1. FindIndex
+|  |  |
+|--|--|
+| Some | Every |
+| Find | FindIndex|
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center
- -->
+# Pregunta Ejemplo #2
 
-## Pregunta Ejemplo
-
+::contents::
 Para retornar la información del estudiante de una lista de estudiantes con una cedula dada, que función se utilizaría?
 
-1. Some
-1. Every
-1. **Find**
-1. FindIndex
+|  |  |
+|--|--|
+| Some | Every |
+| **Find** | FindIndex|
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .filter()
 
-## .filter()
-
-```js
+::contents::
+```js {*}{lines:true}
 function filterFunction(item) {
   return !(item % 2);
 }
@@ -279,17 +324,20 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.filter(filterFunction)); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .filter()
 
-## .filter()
-
-```js
+::contents::
+```js {*}{lines:true}
 function filterFunction(item) {
   return !(item % 2);
 }
@@ -299,29 +347,35 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.filter(filterFunction)); // [4, 2]
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center
- -->
+# .filter()
 
-## .filter()
-
+::contents::
 Le pasas una funcion de filtro, y retorna todos los elemento para los que la funcion retorne true.
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .map()
 
-## .map()
-
-```js
+::contents::
+```js {*}{lines:true}
 function mapFunction(item) {
   return !(item % 2);
 }
@@ -331,17 +385,20 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.map(mapFunction)); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .map()
 
-## .map()
-
-```js
+::contents::
+```js {*}{lines:true}
 function mapFunction(item) {
   return !(item % 2);
 }
@@ -351,29 +408,35 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.map(mapFunction)); // [true, false, true, false, false, false]
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
- -->
-
-## .map()
-
-Le pasas una funcion de "mappeo", o mutación, y retorna los elementos tras ser "mappeados" o mutados con esa función.
-
-##
-
+layout: default-center
 ---
 
-<!--
-_class: body-center
- -->
+# .map()
 
-## .map()
+::contents::
+Le pasas una funcion de mutación y retorna los elementos tras ser mutados con esa función.
 
-```js
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# .map()
+
+::contents::
+```js {*}{lines:true}
 function mapFunction(item) {
   if (item % 2 === 0) {
     return item;
@@ -385,17 +448,20 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.map(mapFunction)); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .map()
 
-## .map()
-
-```js
+::contents::
+```js {*}{lines:true}
 function mapFunction(item) {
   if (item % 2 === 0) {
     return item;
@@ -407,70 +473,75 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.map(mapFunction)); // [4, undefined, 2, undefined, undefined]
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
- -->
-
- <style scoped>
-  p:nth-child(4) {
-    text-align: center;
-    font-size: 2rem;
-  }
- </style>
-
-## .map()
-
-Le pasas una funcion de "mappeo", o mutación, y retorna los elementos tras ser "mappeados" o mutados con esa función.
-
-**No filtra.**
-
-##
-
+layout: default-center
 ---
 
-<!--
-_class: body-center
- -->
+# .map()
 
-## .sort()
+::contents::
+Le pasas una funcion de mutación y retorna los elementos tras ser mutados con esa función.
 
-```js
+## **Map no filtra**
+
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# .sort()
+
+::contents::
+```js {*}{lines:true}
 const numbers = [41, 5, 2, 19, 7];
 
 console.log(numbers.sort()); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .sort()
 
-## .sort()
-
-```js
+::contents::
+```js {*}{lines:true}
 const numbers = [41, 5, 2, 19, 7];
 
 console.log(numbers.sort()); // [19, 2, 41, 5, 7]
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .sort()
 
-## .sort()
-
-```js
+::contents::
+```js {*}{lines:true}
 function sortAscFunction(item1, item2) {
   if (item1 < item2) {
     return 1;
@@ -486,17 +557,20 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.sort(sortFunction)); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .sort()
 
-## .sort()
-
-```js
+::contents::
+```js {*}{lines:true}
 function sortAscFunction(item1, item2) {
   if (item1 < item2) {
     return 1;
@@ -512,17 +586,20 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.sort(sortFunction)); // [1, 2, 4, 5, 7]
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .sort()
 
-## .sort()
-
-```js
+::contents::
+```js {*}{lines:true}
 function sortAscFunction(item1, item2) {
   return item1 - item2;
 }
@@ -532,17 +609,20 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.sort(sortFunction)); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .sort()
 
-## .sort()
-
-```js
+::contents::
+```js {*}{lines:true}
 function sortAscFunction(item1, item2) {
   return item1 - item2;
 }
@@ -552,33 +632,41 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.sort(sortFunction)); // [1, 2, 4, 5, 7]
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center
- -->
+# .sort()
 
-## .sort()
-
-Le pasas una funcion de "ordenamiento", y retorna los elementos ordenados segun esa funcion.
+::contents::
+Le pasas una función de "ordenamiento", y retorna los elementos ordenados segun esa función.
 
 La funcion de "ordenamiento" debe retornar numero negativo, positivo, o cero, segun el orden relativo de los elementos a comparar.
 
-No es que le vayas a pasar burbuja, o inserción.
+*No es que le vayas a pasar burbuja, o inserción.*
 
-##
+Si no pasas una función, los ordena como strings.
+
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .reduce()
 
-## .reduce()
-
-```js
+::contents::
+```js {*}{lines:true}
 function reduceFunction(acumulado, actual) {
   return acumulado + actual;
 }
@@ -588,17 +676,20 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.reduce(reduceFunction)); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .reduce()
 
-## .reduce()
-
-```js
+::contents::
+```js {*}{lines:true}
 function reduceFunction(acumulado, actual) {
   return acumulado + actual;
 }
@@ -608,45 +699,54 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.reduce(reduceFunction)); // 19
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center
- -->
+# .reduce()
 
-## .reduce()
-
+::contents::
 Le pasas una funcion de reducción, y retorna el resultado de reducir el array usando la función.
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center
- -->
+# .reduce()
 
-## .reduce()
-
+::contents::
 Le pasas una funcion de reducción, y retorna el resultado de reducir el array usando la función.
 
 El primer valor del acumulado es el primer elemento del array.
 
 Alternativamente, se le puede pasar un valor inicial como segundo parametro del reduce.
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# .reduce()
 
-## .reduce()
-
-```js
+::contents::
+```js {*}{lines:true}
 function reduceFunction(acumulado, actual) {
   return acumulado + actual;
 }
@@ -657,25 +757,26 @@ const numbers = [4, 5, 2, 1, 7];
 console.log(numbers.reduce(reduceFunction, 1)); // 20
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: title
- -->
-
-## Intermisión
-
+layout: cover
 ---
 
-<!--
-_class: body-center
- -->
+# Intermisión
 
-## Destructuración Objetos
+---
+layout: default-y-center
+---
 
-```js
+# Destructuración Objetos
+
+::contents::
+```js {*}{lines:true}
 const user = {
   nombre: "Ismael",
   altura: 1.75,
@@ -688,17 +789,20 @@ console.log(nombre); // ??
 console.log(user.nombre); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Destructuración Objetos
 
-## Destructuración Objetos
-
-```js
+::contents::
+```js {*}{lines:true}
 const user = {
   nombre: "Ismael",
   altura: 1.75,
@@ -711,17 +815,20 @@ console.log(nombre); // "Ismael"
 console.log(user.nombre); // "Ismael"
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Destructuración Objetos
 
-## Destructuración Objetos
-
-```js
+::contents::
+```js {*}{lines:true}
 const user = {
   nombre: "Ismael",
   altura: 1.75,
@@ -734,17 +841,20 @@ console.log(nombre); // "Ismael"
 console.log(altura); // 1.75
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Destructuración Objetos
 
-## Destructuración Objetos
-
-```js
+::contents::
+```js {*}{lines:true}
 const user = {
   nombre: "Ismael",
   // altura: 1.75,
@@ -757,46 +867,57 @@ console.log(nombre); // "Ismael"
 console.log(altura); // undefined
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center
- -->
+# Destructuración Objetos
 
-## Destructuración Objetos
-
-```js
+::left::
+```js {*}{lines:true}
+// OPCIÓN A
 const user = {
   nombre: "Ismael",
   altura: 1.75,
   puntaje: 3,
 };
-```
 
-```js
-// OPCION A
 const { nombre, altura } = user;
 ```
 
-```js
-// OPCION B
+::right::
+```js {*}{lines:true}
+// OPCIÓN B
+const user = {
+  nombre: "Ismael",
+  altura: 1.75,
+  puntaje: 3,
+};
+
 const nombre = user.nombre;
 const altura = user.altura;
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Valor Predeterminado
 
-## Valor Predeterminado
-
-```js
+::contents::
+```js {*}{lines:true}
 const user = {
   nombre: "Ismael",
   // altura: 1.75,
@@ -809,17 +930,20 @@ console.log(nombre); // "Ismael"
 console.log(altura); // 1.7
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Renombrar variable
 
-## Renombrar variable
-
-```js
+::contents::
+```js {*}{lines:true}
 const user = {
   nombre: "Ismael",
   altura: 1.75,
@@ -832,17 +956,20 @@ console.log(nombre); // undefined
 console.log(name); // "Ismael"
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Renombrar + Predeterminado
 
-## Renombrar + Predeterminado
-
-```js
+::contents::
+```js {*}{lines:true}
 const user = {
   // nombre: "Ismael",
   altura: 1.75,
@@ -855,17 +982,20 @@ console.log(nombre); // undefined
 console.log(name); // "Persona"
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Spread Operator
 
-## Spread Operator
-
-```js
+::contents::
+```js {*}{lines:true}
 const user = {
   nombre: "Ismael",
   altura: 1.75,
@@ -877,17 +1007,20 @@ const { nombre, ...otrosDatos } = user;
 console.log(Object.keys(otrosDatos)); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Spread Operator
 
-## Spread Operator
-
-```js
+::contents::
+```js {*}{lines:true}
 const user = {
   nombre: "Ismael",
   altura: 1.75,
@@ -899,17 +1032,20 @@ const { nombre, ...otrosDatos } = user;
 console.log(Object.keys(otrosDatos)); // ["altura", "puntaje"]
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Spread Operator
 
-## Spread Operator
-
-```js
+::contents::
+```js {*}{lines:true}
 const user = {
   nombre: "Ismael",
   altura: 1.75,
@@ -922,25 +1058,51 @@ console.log(otrosDatos.altura); // 1.75
 console.log(user.altura); // 1.75
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: title
- -->
-
-## Intermisión
-
+layout: cover
 ---
 
-<!--
-_class: body-center
- -->
 
-## Destructuración Listas
+# Intermisión
 
-```js
+---
+layout: default-y-center
+---
+
+# Destructuración Listas
+
+::contents::
+```js {*}{lines:true}
+const users = ["Ismael", "Rafael", "Otroel"];
+
+console.log(users[1]); // ??
+
+const [user_0, user_1] = users;
+
+console.log(user_1); // ??
+console.log(users[1]); // ??
+```
+
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Destructuración Listas
+
+::contents::
+```js {*}{lines:true}
 const users = ["Ismael", "Rafael", "Otroel"];
 
 console.log(users[1]); // "Rafael"
@@ -951,109 +1113,129 @@ console.log(user_1); // "Rafael"
 console.log(users[1]); // "Rafael"
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Destructuración
 
-## Destructuración
-
+::contents::
 Para destructurar un objeto, se usan { **llaves** }.
 
 Para destructurar un array, se usan [ **corchetes** ].
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Destructuración
 
-## Destructuración
-
+::contents::
 Esto sigue la noción que un objeto se crea con { **llaves** }, mientras que un array se crea con [ **corchetes** ].
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Destructuración
 
-## Destructuración
-
-```js
+::contents::
+```js {*}{lines:true}
 const users = ["Ismael", "Rafael", "Otroel"]; // array
 const user = { nombre: "Ismael", altura: 1.75 }; // objeto
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center
- -->
+# Destructuración Listas
 
-## Destructuración Listas
-
-```js
-const users = ["Ismael", "Rafael", "Otroel"];
-```
-
-```js
+::left::
+```js {*}{lines:true}
 // OPCION A
+const users = ["Ismael", "Rafael", "Otroel"];
+
 const [user_0, user_1] = users;
 ```
 
-```js
+::right::
+```js {*}{lines:true}
 // OPCION B
+const users = ["Ismael", "Rafael", "Otroel"];
+
 const user_0 = users[0];
 const user_1 = users[1];
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center
- -->
-
-## Destructuracion Listas
+# Destructuracion Listas
 
 Y si quiero el elemento #1, pero no el #0?
 
-```js
-const users = ["Ismael", "Rafael", "Otroel"];
-```
-
-```js
+::right::
+```js {*}{lines:true}
 // OPCION A
+const users = ["Ismael", "Rafael", "Otroel"];
+
 const [_, user_1] = users;
 ```
 
-```js
+::left::
+```js {*}{lines:true}
 // OPCION B
+const users = ["Ismael", "Rafael", "Otroel"];
+
 const user_1 = users[1];
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Valor Predeterminado
 
-## Valor Predeterminado
-
-```js
+::contents::
+```js {*}{lines:true}
 const users = ["Ismael"];
 
 const [user_0, user_1 = "Usuario 2"] = users;
@@ -1062,17 +1244,20 @@ console.log(user_0); // "Ismael"
 console.log(user_1); // "Usuario 2"
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Spread Operator
 
-## Spread Operator
-
-```js
+::contents::
+```js {*}{lines:true}
 const users = ["Ismael", "Rafael", "Otroel"];
 
 const [user_0, ...otrosUsuarios] = users;
@@ -1081,17 +1266,20 @@ console.log(otrosUsuarios.length); // ??
 console.log(otrosUsuarios[0]); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Spread Operator
 
-## Spread Operator
-
-```js
+::contents::
+```js {*}{lines:true}
 const users = ["Ismael", "Rafael", "Otroel"];
 
 const [user_0, ...otrosUsuarios] = users;
@@ -1100,25 +1288,27 @@ console.log(otrosUsuarios.length); // 2
 console.log(otrosUsuarios[0]); // "Rafael"
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: title
- -->
-
-## Asignacion Avanzada
-
+layout: cover
 ---
 
-<!--
-_class: body-center
- -->
 
-## Asignación Avanzada - Objetos
+# Asignación Avanzada
 
-```js
+---
+layout: default-y-center
+---
+
+# Asignación Avanzada - Objetos
+
+::contents::
+```js {*}{lines:true}
 const nombre = "Ismael";
 const altura = 1.75;
 
@@ -1128,17 +1318,20 @@ const user1 = {
 };
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Brevedad
 
-## Asignación Avanzada - Brevedad
-
-```js
+::contents::
+```js {*}{lines:true}
 const nombre = "Ismael";
 const altura = 1.75;
 
@@ -1148,17 +1341,20 @@ const user1 = {
 };
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Renombrar
 
-## Asignación Avanzada - Renombrar
-
-```js
+::contents::
+```js {*}{lines:true}
 const nombre = "Ismael";
 const altura = 1.75;
 
@@ -1168,17 +1364,20 @@ const user1 = {
 };
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Spread Op.
 
-## Asignación Avanzada - Spread Op.
-
-```js
+::contents::
+```js {*}{lines:true}
 const userDefault = {
   nombre: "Usuario",
   altura: 1.75,
@@ -1190,17 +1389,20 @@ const user1 = {
 };
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Spread Op.
 
-## Asignación Avanzada - Spread Op.
-
-```js
+::contents::
+```js {*}{lines:true}
 const userDefault = {
   nombre: "Usuario",
   altura: 1.75,
@@ -1213,17 +1415,20 @@ const user1 = {
 // user1.userDefault.nombre
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Sobreescritura
 
-## Asignación Avanzada - Sobreescritura
-
-```js
+::contents::
+```js {*}{lines:true}
 const userPredeterminado = {
   nombre: "Usuario",
   altura: 1.75,
@@ -1236,17 +1441,20 @@ const user1 = {
 };
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Sobreescritura
 
-## Asignación Avanzada - Sobreescritura
-
-```js
+::contents::
+```js {*}{lines:true}
 const userPredeterminado = {
   nombre: "Usuario",
   altura: 1.75,
@@ -1259,17 +1467,20 @@ const user1 = {
 };
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Sobreescritura
 
-## Asignación Avanzada - Sobreescritura
-
-```js
+::contents::
+```js {*}{lines:true}
 const userPredeterminado = {
   nombre: "Usuario",
   altura: 1.75,
@@ -1283,17 +1494,20 @@ const user1 = {
 };
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Sobreescritura
 
-## Asignación Avanzada - Sobreescritura
-
-```js
+::contents::
+```js {*}{lines:true}
 const userPredeterminado = {
   nombre: "Usuario",
   altura: 1.75,
@@ -1307,25 +1521,30 @@ const user1 = {
 };
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Multi Spread
 
-## Asignación Avanzada - Multi Spread
-
-```js
+::contents::
+```js {*}{lines:true}
 const userPredeterminado = {
   nombre: "Usuario",
   altura: 1.75,
   puntaje: 0,
 };
+
 const adminPredeterminado = {
   nombre: "Admin",
 };
+
 const nombre = "Rafael";
 
 const user1 = {
@@ -1335,17 +1554,20 @@ const user1 = {
 };
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Listas
 
-## Asignación Avanzada - Listas
-
-```js
+::contents::
+```js {*}{lines:true}
 const user_1 = "Ismael";
 const user_2 = "Rafael";
 const users = [user_1, user_2];
@@ -1353,17 +1575,20 @@ const users = [user_1, user_2];
 console.log(users[0]); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Listas
 
-## Asignación Avanzada - Listas
-
-```js
+::contents::
+```js {*}{lines:true}
 const user_1 = "Ismael";
 const user_2 = "Rafael";
 const users = [user_1, user_2];
@@ -1371,17 +1596,20 @@ const users = [user_1, user_2];
 console.log(users[0]); // "Ismael"
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Listas
 
-## Asignación Avanzada - Listas
-
-```js
+::contents::
+```js {*}{lines:true}
 const user_1 = ["Ismael", "Cael"];
 const user_2 = "Rafael";
 const users = [user_1, user_2];
@@ -1389,17 +1617,20 @@ const users = [user_1, user_2];
 console.log(users[0]); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Listas
 
-## Asignación Avanzada - Listas
-
-```js
+::contents::
+```js {*}{lines:true}
 const user_1 = ["Ismael", "Cael"];
 const user_2 = "Rafael";
 const users = [user_1, user_2];
@@ -1407,17 +1638,20 @@ const users = [user_1, user_2];
 console.log(users[0]); // ["Ismael", "Cael"]
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Spread Op.
 
-## Asignación Avanzada - Spread Op.
-
-```js
+::contents::
+```js {*}{lines:true}
 const user_1 = ["Ismael", "Cael"];
 const user_2 = "Rafael";
 const users = [...user_1, user_2];
@@ -1425,17 +1659,20 @@ const users = [...user_1, user_2];
 console.log(users[0]); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Spread Op.
 
-## Asignación Avanzada - Spread Op.
-
-```js
+::contents::
+```js {*}{lines:true}
 const user_1 = ["Ismael", "Cael"];
 const user_2 = "Rafael";
 const users = [...user_1, user_2];
@@ -1443,17 +1680,20 @@ const users = [...user_1, user_2];
 console.log(users[0]); // "Ismael"
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Sobreescritura
 
-## Asignación Avanzada - Sobreescritura
-
-```js
+::contents::
+```js {*}{lines:true}
 const user_1 = ["Ismael", "Cael"];
 const user_2 = "Rafael";
 const users = [user_2, ...user_1];
@@ -1461,17 +1701,20 @@ const users = [user_2, ...user_1];
 console.log(users[0]); // ??
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Sobreescritura
 
-## Asignación Avanzada - Sobreescritura
-
-```js
+::contents::
+```js {*}{lines:true}
 const user_1 = ["Ismael", "Cael"];
 const user_2 = "Rafael";
 const users = [user_2, ...user_1];
@@ -1479,17 +1722,20 @@ const users = [user_2, ...user_1];
 console.log(users[0]); // ["Rafael"]
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Asignación Avanzada - Sobreescritura
 
-## Asignación Avanzada - Sobreescritura
-
-```js
+::contents::
+```js {*}{lines:true}
 const user_1 = ["Ismael", "Cael"];
 const user_2 = ["Rafael"];
 const users = [...user_2, ...user_1];
@@ -1497,14 +1743,16 @@ const users = [...user_2, ...user_1];
 console.log(users[0]); // "Rafael"
 ```
 
-##
+::header::
+Semana 5: Javascript Avanzado II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: cover
+---
 
-<!--
-_class: title
- -->
-
-# :tada:
+# 🎉
 
 # Son expertos en JS!

@@ -66,7 +66,7 @@ const props = defineProps({
   grid-template-rows: auto 1fr auto;
   gap: 1rem;
 }
-.col-header {
+.col-top {
   grid-area: 1 / 1 / 2 / 3;
 }
 .col-left {

@@ -1,63 +1,102 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
-title: Git
-_class: invert title
-class: body-center
-header: Semana 7: Git
-_header: ""
+title: Git II
+theme: ../theme
+transition: none
+layout: cover
+exportFilename: 16-git-2
 ---
-
- <style>
-    .star {
-      color: rgba(220, 140, 60, 1);
-    }
- </style>
 
 # Git Avanzado
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 25 min.
+✏️ 2025-01 ➖ ⏱️ 25 min.
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# ⭐ Concepto 7: Branches
 
-## <span class="star">:star: Concepto 7:</span> Branches
-
+::contents::
 Una "branch", o rama, es una línea de desarrollo independiente al desarrollo
 principal.
 
 Las ramas permiten el desarrollo simultaneo de varias tareas sin
 dañar el producto presentado al cliente, ni el trabajo de los compañeros.
 
-##
+```mermaid {scale: 0.8}
+gitGraph
+   commit
+   commit
+   branch tarea-1
+   checkout tarea-1
+   commit
+   commit
+   checkout main
+   branch tarea-2
+   checkout tarea-2
+   commit
+   checkout main
+   commit
+   checkout tarea-2
+   commit
+   commit
+```
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# ⭐ Concepto 7: Branches
 
-## <span class="star">:star: Concepto 7:</span> Branches
-
+::contents::
 Las ramas parten de un commit "origen", y luego suelen juntarse a otra rama.
 
-Que otra rama?
+```mermaid {scale: 0.8}
+gitGraph
+   commit
+   commit
+   branch tarea-1
+   checkout tarea-1
+   commit
+   commit
+   checkout main
+   branch tarea-2
+   checkout tarea-2
+   commit
+   checkout main
+   merge tarea-1
+   checkout tarea-2
+   commit
+   commit
+   checkout main
+   merge tarea-2
+```
 
-##
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center
- -->
+## Setup normal en produccion y flujo de trabajo
 
-### Setup normal en produccion y flujo de trabajo
-
+::left::
 Por lo general, se manejan las siguientes ramas:
 
 1. main / production / prod
@@ -65,36 +104,66 @@ Por lo general, se manejan las siguientes ramas:
 3. development / develop / dev
 4. features / fixes / refactors / chores / etc
 
-##
+::right::
+```mermaid {scale: 0.8}
+gitGraph
+   commit
+   branch qa
+   checkout qa
+   branch develop
+   checkout develop
+   branch feat-1
+   checkout feat-1
+   commit
+   commit
+```
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center
- -->
+# 1. main / production / prod
 
- <style scoped>
-  p:nth-child(6) {
-    font-size: 0.75rem;
-    color: rgba(var(--text-color), 0.7);
-  }
- </style>
-
-## 1. main / production / prod
-
+::left::
 Esta rama es la que usa el cliente final.
 
 Es la versión actual desplegada, funcional y estable.
 
 A esta rama no se permiten commits directos\*.
 
-\* A menos que sea 200% necesario, lo hace un Senior developer, y es lo que se le llama un **hotfix**.
+::bottom::
+###### \* A menos que sea 200% necesario, lo hace un Senior developer, y es lo que se le llama un **hotfix**.
+
+::right::
+```mermaid {scale: 0.8}
+gitGraph
+   commit
+   branch qa
+   checkout qa
+   branch develop
+   checkout develop
+   branch feat-1
+   checkout feat-1
+   commit
+   commit
+```
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center
- -->
 
  <style scoped>
   p:nth-child(8) {
@@ -103,8 +172,9 @@ _class: body-center
   }
  </style>
 
-## 2. staging / testing / qa
+# 2. staging / testing / qa
 
+::left::
 Esta rama se usa internamente para probar o demostrar la aplicación afuera del equipo de desarrollo.
 
 Está desplegada en un link interno.
@@ -115,23 +185,36 @@ Al ser aprobada, todos los cambios de staging se mandan a main.
 
 A esta rama no se permiten commits directos\*.
 
-\* En casos muy extraños.
+::bottom::
+###### \* En casos muy extraños.
+
+::right::
+```mermaid {scale: 0.8}
+gitGraph
+   commit
+   branch qa
+   checkout qa
+   branch develop
+   checkout develop
+   branch feat-1
+   checkout feat-1
+   commit
+   commit
+```
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center
- -->
+# 3. development / develop / dev
 
- <style scoped>
-  p:nth-child(8) {
-    font-size: 0.75rem;
-    color: rgba(var(--text-color), 0.7);
-  }
- </style>
-
-## 3. development / develop / dev
-
+::left::
 Esta rama se usa internamente para verificar que “hasta ahora todo está bien”, usualmente adentro del equipo de desarrollo.
 
 Está desplegada en un link interno.
@@ -142,314 +225,507 @@ Al ser aprobada, todos los cambios de dev se mandan a staging.
 
 A esta rama no se permiten commits directos\*.
 
-\* Porque para que?
+::right::
+```mermaid {scale: 0.8}
+gitGraph
+   commit
+   branch qa
+   checkout qa
+   branch develop
+   checkout develop
+   branch feat-1
+   checkout feat-1
+   commit
+   commit
+```
+
+::bottom::
+###### \* Porque para que?
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center
- -->
+# 4. features / fixes / refactors / chores / etc
 
-## 4. features / fixes / refactors / chores / etc
-
+::left::
 No es una sola rama, son varias.
 
 Cada una de estas ramas representa una tarea en proceso de un desarrollador.
 
 Al ser aprobada, la rama se junta con dev.
 
-##
+::right::
+```mermaid {scale: 0.8}
+gitGraph
+   commit
+   branch qa
+   checkout qa
+   branch develop
+   checkout develop
+   branch feat-1
+   checkout feat-1
+   commit
+   commit
+```
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# ⭐ Concepto 8: Merge
 
-## <span class="star">:star: Concepto 8:</span> Merge
-
+::contents::
 Merge es la acción de juntar una rama con otra, y con ella, sus cambios.
 
-##
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
- -->
-
-## Quien decide los merges?
-
-1. De feature --> dev, el líder del equipo de desarrollo, o cualquier persona que
-   sepa lo que hace.
-
-2. De dev --> staging, el líder del equipo de desarrollo, o el product owner/project
-   manager
-
-3. De staging --> production, el product owner/project manager
-
-##
-
+layout: default-y-center
 ---
 
-<!--
-_class: body-center
- -->
+# Quien decide los merges?
 
-## Quien decide los merges?
+::contents::
+1. De feature -> dev, el líder del equipo de desarrollo, o cualquier persona que sepa lo que hace.
 
-1. De feature --> dev, el líder del equipo de desarrollo, o cualquier persona que sepa lo que hace.
+2. De dev -> staging, el líder del equipo de desarrollo, o el product owner/project manager
 
-2. De dev --> staging, el líder del equipo de desarrollo, o el product owner/project manager
+3. De staging -> production, el product owner/project manager
 
-3. De staging --> production, el product owner/project manager
+::header::
+Semana 7: Git II
 
-##
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center align-center
- -->
+# ⭐ Concepto 9: Check Out
 
-## <span class="star">:star: Concepto 9:</span> Check Out
-
+::left::
 Accion de moverse entre 2 ramas.
 
 _Estoy en rama 1, hago check out a rama 2._
+::right::
 
-##
+```mermaid {scale: 0.8}
+gitGraph
+   commit
+   commit
+   branch tarea-1
+   checkout tarea-1
+   commit
+   commit
+   checkout main
+   branch tarea-2
+   checkout tarea-2
+   commit
+   checkout tarea-2
+   commit
+   commit
+   checkout main
+```
 
----
+::header::
+Semana 7: Git II
 
-<!--
-_class: body-center
- -->
-
-## Flujo de trabajo normal de un dev
-
-1. Creas una rama
-2. Trabajas la tarea asignada, separando el progreso en commits
-3. Al terminar la tarea, creas un pull request o merge request (es lo mismo)
-4. Si te piden cambios, los realizas.
-5. Te aprueban la tarea, y tu branch se merge con la dev branch.
-
-##
-
----
-
-<!--
-_class: body-center
- -->
-
-## Flujo de trabajo normal de un dev
-
-1. Creas la rama para la tarea #1
-2. Trabajas la tarea
-3. Al terminar la tarea, creas el PR
-4. Mientras que te revisan la branch de la tarea, te devuelves al paso 1 pero con la tarea # i+1
-
-##
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# Flujo de trabajo normal de un dev
 
-## <span class="star">:star: Concepto 10:</span> Stash
+::contents::
 
+```mermaid {scale: 0.5}
+stateDiagram-v2
+    ToDo: Tarea asignada
+    Dev: Desarrollando
+    FinDev: Tarea Lista
+    PR: PR Creado
+    Changes: Trabajas los cambios
+    Approved: PR aprobado
+    Merged: PR merged
+
+    [*] --> ToDo: Te asignan una tarea
+    ToDo --> Dev: Creas la branch
+    Dev --> FinDev: Desarrollas la tarea
+    FinDev --> PR: Creas el PR
+    PR --> Changes: Te piden cambios
+    Changes --> PR: Haces los cambios
+    PR --> Approved: Te aprueban el PR
+    Approved --> Merged: Merge de los cambios
+```
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Flujo de trabajo normal de un dev
+
+::contents::
+```mermaid {scale: 0.5}
+stateDiagram-v2
+    ToDo: Tarea asignada
+    Dev: Desarrollando
+    FinDev: Tarea Lista
+    PR: PR Creado
+    Changes: Trabajas los cambios
+    Approved: PR aprobado
+    Merged: PR merged
+
+    [*] --> ToDo: Te asignan una tarea
+    ToDo --> Dev: Creas la branch
+    Dev --> FinDev: Desarrollas la tarea
+    FinDev --> PR: Creas el PR
+    PR --> Changes: Te piden cambios
+    Changes --> PR: Haces los cambios
+    PR --> Approved: Te aprueban el PR
+    Approved --> Merged: Merge de los cambios
+    PR --> ToDo: Comienzas trabajo de tarea 2
+```
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-center
+---
+
+# ⭐ Concepto 10: Stash
+
+::contents::
 Guardar unos cambios en proceso para mas tarde.
 
-##
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Stash vs commit?
 
-## Stash vs commit?
-
+::contents::
 1. No se puede hacer checkout con cambios pendientes.
 2. A veces un repositorio no permite commits con errores.
 3. Quizá hiciste los cambios en la branch que no es.
 
-##
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# ⭐ Concepto 10: Stash
 
-## <span class="star">:star: Concepto 10:</span> Stash
-
+::contents::
 Puedes crear un stash con los cambios que tengas, y hacer **pop**, es decir tomar los cambios y destruir la stash, o **apply**, es decir tomar los cambios y dejar la stash ahi.
 
 **Apply** permite aplicar unos mismos cambios de una stash a varias branches, por ejemplo.
 
-##
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# ⭐ Concepto 11: Blame
 
-## <span class="star">:star: Concepto 11:</span> Blame
-
+::contents::
 Accion que muestra el autor de un cambio.
 
-##
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# ⭐ Concepto 12: Cherry Pick
 
-## <span class="star">:star: Concepto 12:</span> Cherry Pick
-
+::contents::
 Accion de copiar un commit de un branch, o sus cambios, (con el proposito de aplicarlo de nuevo).
 
-##
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center align-center
- -->
-
-## <span class="star">:star: Concepto 12+1:</span> Rebase
+# ⭐ Concepto 12+1: Rebase
 
 Accion de cambiar el commit origen de una branch/rama.
 
-##
+::left::
+```mermaid {scale: 0.8}
+gitGraph
+   commit id: "main-1"
+   branch tarea-1
+   checkout tarea-1
+   commit id: "tarea1-1"
+   commit id: "tarea1-2"
+   checkout main
+   commit id: "main-2"
+   commit id: "main-3"
+   checkout tarea-1
+   commit id: "tarea1-3"
+```
+::right::
+```mermaid {scale: 0.8}
+gitGraph
+   commit id: "main-1"
+   commit id: "main-2"
+   commit id: "main-3"
+   branch tarea-1
+   checkout tarea-1
+   commit id: "tarea1-1"
+   commit id: "tarea1-2"
+   commit id: "tarea1-3"
+```
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center align-center
- -->
-
- <style scoped>
-  img {
-    border-radius: 24px;
-    height: 80%;
-  }
- </style>
-
-## <span class="star">:star: Concepto 12+1:</span> Rebase
-
-![img](../assets/week-06/git-rebase-guide.png)
-
-##
-
+layout: default-center
 ---
 
-<!--
-_class: body-center align-center
- -->
+# ⭐ Concepto 14: Reset
 
-## <span class="star">:star: Concepto 14:</span> Reset
-
+::contents::
 Un reset borra los commits de una branch desde el ultimo commit, hasta el commit seleccionado.
 
 Los stashes no se ven afectados.
 
-##
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center align-center
- -->
+# ⭐ Concepto 14: Reset: Hard Reset
 
-## <span class="star">:star: Concepto 14:</span> Reset: Hard Reset
-
+::left::
 En un hard reset, toda la informacion de los commits a borrar se pierde.
 
-Cualquier cambio que se tenia en local, o en staging, se pierde.
+Cualquier cambio que se tenía en local, o en staging, se pierde.
 
-##
+::right::
+```mermaid {scale: 0.5}
+stateDiagram-v2
+    direction LR
+    Trash: Borrados
+    Changes: Cambios
+    Staging: Staging Area
+    Commits: Commits
+    Stash: Stash
+
+    Changes --> Trash: Cambios locales se pierden
+    Staging --> Trash: Cambios en staging se pierden
+    Commits --> Trash: Commits se pierden
+    Stash --> Stash: Stash se queda en su sitio
+```
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center align-center
- -->
+# ⭐ Concepto 14: Reset: Soft Reset
 
-## <span class="star">:star: Concepto 14:</span> Reset: Soft Reset
-
+::left::
 En un soft reset, toda la informacion de los commits a borrar se vuelven cambios actuales.
 
 Cualquier cambio que se tiene en local, o en staging, se queda donde estaba.
 
-##
+::right::
+```mermaid {scale: 0.5}
+stateDiagram-v2
+    direction LR
+    Changes: Cambios
+    Staging: Staging Area
+    Commits: Commits
+    Stash: Stash
+
+    Stash --> Stash: Stash se queda en su sitio
+    Changes --> Changes: Cambios locales se quedan en su sitio
+    Staging --> Staging: Cambios en staging area se quedan en su sitio
+    Commits --> Changes: Commits se vuelven cambios locales
+```
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
-_class: body-center align-center
- -->
+# ⭐ Concepto 14: Resets
 
-## <span class="star">:star: Concepto 15:</span> Conflictos
+::left::
+### Soft
+En un soft reset, toda la informacion de los commits a borrar se vuelven cambios actuales.
 
+Cualquier cambio que se tiene en local, o en staging, se queda donde estaba.
+
+```mermaid {scale: 0.5}
+stateDiagram-v2
+    direction LR
+    Changes: Cambios
+    Staging: Staging Area
+    Commits: Commits
+    Stash: Stash
+
+    Stash --> Stash: Stash se queda en su sitio
+    Changes --> Changes: Cambios locales se quedan en su sitio
+    Staging --> Staging: Cambios en staging area se quedan en su sitio
+    Commits --> Changes: Commits se vuelven cambios locales
+```
+
+::right::
+### Hard
+En un hard reset, toda la informacion de los commits a borrar se pierde.
+
+Cualquier cambio que se tenía en local, o en staging, se pierde.
+```mermaid {scale: 0.5}
+stateDiagram-v2
+    direction LR
+    Trash: Borrados
+    Changes: Cambios
+    Staging: Staging Area
+    Commits: Commits
+    Stash: Stash
+
+    Stash --> Stash: Stash se queda en su sitio
+    Staging --> Trash: Cambios en staging se pierden
+    Changes --> Trash: Cambios locales se pierden
+    Commits --> Trash: Commits se pierden
+```
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+
+---
+layout: default-center
+---
+
+# ⭐ Concepto 15: Conflictos
+
+::contents::
 Sucede cuando dos branches que se intentan merge tienen cambios en la misma ubicacion (aproximadamente).
 
 Para terminar el merge, esos conflictos deben resolverse.
 
-##
-
----
-
-<!--
-_class: body-center
- -->
-
-## <span class="star">:star: Concepto 15:</span> Conflictos
-
 En el codigo, los conflictos se ven asi
 
 ```js
-
-<<<<<< HEAD
-codigo1
-=======
-codigo2
->>>>>> new_branch_to_merge_later
-
+// <<<<<< HEAD
+// codigo1
+// =======
+// codigo2
+// >>>>>> new_branch_to_merge_later
 ```
 
-##
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# ⭐ Concepto 16: Revisiones y Aprobaciones
 
-## <span class="star">:star: Concepto 16:</span> Revisiones y Aprobaciones
-
-En un ambiente profesional, las ramas no se merge asi como si nada.
+::contents::
+En un ambiente profesional, las ramas no se les hacen *merge* asi como si nada.
 
 Otro desarrollador lo debe revisar y lo aprobar.
 
-Tras ser aprobado, se hace merge.
+Tras ser aprobado, se hace *merge*.
 
-Usualmente no se niegan, solo se siguen trabajando.
+Usualmente no se rechazan, solo se siguen trabajando.
 
-##
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: cover
+---
 
-<!--
-_class: title
--->
+# 🎉
 
-# :tada:
-
-# Felicidades!
-
-## Saben Git!
+# Saben Git!

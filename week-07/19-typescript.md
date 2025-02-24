@@ -1,43 +1,62 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
 title: Typescript
-_class: invert title
-class: body-center
-header: Semana 7: Typescript
-_header: ""
+theme: ../theme
+transition: none
+layout: cover
+exportFilename: 19-typescript
 ---
 
 # Typescript
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 45 min.
+✏️ 2025-01 ➖ ⏱️ 45 min.
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-## Tipado
+# Tipado
 
+::contents::
 Javascript es un lenguaje de programacion con tipado debil.
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Tipado
+# Tipado
 
+::contents::
 "Tipado" hace referencia al posible requisito de un lenguaje de
 programacion de declarar el tipo de una variable.
 
 - Java tiene un tipado fuerte.
 - JavaScript tiene un tipado debil.
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Tipado
+# Tipado
 
+::contents::
 "Tipado" hace referencia al posible requisito de un lenguaje de
 programacion de declarar el tipo de una variable.
 
@@ -45,25 +64,35 @@ programacion de declarar el tipo de una variable.
 - JavaScript tiene un tipado debil.
 - **TypeScript tiene un tipado fuerte.**
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: align-center body-center
- -->
-
-## Typescript
-
-Typescript es un lenguaje de programacion que transpila a Javascript.
-
-##
-
+layout: default-center
 ---
 
-## Ejemplo
+# Typescript
 
-```js
+::contents::
+Typescript es un lenguaje de programacion que *transpila* a Javascript.
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Ejemplo
+
+::contents::
+```js {*}{lines:true}
 function getUserAge(user, today) {
   return today - user.birthdate;
 }
@@ -71,61 +100,79 @@ function getUserAge(user, today) {
 // que es user? que es today? que es user.birthdate? que somos? que?
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-## Ejemplo
+# Ejemplo
 
-```js
+::left::
+## Javascript
+```js {*}{lines:true}
 function getUserAge(user, today) {
   return today - user.birthdate;
 }
 ```
 
-```js
+::right::
+## Typescript
+```ts {*}{lines:true}
 function getUserAge(user: User, today: Date): number {
   return today - user.birthdate;
 }
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
+# Instalación
 
-<!--
-_class: body-center
- -->
-
-## Instalación
-
-```
+::contents::
+```bash
 $ npm install typescript
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: align-center body-center
- -->
+# Configuración de TypeScript
 
-## Configuración de TypeScript
-
+::contents::
 Se encuentra en el archivo `tsconfig.json`.
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Ejemplo de Configuración
 
-## Ejemplo de Configuración
-
-```js
+::contents::
+```json {*}{lines:true}
 {
   "compilerOptions": {
   "module": "system",
@@ -140,117 +187,180 @@ _class: body-center
 }
 ```
 
----
+::header::
+Semana 7: Typescript
 
-<!--
-_class: align-center body-center
- -->
+::footer::
+{{ $page }} / {{ $nav.total }}
 
-## Configuración de TypeScript
-
-https://www.typescriptlang.org/tsconfig
-
-##
 
 ---
+layout: default-center
+---
 
-## Declaracion de una variable
+# Configuración de TypeScript
 
-```js
+::contents::
+`https://www.typescriptlang.org/tsconfig`
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: two-cols-header
+---
+
+# Declaracion de una variable
+
+::left::
+## Javascript
+```js {*}{lines:true}
 let variable1 = 1;
 const variable2 = "2";
 ```
 
-```js
+::right::
+## Typescript
+```ts {*}{lines:true}
 let variable1: number = 1;
 const variable2: string = "2";
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-## Y los arrays?
+# Y los arrays?
 
-```js
+::left::
+## Javascript
+```js {*}{lines:true}
 let variable1 = [1, 3, 5];
 ```
 
-```js
+::right::
+## Typescript
+```ts {*}{lines:true}
 // ?
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-## Y los arrays?
+# Y los arrays?
 
-```js
+::left::
+## Javascript
+```js {*}{lines:true}
 let variable1 = [1, 3, 5];
 ```
 
-```js
+::right::
+## Typescript
+```ts {*}{lines:true}
 let variable1: number[] = [1, 3, 5];
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-## Y los objetos?
+# Y los objetos?
 
-```js
+::left::
+## Javascript
+```js {*}{lines:true}
 let usuario = {
-  name: "Juancho",
+  name: "Anyelo",
   birthdate: "2002-10-05",
   semester: 7,
 };
 ```
 
-```js
+::right::
+## Typescript
+```ts {*}{lines:true}
 // ?
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-## Y los objetos?
+# Y los objetos?
 
-```js
+::left::
+## Javascript
+```js {*}{lines:true}
 let usuario = {
-  name: "Juancho",
+  name: "Anyelo",
   birthdate: "2002-10-05",
   semester: 7,
 };
 ```
 
-```js
+::right::
+## Typescript
+```ts {*}{lines:true}
 let usuario: {
   name: string,
   birthdate: Date,
   semester: number,
 } = {
-  name: "Juancho",
+  name: "Anyelo",
   birthdate: "2002-10-05",
   semester: 7,
 };
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Y dos objetos?
+# Y dos objetos?
 
-```js
+::contents::
+```ts {*}{lines:true}
 let usuario1: {
   name: string,
   birthdate: Date,
   semester: number,
 } = {
-  name: "Juancho",
+  name: "Anyelo",
   birthdate: "2002-10-05",
   semester: 7,
 };
@@ -260,17 +370,26 @@ let usuario2: {
   birthdate: Date,
   semester: number,
 } = {
-  name: "Juancha",
+  name: "Emily",
   birthdate: "2002-11-06",
   semester: 5,
 };
 ```
 
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
-## Tipos
+# Tipos
 
-```js
+::contents::
+```ts {1-5,7,13}{lines:true}
 type User = {
   name: string,
   birthdate: Date,
@@ -278,34 +397,50 @@ type User = {
 };
 
 let usuario1: User = {
-  name: "Juancho",
+  name: "Anyelo",
   birthdate: "2002-10-05",
   semester: 7,
 };
 
 let usuario2: User = {
-  name: "Juancha",
+  name: "Emily",
   birthdate: "2002-11-06",
   semester: 5,
 };
 ```
 
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
-## Inferencia de tipos
+# Inferencia de tipos
 
-```js
+::contents::
+```ts {*}{lines:true}
 // de que tipo es esta variable? (segun Typescript)
 let variable1: number;
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Inferencia de tipos
+# Inferencia de tipos
 
-```js
+::contents::
+```ts {*}{lines:true}
 // de que tipo es esta variable? (segun typescript)
 let variable1: number;
 
@@ -313,24 +448,38 @@ let variable1: number;
 // porque ahí lo dice
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Inferencia de tipos
+# Inferencia de tipos
 
-```js
+::contents::
+```ts {*}{lines:true}
 // de que tipo es esta variable? (segun Typescript)
 let variable1 = 1;
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Inferencia de tipos
+# Inferencia de tipos
 
-```js
+::contents::
+```ts {*}{lines:true}
 // de que tipo es esta variable? (segun typescript)
 let variable1 = 1;
 
@@ -338,124 +487,194 @@ let variable1 = 1;
 // porque el valor dado a la variable es un numero
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Inferencia de tipos
+# Inferencia de tipos
 
-```js
+::contents::
+```ts {*}{lines:true}
 // de que tipo es esta variable? (segun typescript)
 let variable1;
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Inferencia de tipos
+# Inferencia de tipos
 
-```js
+::contents::
+```ts {*}{lines:true}
 // de que tipo es esta variable? (segun typescript)
 let variable1;
+
 // segun TS, es tipo "any"
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## « Any »
+# « Any »
 
+::contents::
 El tipo "any" significa cualquier cosa.
 
-Se recomienda evitar utilizarlo.
+Se recomienda evitar utilizarlo. <br />
 Se recomienda no permitir que se infiera.
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-## Declaracion de una función
+# Declaracion de una función
 
-```js
+::left::
+```js {*}{lines:true}
 function suma(a, b) {
   return a + b;
 }
 ```
 
-```js
+::right::
+```ts {*}{lines:true}
+function suma(a, b) {
+  return a + b;
+}
 // cual es el tipo de a? b? a+b?
-function suma(a, b) {
-  return a + b;
-}
 ```
 
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
-## Declaracion de una función
+# Declaracion de una función
 
-```js
+::contents::
+```ts {*}{lines:true}
+function suma(a: number, b: number) {
+  return a + b;
+}
 // cual es el tipo de a+b?
-function suma(a: number, b: number) {
-  return a + b;
-}
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Declaracion de una función
+# Declaracion de una función
 
-```js
-// y cual es el tipo de a+b?
+::contents::
+```ts {*}{lines:true}
 function suma(a: number, b: number) {
   return a + b;
 }
-
+// cual es el tipo de a+b?
 // TS infiere que suma(a,b) retorna un numero
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Declaracion de una función
+# Declaracion de una función
 
-```js
+::contents::
+```ts {*}{lines:true}
 function suma(a: number, b: number): number {
   return a + b;
 }
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Declaracion de una función (arrow)
+# Declaracion de una función (arrow)
 
-```js
+::contents::
+```ts {*}{lines:true}
 const suma = (a: number, b: number): number => {
   return a + b;
 };
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: title
- -->
-
-## Pero bueno volvamos a los tipos
-
+layout: cover
 ---
 
-## Tipos
+# Pero bueno volvamos a los tipos
 
-```js
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Tipos
+
+::contents::
+```ts {*}{lines:true}
 type User = {
   name: string,
   birthdate: Date,
@@ -463,15 +682,23 @@ type User = {
 };
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Fecha de Nacimiento quizá no es una "Fecha"
+# Que pasa si...
 
-Puede ser "1990-07-15".
+#### Fecha de Nacimiento quizá no es una "Fecha"
 
-```js
+::contents::
+
+```ts {3}{lines:true}
 type User = {
   name: string,
   birthdate: Date,
@@ -479,13 +706,25 @@ type User = {
 };
 ```
 
+Puede ser `"1990-07-15"`. <br />
 Como permitimos que birthdate sea Date y string?
 
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
-## Fecha de Nacimiento quizá no es una "Fecha"
+# Que pasa si...
 
-```js
+#### Fecha de Nacimiento quizá no es una "Fecha"
+
+::contents::
+```ts {3}{lines:true}
 type User = {
   name: string,
   birthdate: Date | string,
@@ -493,13 +732,25 @@ type User = {
 };
 ```
 
-El simbolo **|** nos permite decir que una variable o campo puede tener dos o mas tipos.
+El simbolo `|` nos permite decir que una variable o campo puede tener dos o mas tipos.
+
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Agreguemos telefono
+# Que pasa si...
 
-```js
+#### Queremos agregar telefono
+
+::contents::
+```ts {*}{lines:true}
 type User = {
   name: string,
   birthdate: Date | string,
@@ -507,15 +758,26 @@ type User = {
 };
 ```
 
-Pero no todos tienen un telefono.
+Pero no todos los usuarios van a tener telefono. <br />
+Como permitimos que `User` tenga telefono, pero que no sean todos?
 
-Como permitimos que User tenga telefono declarado, pero no todos los Users tienen telefono?
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Agreguemos telefono
+# Que pasa si...
 
-```js
+#### Queremos agregar telefono
+
+::contents::
+```ts {5}{lines:true}
 type User = {
   name: string,
   birthdate: Date | string,
@@ -524,12 +786,24 @@ type User = {
 };
 ```
 
-El simbolo **?** nos permite decir que un campo es opcional.
+El simbolo `?` nos permite decir que un campo es opcional.
+
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Queremos administradores
+# Que pasa si...
 
+#### Queremos usuarios administrador
+
+::contents::
 ```js
 type User = {
   name: string,
@@ -541,20 +815,30 @@ type User = {
 
 Un administrador es como un usuario, pero tiene unos campos adicionales.
 
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
-## Queremos administradores
+# Que pasa si...
 
-```js
+#### Queremos usuarios administrador
+
+::contents::
+```ts {*}{lines:true}
 type User = {
   name: string,
   birthdate: Date | string,
   semester: number,
   telephone?: number,
 };
-```
 
-```js
 type Admin = {
   name: string,
   birthdate: Date | string,
@@ -565,13 +849,57 @@ type Admin = {
 };
 ```
 
-Pero no queremos repetirnos…
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Queremos administradores
+# Que pasa si...
 
-```js
+#### Queremos usuarios administrador
+
+::contents::
+```ts {2-5,9-12}{lines:true}
+type User = {
+  name: string,
+  birthdate: Date | string,
+  semester: number,
+  telephone?: number,
+};
+
+type Admin = {
+  name: string,
+  birthdate: Date | string,
+  semester: number,
+  telephone?: number,
+  employeeID: number,
+  department: string,
+};
+```
+
+Pero entonces nos estamos repitiendo.
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Que pasa si...
+
+#### Queremos usuarios administrador
+
+::contents::
+```ts {6,7}{lines:true}
 type User = {
   name: string,
   birthdate: Date | string,
@@ -584,48 +912,113 @@ type User = {
 
 Podemos agregar los campos de Admin a User, y volverlos opcionales.
 
----
 
-## Que prefieren este o este?
+::header::
+Semana 7: Typescript
 
-A) Tener dos tipos, y repetir los campos de usuario en administrador
-
-B) Tener un tipo, y los campos de administrador son opcionales
-
-##
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-## Queremos administradores
+# Que prefieren, este o este?
 
-```js
+::left::
+Tener dos tipos, y repetir los campos de usuario en administrador
+```ts {*}{lines:true}
 type User = {
   name: string,
   birthdate: Date | string,
   semester: number,
   telephone?: number,
 };
+
+type Admin = {
+  name: string,
+  birthdate: Date | string,
+  semester: number,
+  telephone?: number,
+  employeeID: number,
+  department: string,
+};
+```
+
+
+::right::
+Tener un tipo, y los campos de administrador son opcionales
+```ts {*}{lines:true}
+type User = {
+  name: string,
+  birthdate: Date | string,
+  semester: number,
+  telephone?: number,
+  employeeID?: number,
+  department?: string,
+};
+```
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Que pasa si...
+
+#### Queremos usuarios administrador
+
+::contents::
+```ts {8}{lines:true}
+type User = {
+  name: string,
+  birthdate: Date | string,
+  semester: number,
+  telephone?: number,
+};
+
 type Admin = User & {
   employeeID: number,
   department: string,
 };
 ```
 
-##
+El simbolo `&` nos permite 'extender' un tipo en otro.
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-## Type o Interface?
-
-Son virtualmente lo mismo.
-
-##
-
+layout: default-center
 ---
 
-## Type o Interface?
+# Type o Interface?
 
-```js
+::contents::
+Son funcionalmente lo mismo.
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: two-cols-header
+---
+
+# Type o Interface?
+
+::left::
+```ts {*}{lines:true}
 interface Animal {
   name: string;
 }
@@ -635,7 +1028,8 @@ interface Bear extends Animal {
 }
 ```
 
-```js
+::right::
+```ts {*}{lines:true}
 type Animal = {
   name: string,
 };
@@ -645,11 +1039,20 @@ type Bear = Animal & {
 };
 ```
 
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: two-cols-header
 ---
 
-## Type o Interface?
+# Type o Interface?
 
-```js
+::left::
+```ts {*}{lines:true}
 interface Window {
   title: string;
 }
@@ -657,10 +1060,10 @@ interface Window {
   ts: TypeScriptAPI;
 }
 ```
-
 ✅ Todo bien
 
-```js
+::right::
+```ts {*}{lines:true}
 type Window = {
   title: string,
 };
@@ -668,14 +1071,23 @@ type Window = {
   ts: TypeScriptAPI,
 };
 ```
+⚠️ Window ya existe
 
-⚠ Window ya existe
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## "Yo sé lo que es" -- Devs, 1997 - Hoy.
+> # "Yo sé lo que es" 
+#### -- Devs, 1997 - Hoy.
 
-```js
+::contents::
+```ts {*}{lines:true}
 function func1(value: number): string | number {
   if (value < 5) {
     return "Error.";
@@ -683,15 +1095,25 @@ function func1(value: number): string | number {
     return value;
   }
 }
+
+console.log(func1(6) * 10);
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## "Yo sé lo que es" -- Devs, 1997 - Hoy.
+> # "Yo sé lo que es" 
+#### -- Devs, 1997 - Hoy.
 
-```js
+::contents::
+```ts {9}{lines:true}
 function func1(value: number): string | number {
   if (value < 5) {
     return "Error.";
@@ -699,16 +1121,25 @@ function func1(value: number): string | number {
     return value;
   }
 }
+
 console.log(func1(6) * 10); // multiplicando una string?
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## "Yo sé lo que es" -- Devs, 1997 - Hoy.
+> # "Yo sé lo que es" 
+#### -- Devs, 1997 - Hoy.
 
-```js
+::contents::
+```ts {9,10}{lines:true}
 function func1(value: number): string | number {
   if (value < 5) {
     return "Error.";
@@ -721,13 +1152,20 @@ console.log(<number>func1(6) * 10)
 console.log(func1(6) as number * 10)
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Tipos literales
+# Tipos literales
 
-```js
+::contents::
+```ts {*}{lines:true}
 function compara(a: number, b: number) {
   if (a === b) {
     return 0;
@@ -738,13 +1176,20 @@ function compara(a: number, b: number) {
 }
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Tipos literales
+# Tipos literales
 
-```js
+::contents::
+```ts {1}{lines:true}
 function compara(a: number, b: number): -1 | 0 | 1 {
   if (a === b) {
     return 0;
@@ -755,13 +1200,20 @@ function compara(a: number, b: number): -1 | 0 | 1 {
 }
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Tipos literales
+# Tipos literales
 
-```js
+::contents::
+```ts {*}{lines:true}
 function compara(a: number, b: number): -1 | 0 | 1 {
   if (a === b) {
     return 0;
@@ -772,59 +1224,90 @@ function compara(a: number, b: number): -1 | 0 | 1 {
 }
 ```
 
-Tambien se puede con strings.
-Y con Booleans pero eso es como tonto.
+Tambien se puede con strings. <br />
+Y con booleanos pero eso es como tonto.
+
+
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Generics
+# Generics
 
-```js
+::contents::
+```ts {*}{lines:true}
 function sum<X>(a: X, b: X): X {
   return a + b;
 }
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Generics
+# Generics
 
-```ts
-// como permito que la funcion sum concatene
-// dos strings si es el caso?
+::contents::
+```ts {*}{lines:true}
 function sum(a: number, b: number): number {
   return a + b;
 }
+// como permito que la funcion sum concatene
+// dos strings si es el caso?
 
 console.log(sum(2, 3));
 console.log(sum("a", "b")); // Error
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Generics
+# Generics
 
-```ts
-// usando generics, podemos decir que ambos params
-// son un tipo, que tambien es el del resultado
+::contents::
+```ts {*}{lines:true}
 function sum<X>(a: X, b: X): X {
   return a + b;
 }
+// usando generics, podemos decir que ambos params
+// son un tipo, que tambien es el del resultado
 
 console.log(sum<number>(2, 3));
 console.log(sum<string>("a", "b"));
 ```
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Utility Types
+# Utility Types
 
+::contents::
 - Partial\<Type>
   - Todos los campos de Type, pero todos opcionales
 - Required\<Type>
@@ -834,4 +1317,16 @@ console.log(sum<string>("a", "b"));
 - Omit\<Type, Keys>
   - Todos los campos de Type, excepto Keys
 
-##
+::header::
+Semana 7: Typescript
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉
+
+# Saben Typescript!

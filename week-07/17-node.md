@@ -1,144 +1,148 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
 title: Node
-_class: invert title
-class: body-center
-header: Semana 7: Node
-_header: ""
+theme: ../theme
+transition: none
+layout: cover
+exportFilename: 17-node
 ---
 
 # Node & NPM
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 30 min.
+✏️ 2025-01 ➖ ⏱️ 30 min.
+
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
- _class: align-center body-center
-  -->
+# Que es NodeJS?
 
-## Que es NodeJS?
-
+::contents::
 Un _runtime environment_ para JS.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
- _class: align-center body-center
-  -->
+# Que es un _Runtime Environment_ ?
 
-## Que es un _Runtime Environment_ ?
-
+::contents::
 Coloquialmente, es donde corre un programa.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
- _class: align-center body-center
-  -->
+# Que es NPM?
 
-## Que es NPM?
-
+::contents::
 **N**ode **P**ackage **M**anager
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
- _class: align-center body-center
-  -->
+# Que es un package?
 
-## Que es un package?
-
+::contents::
 Un “pequeño” software instalable/agregable a una aplicación de Node que agrega/modifica funcionalidad.
-
-##
-
----
-
-<!--
- _class: align-center body-center
-  -->
-
-## Que es un package?
 
 Todos los packages están listados en https://www.npmjs.com/
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: two-cols-header
+---
 
-<!--
- _class: body-center
-  -->
+# Creando un proyecto de Node
 
-## Creando un proyecto de Node
-
-```
+::left::
+## Normal
+```bash
 $ npm init
 ```
 
-##
-
----
-
-<!--
- _class: body-center
-  -->
-
-## Creando un proyecto de Node - Rapido
-
-```
+::right::
+## Rapido
+```bash
 $ npm init --y
 ```
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
- _class: body-center
-  -->
+# Creando un proyecto de Node
 
-## Creando un proyecto de Node
-
-```js
+::contents::
+```json {*}{lines:true}
 {
-"name": "test",
-"version": "1.0.0",
-"description": "",
-"main": "index.js",
-"scripts": {
-  "test": "node index"
-},
-"author": "",
-"license": "ISC",
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "author": "",
+  "license": "ISC",
 }
 ```
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: title
- -->
-
-## Express
-
+layout: cover
 ---
 
-## Un server sencillo
+# Express
 
-```js
+---
+layout: default-y-center
+---
+
+# Un server sencillo
+
+::contents::
+```js {*}{lines:true}
 const http = require("http");
 
 function requestListener(req, res) {
@@ -150,65 +154,93 @@ const server = http.createServer(requestListener);
 server.listen(8080);
 ```
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-## Nodemon
+# Nodemon
 
+::contents::
 Un package que nos permite hacer "hot reloading", es decir, que al realizar cambios el servidor automaticamente se reinicie.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center
--->
+# Nodemon?
 
-## Nodemon?
-
+::contents::
 Node ya implementó una manera de hacer esto sin instalar packages externos:
 
-```
+```bash
 $ node --watch index.js
 ```
 
 Sin embargo, Nodemon tiene otras funcionalidades.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center align-center
--->
-
-## Instalar un package
-
-npm i \<nombre>
-
-##
-
+layout: default-center
 ---
 
-<!--
-_class: body-center align-center
--->
+# Instalar un package
 
-## Instalar nodemon
+::contents::
+```bash
+$ npm i {nombre}
+```
 
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-center
+---
+# Instalar nodemon
+
+::contents::
+```bash
 npm i nodemon
+```
 
+```bash
 npm install nodemon
+```
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Responder con JSON
+# Responder con JSON
 
-```js
+::contents::
+```js {*}{lines:true}
 const requestListener = function (req, res) {
   res.setHeader("Content-Type", "application/json");
   res.writeHead(200);
@@ -216,16 +248,19 @@ const requestListener = function (req, res) {
 };
 ```
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center align-center
--->
+# JSON
 
-## JSON
-
+::contents::
 **J**ava **S**cript **O**bject **N**otation
 
 O, Notación de Objeto de JavaScript.
@@ -233,389 +268,494 @@ O, Notación de Objeto de JavaScript.
 Es una manera de representar (en una string) un objeto de JavaScript.
 Tipicamente se espera enviar y recibir datos usando JSON.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center align-center
--->
-
-## Express
-
-npm i express
-
-##
-
+layout: default-center
 ---
 
-## Inicialización de un servidor de Express
+# Express
 
-```js
+::contents::
+```bash
+$ npm i express
+```
+
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-center
+---
+
+# Inicialización de un servidor de Express
+
+::contents::
+```js {*}{lines:true}
 const express = require("express");
 const app = express();
 ```
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Un Endpoint en Express
+# Un Endpoint en Express
 
-```js
+::contents::
+```js {*}{lines:true}
 app.get("/", async function (req, res) {
   res.status(200).json({ message: "Success" });
 });
 ```
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Escuchar por peticiones en Express
+# Escuchar por peticiones en Express
 
-```js
+::contents::
+```js {*}{lines:true}
 const port = 3000;
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 ```
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center align-center
--->
-<style scoped>
-  h2:nth-child(3) {
-    font-size: 6rem;
-    text-align: center;
-  }
-</style>
+# Operaciones basicas de almacenamiento
 
-## Operaciones basicas de almacenamiento
-
+::contents::
 ## CRUD
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
--->
-
-## Operaciones basicas de almacenamiento
-
-1. ## C
-2. ## R
-3. ## U
-4. ## D
-
+layout: default-y-center
 ---
 
-<!--
-_class: body-center
--->
+# Operaciones basicas de almacenamiento
 
-## Operaciones basicas de almacenamiento
+::contents::
+1. # C
 
-1. ## C
-2. ## R
-3. ## U
-4. ## creaDo
+2. # R
 
----
+3. # U
 
-<!--
-_class: body-center
--->
+4. # D
 
-## Operaciones basicas de almacenamiento
 
-1. ## C
-2. ## R
-3. ## hUsmear
-4. ## creaDo
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
--->
-
-## Operaciones basicas de almacenamiento
-
-1. ## aCtualizar
-2. ## R
-3. ## hUsmear
-4. ## creaDo
-
+layout: default-y-center
 ---
 
-<!--
-_class: body-center
--->
+# Operaciones basicas de almacenamiento
 
-## Operaciones basicas de almacenamiento
+::contents::
+1. # C
 
-1. ## aCtualizar
-2. ## borRar
-3. ## hUsmear
-4. ## creaDo
+2. # R
 
----
+3. # U
 
-<!--
-_class: body-center
--->
+4. # creaDo
 
-## Operaciones basicas de almacenamiento
 
-1. ## Create
-2. ## Read
-3. ## Update
-4. ## Delete
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Operaciones basicas de almacenamiento
 
- <style scoped>
-  table {
-    text-align: center;
-  }
- </style>
+::contents::
+1. # C
 
-## Metodos HTTP
+2. # R
 
+3. # hUsmear
+
+4. # creaDo
+
+
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Operaciones basicas de almacenamiento
+
+::contents::
+1. # aCtualizar
+
+2. # R
+
+3. # hUsmear
+
+4. # creaDo
+
+
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Operaciones basicas de almacenamiento
+
+::contents::
+1. # aCtualizar
+
+2. # borRar
+
+3. # hUsmear
+
+4. # creaDo
+
+
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Operaciones basicas de almacenamiento
+
+::contents::
+1. # **C**reate
+2. # **R**ead
+3. # **U**pdate
+4. # **D**elete
+
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+
+# Metodos HTTP
+
+::contents::
 |         |        |         |
 | ------- | ------ | ------- |
 | GET     | HEAD   | POST    |
 | PUT     | DELETE | CONNECT |
 | OPTIONS | TRACE  | PATCH   |
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Metodos HTTP
 
- <style scoped>
-  table {
-    text-align: center;
-  }
- </style>
-
-## Metodos HTTP
-
+::contents::
+Tipicamente usados en REST:
 | GET | PUT | POST | PATCH | DELETE |
 | --- | --- | ---- | ----- | ------ |
 
+No tan tipicos:
 | OPTIONS | TRACE | HEAD | CONNECT |
 | ------- | ----- | ---- | ------- |
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# Metodos HTTP => CRUD
 
- <style scoped>
-  table {
-    text-align: center;
-  }
- </style>
-
-## Metodos HTTP => CRUD
-
+::contents::
 | GET  | PUT           | POST   | PATCH  | DELETE |
 | ---- | ------------- | ------ | ------ | ------ |
-|      |               |        |        |        |
 | READ | UPDATE/CREATE | CREATE | UPDATE | DELETE |
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# Put vs Patch
 
-## Put vs Patch
-
+::contents::
 Put sobre-escribe (o crea) un recurso.
 
 Patch modifica un recurso ya existente.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# Metodos HTTP => CRUD
 
-## Metodos HTTP => CRUD
-
+::contents::
 | GET  | PUT           | POST   | PATCH  | DELETE |
 | ---- | ------------- | ------ | ------ | ------ |
-|      |               |        |        |        |
 | READ | UPDATE/CREATE | CREATE | UPDATE | DELETE |
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# CORS
 
-## CORS
-
+::contents::
 **Cross-Origin Resource Sharing**
 
 1. Medida de seguridad para prevenir abuso.
 2. Previene utilizar recursos de otro origen a menos que este lo permita.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center align-center
- -->
-
-## CORS
-
-![img](../assets/week-07/cors-log.png)
-
-##
-
+layout: default-center
 ---
 
-<!--
-_class: body-center align-center
- -->
+# CORS
 
-## CORS
+::contents::
+![alt](./cors-log.png)
 
-![img](../assets/week-07/cors-diagram.png)
+::header::
+Semana 7: Node
 
-##
-
----
-
-<!--
-_class: body-center align-center
- -->
-
-## Metodo OPTIONS + CORS
-
-El metodo OPTIONS tiene como proposito preguntar los permisos de CORS al origen del recurso previo a solicitar el recurso.
-
-##
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# CORS
 
-## CORS
+::contents::
+```mermaid {scale: 0.8}
+sequenceDiagram
+    participant DominioA
+    participant PaginaA
+    participant DominioB
+
+    PaginaA->>DominioA: GET image1.png
+    DominioA->>PaginaA: ✅ GET image1.png
+
+    PaginaA->>DominioB: GET image2.png
+    DominioB->>PaginaA: ❎ GET image2.png
+```
+
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-center
+---
+
+# Metodo `OPTIONS` + CORS
+
+::contents::
+El metodo `OPTIONS` tiene como proposito preguntar los permisos de CORS al origen del recurso previo a solicitar el recurso.
 
 Un problema de CORS 99% de las veces es un problema de backend.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# CORS
 
-## CORS
-
-Un navegador hace un metodo OPTIONS para saber los permisos.
+::contents::
+Un navegador hace un metodo `OPTIONS` para saber los permisos.
 
 Un cliente REST NO.
 
 Clientes REST como Postman, ThunderClient, Insomnia, etc.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# CORS
 
-## CORS
+::contents::
+> Front end dev: "Este endpoint me tira error."
 
-Front end dev: "Este endpoint me tira error."
-Back end dev: "Pero lo pruebo en Postman y me funciona sin problema."
+<br />
+
+> Back end dev: "Pero lo pruebo en Postman y me funciona sin problema."
 
 Conclusión: Revisa CORS.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# CORS - Solución
 
-## CORS - Solución
-
-```js
+::contents::
+```js {*}{lines:true}
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "*");
+
   if (req.method === "OPTIONS") {
     res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
     return res.status(200).json({});
   }
+
   next();
 });
 ```
 
-Agregar este endpoint al inicio del server responde toda petición de OPTIONS con accesso permitido para todo.
+Agregar este endpoint al inicio del server responde toda petición de `OPTIONS` con accesso permitido para todo.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center
- -->
+# CORS - Solución
 
-## CORS - Solución
-
-```js
+::contents::
+```bash
 $ npm i cors
 ```
 
 Este package hace todo lo que hace el endpoint anterior.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# CORS - Solución 2
 
-## CORS - Solución 2
-
-```js
+::contents::
+```js {*}{lines:true}
 let express = require("express");
 let cors = require("cors");
 let app = express();
@@ -623,21 +763,24 @@ let app = express();
 app.use(cors());
 
 app.get("/products/:id", function (req, res, next) {
-  res.json({ msg: "This is CORS-enabled for all origins!" });
+  res.json({ msg: "CORS resuelto!" });
 });
 ```
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+# "Fallbacks"
 
-## "Fallbacks"
-
-```js
+::contents::
+```js {*}{lines:true}
 app.use(async function (req, res) {
   res.status(404).json({ message: "Not found." });
 });
@@ -645,4 +788,54 @@ app.use(async function (req, res) {
 
 Este endpoint va al final, para recibir toda petición que no fue servida por otros endpoints.
 
-##
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+
+---
+layout: default-y-center
+---
+
+::contents::
+```js {*}{lines:true}
+// imports
+const express = require("express");
+const cors = require("cors");
+const app = express();
+const port = 3000;
+
+// resuelve CORS
+app.use(cors());
+
+// un endpoint GET
+app.get("/products/:id", function (req, res, next) {
+  res.json({ msg: "CORS resuelto!" });
+});
+
+// endpoint de 404
+app.use(async function (req, res) {
+  res.status(404).json({ message: "Not found." });
+});
+
+// 'iniciar' servidor
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
+```
+
+::header::
+Semana 7: Node
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉
+
+# Saben Node y Express!

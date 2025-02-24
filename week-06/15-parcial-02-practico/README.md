@@ -1,3 +1,4 @@
+
 # Parcial 02
 
 > ## Instrucciones:
@@ -14,34 +15,42 @@
 
 ## Puntos
 
-1. Implemente una función que reciba los datos de estudiantes y retorne los correos de los estudiantes que han estado involucrados en la extra curricular INNOVA.
+1. Implemente una función que reciba los datos de estudiantes y retorne los correos de los ~140 estudiantes que han estado involucrados en la extra curricular INNOVA.
 
-2. Implemente una función que reciba los datos de estudiantes y retorne el nombre completo del estudiante de mayor promedio de cada semestre.
+2. Implemente una función que reciba los datos de estudiantes y retorne el nombre completo del estudiante de mayor promedio, ~3.7, de quinto semestre.
 
 3. Implemente una función que reciba los datos de estudiantes y retorne la información personal de los estudiantes de primer semestre modificados para tener el siguiente formato:
 
 ```js
 {
-  "gender":"M",
+  "gender": "M",
   "titulo": "Sr.",
   "nombreCompleto" : "Luis Molina",
-  "primerNombre":"Luis",
-  "primerApellido":"Molina",
+  "primerNombre": "Luis",
+  "primerApellido": "Molina",
   "altura": 182,
   "edad": 19,
   "nacimiento": "2004-10-14",
-  "correo":"lmolina@uninorte.edu.co",
-  "usuario":"lmolina"
+  "correo": "lmolina@uninorte.edu.co",
+  "usuario": "lmolina"
 },
 ```
+
+4. Implemente una función que reciba los datos de estudiantes y retorne el nombre completo del estudiante mas alto, ~1.9m, que está en Baloncesto este semestre.
+
+---
 
 ## Información Adicional
 
 - Todos los cursos de un estudiante tienen el mismo peso sobre su promedio actual.
 
+- El semestre de un estudiante es equivalente al mayor semestre en su matricula.
+
 - El archivo datos.json contiene datos de estudiantes para que realicen pruebas. A continuación pueden ver un ejemplo de un estudiante:
 
-```js
+- Los estudiantes tienen una cantidad variable de cursos, y extra curriculares.
+
+```json
 {
   "_id": "par02estid001",
   "info_personal": {
@@ -92,5 +101,3 @@
   ]
 }
 ```
-
-- Los estudiantes tienen una cantidad variable de cursos, y extra curriculares.

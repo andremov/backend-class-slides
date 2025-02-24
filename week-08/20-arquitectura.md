@@ -1,61 +1,95 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
 title: Arquitectura
-_class: invert title
-class: body-center
-header: Semana 8: Arquitectura
-_header: ""
+theme: ../theme
+transition: none
+layout: cover
+exportFilename: 20-arquitectura
 ---
 
 # Arquitectura
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 20 min.
+✏️ 2025-01 ➖ ⏱️ 20 min.
+
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Arquitectura del Backend
 
+# Arquitectura del Backend
+
+::contents::
 1. Monolito
 2. Microservicios
 3. Serverless
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Monolito
+# Monolito
 
+::contents::
 Todo el codigo de la aplicación está en un solo proyecto, una sola app, un solo repo.
 
 La app se despliega completa, y si se necesita mayor capacidad, se despliega una mayor cantidad.
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Microservicios
+# Microservicios
 
+::contents::
 Lo que sería una aplicación "monolito" está separada en secciones, en servicios pequeños e independientes que se comunican entre si con una API interna.
 
 Esta arquitectura permite desplegar los servicios independientes de cada uno, por lo que podrías, por ejemplo, desplegar 3 veces el servicio de usuario, pero 1 sola vez el servicio de autenticación.
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Serverless
+# Serverless
 
+::contents::
 Similar a microservicios, con la diferencia que le dejas el control de la infraestructura y despliegue al proveedor del cloud hosting.
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Arquitectura de la aplicación Backend
+# Arquitectura de la aplicación Backend
 
+::contents::
 1. Clean Architecture
 2. Hexagonal Architecture
 3. Onion Architectura
@@ -63,12 +97,19 @@ Similar a microservicios, con la diferencia que le dejas el control de la infrae
 5. DCI
 6. BCE
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Arquitectura de la aplicación Backend
+# Arquitectura de la aplicación Backend
 
+::contents::
 1. **Clean Architecture**
 2. Hexagonal Architecture
 3. Onion Architectura
@@ -76,38 +117,42 @@ Similar a microservicios, con la diferencia que le dejas el control de la infrae
 5. DCI
 6. BCE
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center align-center
- -->
-
- <style scoped>
-  img {
-    width: 700px;
-  }
- </style>
-
-## Clean Architecture
-
-![img](../assets/week-08/clean-arch.png)
-
+layout: default-center
 ---
 
-<style scoped>
-  p:nth-child(5) {
-    color: rgba(var(--text-color), 0.6);
-    text-align: center;
-    margin: auto;
-    max-width: 800px;
-    height: 0;
-  }
+<style>
+img {
+  width: 60%;
+  margin: 0 auto;
+}
 </style>
 
-## Capas Clean Architecture
+# Clean Architecture
 
+::contents::
+![img](./clean-arch.png)
+
+
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Capas Clean Architecture
+
+::contents::
 ##
 
 1. Capa 1 > Frontend
@@ -118,37 +163,36 @@ _class: body-center align-center
 
 Esto es un poco distinto al diagrama porque el diagrama ubica la DB en las afueras.
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# Capa 1 - Frontend
 
-## Capa 1 - Frontend
-
+::contents::
 Esta capa es literalmente el frontend.
 
 El frontend realiza requests al backend. La **capa 2** recibe esos requests.
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<style scoped>
-  p {
-    max-width: 800px;
-    margin: auto;
-  }
-</style>
+# Capa 2 - Rutas
 
-<!--
-_class: body-center align-center
- -->
-
-## Capa 2 - Rutas
-
+::contents::
 Esta capa recibe los requests por parte del frontend.
 
 Es donde se define la ruta del endpoint y que función de la **capa 3** se ejecuta.
@@ -157,81 +201,97 @@ Adicionalmente, podría ser responsable de extraer los datos del request (body, 
 
 **Existe un archivo para cada modelo.**
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<style scoped>
-  p {
-    max-width: 800px;
-    margin: auto;
-  }
-</style>
+# Capa 3 - Controladores
 
-<!--
-_class: body-center align-center
- -->
-
-## Capa 3 - Controladores
-
+::contents::
 Esta capa es ejecutada por la **capa 2** con todos los datos necesarios para su ejecución pasado por parametros.
 
 Esta capa ejecuta todas las funciones de la **capa 4** que considere necesario para realizar su labor.
 
 **Existe un archivo para cada modelo.**
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# Capa 4 - Casos de Uso / Acciones
 
-## Capa 4 - Casos de Uso / Acciones
-
+::contents::
 Esta capa es ejecutada por la **capa 3** con todos los datos necesarios para su ejecución pasado por parametros.
 
 Esta capa realiza llamados a la **capa 5** y retorna el resultado.
 
 **Existe un archivo para cada accion de cada modelo.**
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# Capa 5 - Base de Datos
 
-## Capa 5 - Base de Datos
-
+::contents::
 Esta capa es literalmente la base de datos.
 
 Pero su representación en el codigo es el archivo del modelo.
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<style scoped>
-  p:nth-child(4) {
-    text-align: center;
+# Estructura de proyecto
+
+::contents::
+Cada capa está representada en un archivo distinto, siguiendo esta estructura:
+
+`[modelo].[capa].js`
+
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+<style>
+  table {
+    transform: scale(0.8);
   }
 </style>
 
-## Estructura de proyecto
+# Servicio de Usuarios
 
-Cada capa está representada en un archivo distinto, siguiendo esta estructura:
-
-[modelo].[capa].js
-
-##
-
----
-
-## Servicio de Usuarios
-
+::contents::
 Entonces, para el servicio de users, tendríamos los siguientes archivos:
 
 | Archivo               | Capa        |
@@ -244,35 +304,93 @@ Entonces, para el servicio de users, tendríamos los siguientes archivos:
 | delete.user.action.js | Acción      |
 | user.model.js         | BD          |
 
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
-## Estructura de proyecto
+# Servicio de Usuarios
 
+::contents::
+```mermaid {scale: 0.65}
+sequenceDiagram
+    participant frontend as Front-end
+    participant userRoute as user.route.js
+    participant userController as user.controller.js
+    participant readUserAction as read.user.action.js
+    participant userModel as user.model.js
+    participant DB as MongoDB
+
+    frontend->>userRoute: GET "/usuario/1"
+    userRoute->>userController: readUser(1)
+    userController->>readUserAction: readUserAction(1)
+    readUserAction->>userModel: findOne({_id: 1})
+    userModel->>DB: findOne({_id: 1})
+    DB->>userModel: User{}
+    userModel->>readUserAction: User{}
+    readUserAction->>userController: User{}
+    userController->>userRoute: User{}
+    userRoute->>frontend: { data: User{} }
+```
+Entonces, para el servicio de users, tendríamos los siguientes archivos:
+
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-center
+---
+
+# Estructura de proyecto
+
+::contents::
 Juntamos todas la rutas en una carpeta de rutas, todos los controladores en una carpeta de controladores, etc?
 
 O
 
 Juntamos todo lo involucrado a un servicio en su propia carpeta?
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-## Estructura de proyecto
+# Estructura de proyecto
 
+::contents::
 Capas juntas o modelo junto?
 
 Eso ya es preferencia propia.
 
-Yo prefiero modelo junto.
+*Yo* prefiero modelo junto.
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Ejemplo Archivo de Rutas
+# Ejemplo Archivo de Rutas
 
-```js
+::contents::
+```ts {*}{lines:true}
 // INIT ROUTES
 const userRoutes = Router();
 
@@ -290,13 +408,20 @@ async function GetUsers(request: Request, response: Response) {
 userRoutes.get("/", GetUsers);
 ```
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Ejemplo Archivo Controlador
+# Ejemplo Archivo Controlador
 
-```js
+::contents::
+```ts {*}{lines:true}
 // DECLARE CONTROLLER FUNCTIONS
 async function readUsers(): Promise<UserType[]> {
   const users = await readUserAction();
@@ -308,13 +433,20 @@ async function readUsers(): Promise<UserType[]> {
 export { readUsers };
 ```
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Ejemplo Archivo Acción Read
+# Ejemplo Archivo Acción Read
 
-```js
+::contents::
+```ts {*}{lines:true}
 import { UserModel, UserType } from "./user.model";
 
 // DECLARE ACTION FUNCTION
@@ -328,13 +460,20 @@ async function readUserAction(): Promise<UserType[]> {
 export default readUserAction;
 ```
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Ejemplo Archivo Modelo
+# Ejemplo Archivo Modelo
 
-```js
+::contents::
+```ts {*}{lines:true}
 // DECLARE MODEL TYPE
 type UserType = {
   // USER FIELDS
@@ -342,9 +481,7 @@ type UserType = {
 
 // DECLARE MONGOOSE SCHEMA
 const UserSchema =
-  new Schema() <
-  UserType >
-  {
+  new Schema()<UserType>{
     // USER FIELDS
   };
 
@@ -355,4 +492,17 @@ const UserModel = model < UserType > ("User", UserSchema);
 export { UserModel, UserSchema, UserType };
 ```
 
-##
+::header::
+Semana 8: Arquitectura
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+
+---
+layout: cover
+---
+
+# 🎉
+
+# 'tamos claros

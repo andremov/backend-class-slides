@@ -1,131 +1,205 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
 title: Paradigmas
-_class: invert title
-class: body-center
-header: Semana 8: Paradigmas
-_header: ""
+theme: ../theme
+transition: none
+layout: cover
+exportFilename: 21-paradigmas
 ---
 
 # Paradigmas de Bases de Datos
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 25 min.
+✏️ 2025-01 ➖ ⏱️ 25 min.
+
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Key-Value
+# Key-Value
 
+::contents::
 1. Redis
 2. Memcache
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Key-Value
+# Key-Value
 
-| user:23:bio | Unica e indiferente |
+::contents::
+| Key | Value |
 | ----------- | ------------------- |
+| user:23:bio | Unica e indiferente |
 | user:24:bio | Artista. Poeta.     |
-| user:25:bio | > Escorpio > 19 > ⚕ |
+| user:25:bio | > Tauro > 19 > ⚕ |
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## "Wide Column"
+# "Wide Column"
 
+::contents::
 1. Cassandra
 2. HBase
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-## "Wide Column"
-
-| user:23 | bio="Unica e indiferente"; nombre="Angela"  |
-| ------- | ------------------------------------------- |
-| user:24 | bio="Artista. Poeta."; nombre="Ernesto"     |
-| user:25 | bio="> Escorpio > 19 > ⚕"; nombre="Daniela" |
-
-##
-
+layout: default-y-center
 ---
 
-## Relational
+# "Wide Column"
 
+::contents::
+| Key | Value |
+| ----------- | ------------------- |
+| user:23 | bio="Unica e indiferente"; nombre="Lena"  |
+| user:24 | bio="Artista. Poeta."; nombre="Kidman"     |
+| user:25 | bio="> Tauro > 19 > ⚕"; nombre="Maria" |
+
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Relational
+
+::contents::
 1. PostgreSQL
 2. mySQL
 3. SQLite
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Relational
+# Relational
 
+::contents::
 | id  | bio                 | name    | age |
 | --- | ------------------- | ------- | --- |
-| 23  | Unica e indiferente | Angela  | 26  |
-| 24  | Artista. Poeta.     | Ernesto | 16  |
-| 25  | > Escorpio > 19 > ⚕ | Daniela | 17  |
+| 23  | Unica e indiferente | Lena  | 26  |
+| 24  | Artista. Poeta.     | Kidman | 16  |
+| 25  | > Tauro > 19 > ⚕ | Maria | 17  |
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Graph
+# Graph
 
+::contents::
 1. Neo4j
 2. d-graph
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: align-center body-center
- -->
-
-<style scoped>
+<style>
   img {
-    height: 500px;
+    width: 60%;
+    margin: 0 auto;
   }
-</style>>
+</style>
 
-## Graph
+# Graph
 
-![img](../assets/week-09/neo4j-preview.png)
+::contents::
+![img](../neo4j-preview.png)
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Otros
+# Otros Paradigmas
 
+::contents::
 - Search (ej: Elastic, Solr, meili search)
 - Multi-model (ej Fauna)
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Document
+# Document
 
-1. MongoDB
+::contents::
+1. **MongoDB**
 2. Firebase
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Document
+# Document
 
-```js
+::contents::
+```json {*}{lines:true}
 {
   "id": 23,
   "bio": "Unica e indiferente",
@@ -133,36 +207,63 @@ _class: align-center body-center
 }
 ```
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Base de datos
+# Base de datos
 
+::contents::
 - Contenida en un cluster
 - Contiene collections
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Collections
+# Collections
 
+::contents::
 - Equivalente a una tabla en una BD relacional
 - Contenida en un database
 - Contiene documents
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Documents
+# Documents
 
+::contents::
 - Equivalente a una fila en una BD relacional
 - Es contenido en una collection
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 <style scoped>
@@ -172,13 +273,24 @@ td, th {
 }
 </style>
 
-## DBs → Objetos
+# DBs → Objetos
 
-| DB  | ?   | API |
-| --- | --- | --- |
+::contents::
+```mermaid
+stateDiagram-v2
+    direction lr
+    DB --> ???
+    ??? --> API
+```
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 <style scoped>
@@ -188,20 +300,31 @@ td, th {
 }
 </style>
 
-## Object Relational Mapping (ORM)
+# Object Relational Mapping (ORM)
 
+::contents::
+```mermaid
+stateDiagram-v2
+    direction lr
+    DB --> ORM
+    ORM --> API
+```
 - Interfaz entre una API y una base de datos (relational)
 - "Transforma" una "fila" en objeto
 
-| DB  | ORM | API |
-| --- | --- | --- |
+::header::
+Semana 8: Paradigmas de Bases de Datos
 
-##
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Object Relational Mapping (ORM)
+# Object Relational Mapping (ORM)
 
+::contents::
 - Prisma
 - Sequelize
 - TypeORM
@@ -210,8 +333,14 @@ td, th {
 - Waterline
 - Knex.js
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 <style scoped>
@@ -221,21 +350,44 @@ td, th {
 }
 </style>
 
-## Object Document Mapping (ODM)
+# Object Document Mapping (ODM)
 
+::contents::
+```mermaid
+stateDiagram-v2
+    direction lr
+    DB --> ODM
+    ODM --> API
+```
 - Interfaz entre una API y una base de datos (document)
 - "Transforma" un documento en objeto
 
-| Document DB | ODM | API |
-| ----------- | --- | --- |
+::header::
+Semana 8: Paradigmas de Bases de Datos
 
-##
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Object Document Mapping (ODM)
+# Object Document Mapping (ODM)
 
+::contents::
 - Prisma
 - **Mongoose**
 
-##
+::header::
+Semana 8: Paradigmas de Bases de Datos
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# 🎉
+
+# Saben los paradigmas!

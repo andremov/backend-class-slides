@@ -5,5 +5,7 @@
     "./themes/slides-theme.css",
     "./themes/doc-theme.css",
     "./themes/syllabus-theme.css"
-  ]
+  ],
+  "slidev.force-enabled": true,
+  "slidev.include": ["**/*.md"]
 }

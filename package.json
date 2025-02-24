@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "slide-pdf": "marp --pdf --html --allow-local-files --theme-set ./themes/ -p",
-    "doc-pdf": "marp --pdf --html --allow-local-files --theme-set ./themes/ -p"
+    "marp-slide-pdf": "marp --pdf --html --allow-local-files --theme-set ./themes/ -p",
+    "marp-doc-pdf": "marp --pdf --html --allow-local-files --theme-set ./themes/ -p",
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,15 @@
   "dependencies": {
     "@marp-team/marp-cli": "^4.1.1",
     "@marp-team/marp-core": "^4.0.1",
-    "@marp-team/marpit": "^3.1.2"
+    "@marp-team/marpit": "^3.1.2",
+    "@slidev/cli": "^51.2.2",
+    "@slidev/theme-apple-basic": "^0.25.1",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "slidev-theme-dracula": "^0.2.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.50.1"
   }
 }

@@ -1,87 +1,119 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
+exportFilename: 01b-ipo-model
 title: IPO Model
-_class: invert title
-class: body-center
-header: Relleno: IPO Model
-_header: ""
 ---
 
 # IPO Model
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 7 min.
+✏️ 2025-01 ➖ ⏱️ 7 min.
 
 ---
-
-<!--
-_class: title
- -->
+layout: cover
+---
 
 O, en español,
 
 # Modelo EPS
 
 ---
+layout: default-y-center
+---
 
-## Que es EPS?
+# Que es EPS?
 
+::contents::
 ENTIDAD PROMOTORA DE SALUD - EPS
+
 Entidades responsables de la afiliación y registro de los afiliados al sistema de la regularidad social en Colombia.
 
-##
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-<!--
-_class: body-center align-center
- -->
+# Que es el IPO Model?
 
-## Que es el IPO Model?
-
+::contents::
 Es un patron reconocido para el diseño y desarrollo de algoritmos.
 
-##
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-## IPO significa...
-
-INPUT
-PROCESS
-OUTPUT
-
-##
-
+layout: default-y-center
 ---
 
-## EPS significa...
+# IPO significa...
 
-ENTRADA
-PROCESO
-SALIDA
+::contents::
+1. INPUT
+1. PROCESS
+1. OUTPUT
 
-##
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Es decir,
+# EPS significa...
 
+::contents::
+1. ENTRADA
+1. PROCESO
+1. SALIDA
+
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+
+---
+layout: default-y-center
+---
+
+# Es decir,
+
+::contents::
 Para desarrollar un algoritmo que solucione un problema (pequeño),
 
-Paso 1: Obtener los datos necesarios (input)
-Paso 2: Procesar o modificar los datos (process)
-Paso 3: Devolver un resultado (output)
+1. Obtener los datos necesarios (input)
+1. Procesar o modificar los datos (process)
+1. Devolver un resultado (output)
+
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ##
 
 ---
+layout: default-y-center
+---
 
-## Ejemplo
+# Ejemplo
 
-```js
+::contents::
+```js {*|2,3|5|7|*}{lines:true}
 function suma(a, b) {
   const operando1 = a;
   const operando2 = b;
@@ -92,125 +124,141 @@ function suma(a, b) {
 }
 ```
 
-##
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-## Ejemplo
-
-```js
-function suma(a, b) {
-  // input
-  const operando1 = a;
-  const operando2 = b;
-
-  // process
-  const resultado = operando1 + operando2;
-
-  // output
-  return resultado;
-}
-```
-
-##
-
+layout: default-y-center
 ---
 
-## Ejemplo
+# Ejemplo
 
-```js
+::contents::
+```js {*}{lines:true}
 function suma(a, b) {
-  // input
   // const operando1 = a;
   // const operando2 = b;
 
-  // process
   const resultado = a + b;
 
-  // output
   return resultado;
 }
 ```
 
-##
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Ejemplo
+# Ejemplo
 
-```js
+::contents::
+```js {*}{lines:true}
 function suma(a, b) {
-  // input
   // const operando1 = a;
   // const operando2 = b;
 
-  // process
   // const resultado = a + b;
 
-  // output
   return a + b;
 }
 ```
 
-##
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-center
+---
 
-## Problema
+# Problema
 
+::contents::
 Dada una lista de estudiantes y su nota final, cuantos estudiantes sacaron la mayor nota, que no es necesariamente la nota maxima posible (5)?
 
-##
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Problema
+# Problema
 
-```js
+::contents::
+```js {*}{lines:true}
 function suma(estudiantes) {
   // input
-  .
-  .
+  
+  
 
   // process
-  .
-  .
-  .
+  
+  
+  
 
   // output
-  .
+  
 }
 ```
 
-##
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Problema
+# Problema
 
-```js
+::contents::
+```js {3,4}{lines:true}
 function suma(estudiantes) {
   // input
   const notasFinales = estudiantes.map((estudiante) => estudiante.notaFinal);
   const mayorNota = Math.max(...notasFinales);
 
   // process
-  .
-  .
-  .
+  
+  
+  
 
   // output
-  .
+  
 }
 ```
 
-##
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Problema
+# Problema
 
-```js
+::contents::
+```js {7,8,9}{lines:true}
 function suma(estudiantes) {
   // input
   const notasFinales = estudiantes.map((estudiante) => estudiante.notaFinal);
@@ -222,17 +270,24 @@ function suma(estudiantes) {
   );
 
   // output
-  .
+  
 }
 ```
 
-##
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Problema
+# Problema
 
-```js
+::contents::
+```js {12}{lines:true}
 function suma(estudiantes) {
   // input
   const notasFinales = estudiantes.map((estudiante) => estudiante.notaFinal);
@@ -248,13 +303,49 @@ function suma(estudiantes) {
 }
 ```
 
-##
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Y si las entradas son invalidas?
+# Problema
 
-```js
+::contents::
+```js {*}{lines:true}
+function suma(estudiantes) {
+  // input
+  const notasFinales = estudiantes.map((estudiante) => estudiante.notaFinal);
+  const mayorNota = Math.max(...notasFinales);
+
+  // process
+  const estudiantesConMayorNota = estudiantes.filter(
+    (estudiante) => estudiante.notaFinal === mayorNota
+  );
+
+  // output
+  return estudiantesConMayorNota.length;
+}
+```
+
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+# Y si las entradas son invalidas?
+
+::contents::
+```js {2-5}{lines:true}
 function suma(estudiantes) {
   // ??
   if (estudiantes.length === 0) {
@@ -275,11 +366,20 @@ function suma(estudiantes) {
 }
 ```
 
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
-## Y si las entradas son invalidas?
+# Y si las entradas son invalidas?
 
-```js
+::contents::
+```js {2-5}{lines:true}
 function suma(estudiantes) {
   // early return
   if (estudiantes.length === 0) {
@@ -300,28 +400,45 @@ function suma(estudiantes) {
 }
 ```
 
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 <!--
 _footer: https://wiki.c2.com/?ElseConsideredSmelly
  -->
 
-## Early Return
+# Early Return
 
+::contents::
 Los `else` son, hasta cierto punto, considerados "malos".
 
 Porque?
 
-1. Si la condicion del `if` es complicadita, es complicado entender cuando cae el `else`.
+1. Si la condición del `if` es complicadita, es complicado entender cuando cae en el `else`.
 2. Si el codigo dentro del `if` es considerable, es facil de olvidar cual era la condicion.
 
-##
+
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-## Alternativa?
+# Alternativa?
 
-```js
+::contents::
+```js {*}{lines:true}
 function suma(estudiantes) {
   if (estudiantes.length !== 0) {
     // input
@@ -341,6 +458,14 @@ function suma(estudiantes) {
 }
 ```
 
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-center
 ---
 
 <!--
@@ -349,15 +474,24 @@ _footer: https://wiki.c2.com/?ArrowAntiPattern
 
 ## Y si son varias condiciones?
 
-Terminamos con una flecha. (anti-patron)
+::contents::
+Terminamos con una flecha. (anti-patrón)
 
-##
 
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Flecha
 
-```js
+::contents::
+```js {*}{lines:true}
 function proceso(param1, param2) {
   if (isValid(argument1)) {
     if (isValid(argument2)) {
@@ -383,9 +517,18 @@ function proceso(param1, param2) {
 }
 ```
 
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
-```java
+::contents::
+```java {*}{lines:true}
 public String returnStuff(SomeObject argument1, SomeObject argument2){
   if (!argument1.isValid()) {
     throw new Exception();
@@ -411,11 +554,20 @@ public String returnStuff(SomeObject argument1, SomeObject argument2){
 }
 ```
 
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Early Return
 
-```js
+::contents::
+```js {*}{lines:true}
 function suma(estudiantes) {
   if (estudiantes.length === 0) {
     return 0;
@@ -432,4 +584,15 @@ function suma(estudiantes) {
 }
 ```
 
-##
+
+::header::
+Relleno: Modelo IPO
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
+---
+
+# Fin

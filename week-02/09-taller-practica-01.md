@@ -3,7 +3,7 @@ marp: true
 theme: doc-theme
 title: Ejercicios de Practica 01
 header: Ejercicios de Practica 01 
-footer: :pencil: 2024-03
+footer: ✏️ 2024-03
 ---
 
 # Ejercicios de Practica 01

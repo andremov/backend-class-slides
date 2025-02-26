@@ -20,6 +20,20 @@ Semana 7: Git II
 layout: default-y-center
 ---
 
+::contents::
+
+https://github.com/joshnh/Git-Commands/blob/master/READMEes.md
+
+::header::
+Semana 7: Git II
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
 # ⭐ Concepto 7: Branches
 
 ::contents::

@@ -1,9 +1,3 @@
----
-marp: true
-theme: doc-theme
-title: Parcial 02
-header: "Parcial 02"
----
 
 # Parcial 02
 
@@ -21,9 +15,9 @@ header: "Parcial 02"
 
 ## Puntos
 
-1. Implemente una función que reciba los datos de estudiantes y retorne los correos de los ~140 estudiantes que han estado involucrados en la extra curricular INNOVA.
+1. Implemente una función que reciba los datos de estudiantes y el nombre de una extracurricular y retorne los correos de los estudiantes que han estado involucrados en esa extra curricular, como por ejemplo los correos de los ~140 estudiantes que han estado involucrados en la extra curricular INNOVA.
 
-2. Implemente una función que reciba los datos de estudiantes y retorne el nombre completo del estudiante de mayor promedio, ~3.7, de quinto semestre.
+2. Implemente una función que reciba los datos de estudiantes y un semestre y retorne el nombre completo del estudiante de mayor promedio, como por ejemplo el estudiante de quinto semestre con ~3.7 de promedio.
 
 3. Implemente una función que reciba los datos de estudiantes y retorne la información personal de los estudiantes de primer semestre modificados para tener el siguiente formato:
 
@@ -42,7 +36,7 @@ header: "Parcial 02"
 },
 ```
 
-4. Implemente una función que reciba los datos de estudiantes y retorne el nombre completo del estudiante mas alto, ~1.9m, que está en Baloncesto este semestre.
+4. Implemente una función que reciba los datos de estudiantes y retorne el nombre completo del estudiante mas alto inscrito en Baloncesto en el semestre actual, como por ejemplo el estudiante que mide ~1.9m de altura.
 
 ---
 

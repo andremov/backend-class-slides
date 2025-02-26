@@ -9,3 +9,9 @@ function puntoUno(estudiantes) {
 // CODIGO DE PUNTO 3 AQUI
 
 // CODIGO DE PUNTO 4 AQUI
+
+function puntoCuatro(estudiantes) {
+  estudiantes.map;
+}
+
+console.log(puntoCuatro);

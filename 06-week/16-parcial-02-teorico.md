@@ -111,7 +111,7 @@ const history = purchases
 
 ## Pregunta 5
 
-Su compañero de trabajo, Shaddia, llegó a su escritorio a pedirles ayuda con el siguiente error:
+Su compañero de trabajo, Emily, llegó a su escritorio a pedirles ayuda con el siguiente error:
 
 ```js
 function getLastPurchaseName(user) {
@@ -121,6 +121,6 @@ function getLastPurchaseName(user) {
 
 _Uncaught TypeError: Cannot read properties of undefined (reading 'name')_
 
-Que necesita Shaddia para no tener este error, sin cambiar el funcionamiento de la funcion, ni dar resultados que no representan el estado de los parametros?
+Que necesita Emily para no tener este error, sin cambiar el funcionamiento de la funcion, ni dar resultados que no representan el estado de los parametros?
 
 ##

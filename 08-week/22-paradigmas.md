@@ -3,7 +3,7 @@ title: Paradigmas
 theme: ../theme
 transition: none
 layout: cover
-exportFilename: 21-paradigmas
+exportFilename: 22-paradigmas
 ---
 
 # Paradigmas de Bases de Datos

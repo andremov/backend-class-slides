@@ -3,7 +3,7 @@ title: Typescript
 theme: ../theme
 transition: none
 layout: cover
-exportFilename: 19-typescript
+exportFilename: 20-typescript
 ---
 
 # Typescript

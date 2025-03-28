@@ -1,2 +1,2 @@
 
-tar -acf 15-parcial-02-practico.zip 15-parcial-02-practico
+tar -acf 16-parcial-02-practico.zip 16-parcial-02-practico

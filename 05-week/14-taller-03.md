@@ -66,35 +66,17 @@ Desarrolle una funcion llamada **conversionRomana** que reciba una string de cif
 
 ---
 
-## Rubrica Punto 1
+## Punto 4
 
-| Criterio                                         | Puntos |
-| ------------------------------------------------ | ------ |
-| La funcion no está correctamente nombrada.       | -1     |
-| La funcion no compila.                           | -1     |
-| La funcion no retorna el resultado.              | -1     |
-| El resultado es el correcto en formato correcto. | 2      |
-| Total                                            | 2      |
+Desarrolle una funcion llamada **descomposicion** que reciba una string de palabras separada por comas, donde la primera palabra es la palabra a descomponer y el resto son el diccionario a utilizar. La función debe retornar las dos palabras del diccionario que compongan la palabra a descomponer.
 
-##
+|                   Entrada              |        Salida        |
+| -------------------------------------- | -------------------- |
+| "malhumor,al,hum,humor,m,mal,malhu"    | ["mal", "humor"]     |
 
 ---
 
-## Rubrica Punto 2
-
-| Criterio                                         | Puntos |
-| ------------------------------------------------ | ------ |
-| La funcion no está correctamente nombrada.       | -1     |
-| La funcion no compila.                           | -1     |
-| La funcion no retorna el resultado.              | -1     |
-| El resultado es el correcto en formato correcto. | 2      |
-| Total                                            | 2      |
-
-##
-
----
-
-## Rubrica Punto 3
+## Rubrica Puntos
 
 | Criterio                                         | Puntos |
 | ------------------------------------------------ | ------ |

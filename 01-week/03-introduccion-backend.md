@@ -1,128 +1,123 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Introduccion al Desarrollo Back-End
-_class: invert title
-header: Semana 1: Introduccion
-_header: ""
+exportFilename: 03-introduccion-backend
 ---
 
-# Introduccion al desarrollo back-end
+# Introduccion al <br>desarrollo back-end
 
-:pencil: 2025-01 :heavy_minus_sign: :stopwatch: 15 min.
-
----
-
-<!--
-_class: title
- -->
-
-## Que es "back-end"?
+✏️ 2025-03 ➖ ⏱️ 15 min.
 
 ---
-
-<!--
-_class: title
- -->
-
-Back-end es aquello que **no** es front-end.
-
+layout: cover
 ---
 
-<!--
-_class: title
- -->
-
-## Que es "front-end"?
+# Que es "back-end"?
 
 ---
+layout: cover
+---
 
-<!--
-_class: align-center body-center
- -->
+# Back-end es aquello que **no** es front-end.
+
+---
+layout: cover
+---
+
+# Que es "front-end"?
+
+---
+layout: default-y-center
+---
 
 ## Front-end
 
+::contents::
 Se considera "front-end" aquello que manipula el usuario, o el lado de la aplicacion que esta bajo el control del usuario.
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: align-center body-center
- -->
+layout: default-y-center
+---
 
 ## Back-end
 
+::contents::
 Se considera "back-end" aquello que **NO** manipula el usuario, o el lado de la aplicacion que **NO** esta bajo el control del usuario.
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: align-center body-center
- -->
+layout: default-y-center
+---
 
 ## Back-end
 
+::contents::
 Para las aplicaciones web,
 
 El front-end es la pagina web.
 El back-end es _el resto_.
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: align-center body-center
- -->
+layout: default-y-center
+---
 
 ## Back-end
 
+::contents::
 Para cualquier aplicacion,
 
 El front-end es la interfaz de usuario (y el programa que lo contiene).
 El back-end es _todo lo otro_.
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: align-center body-center
- -->
+layout: default-y-center
+---
 
 ## Back-end
 
+::contents::
 El front-end tambien es llamado "el cliente", o "client-side".
 
 El back-end tambien es llamado "el servidor", o "server-side".
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: align-center body-center
- -->
-
-<style scoped>
-p {
-    color: rgba(var(--text-color), 0.2);
-
-}
-p:nth-child(3) {
-    color: rgba(var(--text-color), 1);
-}
-</style>
+layout: default-y-center
+---
 
 ## Back-end
 
+::contents::
 En terminos del modelo MVC:
 
 Vista: Frontend
@@ -131,158 +126,55 @@ Modelo: Backend
 
 Controlador: ?
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: align-center body-center
- -->
-
-<style scoped>
-p {
-    color: rgba(var(--text-color), 0.2);
-
-}
-p:nth-child(3) {
-    color: rgba(var(--text-color), 1);
-}
-p:nth-child(4) {
-    color: rgba(var(--text-color), 1);
-}
-</style>
-
-## Back-end
-
-En terminos del modelo MVC:
-
-Vista: Frontend
-
-Modelo: Backend
-
-Controlador: ?
-
-##
-
+layout: default-y-center
 ---
 
-<!--
-_class: align-center body-center
- -->
+::contents::
+![image](./assets/rest-api-mvc-model.png)
 
-<style scoped>
-p {
-    color: rgba(var(--text-color), 0.2);
+::header::
+Semana 1: Introduccion al curso
 
-}
-p:nth-child(3) {
-    color: rgba(var(--text-color), 1);
-}
-p:nth-child(5) {
-    color: rgba(var(--text-color), 1);
-}
-</style>
-
-## Back-end
-
-En terminos del modelo MVC:
-
-Vista: Frontend
-
-Modelo: Backend
-
-Controlador: ?
-
-##
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: align-center body-center
- -->
-
-<style scoped>
-p {
-    color: rgba(var(--text-color), 0.2);
-
-}
-p:nth-child(3) {
-    color: rgba(var(--text-color), 1);
-}
-p:nth-child(6) {
-    color: rgba(var(--text-color), 1);
-}
-</style>
-
-## Back-end
-
-En terminos del modelo MVC:
-
-Vista: Frontend
-
-Modelo: Backend
-
-Controlador: ?
-
-##
-
+layout: default-y-center
 ---
 
-<!--
-_class: align-center body-center
- -->
-
-## Back-end
-
-En terminos del modelo MVC:
-
-Vista: Frontend
-
-Modelo: Backend
-
-Controlador: ?
-
-##
-
----
-
-<!--
-_class: title
- -->
-
-![image](../assets/week-01/rest-api-mvc-model.png)
-
----
-
-<!--
-_class: title
- -->
-
-<style scoped>
-p:nth-child(3) {
+<style>
+.slidev-page-12 p:nth-child(2) {
     position: absolute;
     color: black;
     font-weight: bold;
     top: 68%;
-    left: 10%;
+    left: 13%;
 }
-p:nth-child(4) {
+.slidev-page-12 p:nth-child(3) {
     position: absolute;
     color: black;
     font-weight: bold;
     top: 68%;
-    left: 48%;
+    left: 51%;
 }
-p:nth-child(5) {
+.slidev-page-12 p:nth-child(4) {
     position: absolute;
     color: black;
     font-weight: bold;
     top: 68%;
-    left: 69%;
+    left: 74%;
 }
 </style>
 
-![image](../assets/week-01/rest-api-mvc-model.png)
+::contents::
+![image](./assets/rest-api-mvc-model.png)
 
 Front-end / Vista
 
@@ -290,111 +182,108 @@ Controlador
 
 Back-end / Modelo
 
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
-<!--
-_class: title
- -->
-
-<style scoped>
-p:nth-child(3) {
+<style>
+.slidev-page-13 p:nth-child(2) {
     position: absolute;
     color: black;
     font-weight: bold;
     top: 68%;
-    left: 10%;
+    left: 13%;
 }
-p:nth-child(4) {
+.slidev-page-13 p:nth-child(3) {
     position: absolute;
     color: black;
     font-weight: bold;
     top: 68%;
-    left: 50%;
+    left: 54%;
 }
 </style>
 
-![image](../assets/week-01/rest-api-mvc-model.png)
+::contents::
+![image](./assets/rest-api-mvc-model.png)
 
 Front-end / Vista
 
 Back-end / Controlador + Modelo
 
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 ---
-
-<!--
-_class: align-center body-center
- -->
-
-<style scoped>
-    p:nth-child(4) {
-        color: rgba(var(--text-color), 0.3);
-        text-align: center;
-        position: absolute;
-        bottom: 10%;
-        left: 0%;
-        padding: 0 5rem;
-    }
-</style>
+layout: default-y-center
+---
 
 ## Que es una aplicacion web?
 
+::contents::
 Una aplicacion a la que se accede usando un navegador.
 
 Adicionalmente, puede ser una aplicacion desarrollada usando tecnologias tipicamente usadas en desarrollo web.
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Historia del Desarrollo Web I
 
+::contents::
 1969: Las universidades UCLA y Stanford se conectan usando cable de telefono (ARPANET).
 
 1983: Se cambia el protocolo NCP por TCP/IP.
 
 1986: Se desarrolla el "arbol del internet", conectando varias "redes" a lo largo del mundo para tener una sola gran red.
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Historia del Desarrollo Web II
 
+::contents::
 1990: Se comienza a programar la "web".
 
 1991: Primer "navegador" web (solo texto)
 
 1993: Primer navegador web con texto y graficos en linea.
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
- -->
-
-<style scoped>
-    p:nth-child(7) {
-        color: rgba(var(--text-color),0.4);
-        position: absolute;
-        left: 0;
-        bottom: 10%;
-        text-align: center;
-        width: 100%;
-    }
-</style>
+layout: default-y-center
+---
 
 ## Historia del Desarrollo Web III
 
+::contents::
 1993: Primera programacion web por lado de servidor.
 
 1995: Nace PHP
@@ -405,39 +294,36 @@ _class: body-center
 
 Luego entonces, nace LAMP stack.
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
- -->
-
-## Que es una stack?
-
-Una stack, o tech stack, es el conjunto de tecnologias primarias utilizadas en una aplicacion, sea web o no.
-
-El termino viene de la idea de que las tecnologias estan "stacked", una encima de la otra. Como una hamburguesa.
-
-##
-
+layout: default-y-center
 ---
 
-<!--
-_class: body-center
- -->
+## Que es una **stack**?
 
-<style scoped>
-    p {
-        color: rgba(var(--text-color), 0.3);
-    }
-    p:nth-child(3) {
-        color: rgba(var(--text-color), 1);
-    }
-</style>
+::contents::
+Una **stack**, o **tech stack**, es el conjunto de tecnologias primarias utilizadas en una aplicacion, sea web o no.
 
-## Que es LAMP stack?
+El termino viene de la idea de que las tecnologias estan "stacked", una encima de la otra. _Como una hamburguesa._
 
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Que es **LAMP stack**?
+
+::contents::
 Un servidor con Linux de OS.
 
 Corriendo Apache como software servidor.
@@ -446,97 +332,19 @@ Guardando datos con MySQL.
 
 Recibiendo y respondiendo peticiones con PHP/Perl/Python.
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
- -->
-
-<style scoped>
-    p {
-        color: rgba(var(--text-color), 0.3);
-    }
-    p:nth-child(4) {
-        color: rgba(var(--text-color), 1);
-    }
-</style>
+layout: default-y-center
+---
 
 ## Que es LAMP stack?
 
-Un servidor con Linux de OS.
-
-Corriendo Apache como software servidor.
-
-Guardando datos con MySQL.
-
-Recibiendo y respondiendo peticiones con PHP/Perl/Python.
-
-##
-
----
-
-<!--
-_class: body-center
- -->
-
-<style scoped>
-    p {
-        color: rgba(var(--text-color), 0.3);
-    }
-    p:nth-child(5) {
-        color: rgba(var(--text-color), 1);
-    }
-</style>
-
-## Que es LAMP stack?
-
-Un servidor con Linux de OS.
-
-Corriendo Apache como software servidor.
-
-Guardando datos con MySQL.
-
-Recibiendo y respondiendo peticiones con PHP/Perl/Python.
-
-##
-
----
-
-<!--
-_class: body-center
- -->
-
-<style scoped>
-    p {
-        color: rgba(var(--text-color), 0.3);
-    }
-    p:nth-child(6) {
-        color: rgba(var(--text-color), 1);
-    }
-</style>
-
-## Que es LAMP stack?
-
-Un servidor con Linux de OS.
-
-Corriendo Apache como software servidor.
-
-Guardando datos con MySQL.
-
-Recibiendo y respondiendo peticiones con PHP/Perl/Python.
-
-##
-
----
-
-<!--
-_class: body-center
- -->
-
-## Que es LAMP stack?
-
+::contents::
 **L**inux de OS.
 
 **A**pache como software servidor.
@@ -545,24 +353,38 @@ _class: body-center
 
 **P**HP, **P**erl o **P**ython en el servidor.
 
-##
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: title
- -->
+layout: cover
+---
 
 1995: Nace JavaScript.
 
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: cover
 ---
 
-<!--
-_class: title
-_paginate: false
-_header: ''
- -->
+<style>
+.slidev-page-22 img {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    z-index: -1;
+    opacity: 20%;
+}
+</style>
 
-![bg opacity:0.2](../assets/week-01/flame-dog.png)
+![](./assets/flame-dog.png)
 
-1995: Nace JavaScript.
+# 1995: Nace JavaScript.

@@ -1,0 +1,668 @@
+﻿//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 1,
+QuestionText,Que es NodeJS?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Un ambiente para ejecutar codigo Javascript
+Option,0,Un servidor de Javascript
+Option,0,Un framework de Javascript para montar un servidor
+Option,0,Una libreria de Javascript con muchas funciones utiles (y/o necesarias)
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 2,
+QuestionText,Cual es la funcion de NPM?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Instalar paquetes de Node
+Option,100,Manejar paquetes de Node
+Option,0,Instalar y manejar Node
+Option,0,Configurar e inicializar el proyecto de Node
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 3,
+QuestionText,Que comando se puede usar para ejecutar un archivo de codigo Javascript?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,$ npm run <archivo>
+Option,0,$ node run <archivo>
+Option,0,$ npm <archivo>
+Option,100,$ node <archivo>
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 4,
+QuestionText,Que archivo se usa para definir dependencias de un proyecto?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,package.json
+Option,0,index.json
+Option,0,server.json
+Option,0,package-lock.json
+Option,0,node_modules.json
+Option,0,nodemon.json
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 5,
+QuestionText,Que funcion tiene el comando $npm i <package> ?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Instalar el package nombrado
+Option,0,Instalar un package aleatorio
+Option,0,Inhabilitar el package nombrado
+Option,0,Importar el package nombrado
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 6,
+QuestionText,Que funcion tiene el comando $ npm i ?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Instalar un package aleatorio
+Option,0,Instalar unos packages predefinidos por Node/NPM
+Option,100,Instalar los packages definidos en el archivo de configuracion del proyecto
+Option,0,Instalar los packages recomendados por la comunidad para el proyecto
+Option,0,"Profe, le soy sincero, no se"
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 7,
+QuestionText,Como se crea un proyecto de Node?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,$ npm init
+Option,0,$ npm install
+Option,0,$ node init
+Option,0,$ node init --y
+Option,0,$ node install
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 8,
+QuestionText,Como se instala NodeJS?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Con el comando $ npm install
+Option,0,Con el comando $ npm install nodejs
+Option,100,Con el instalador
+Option,0,Javascript trae NodeJS instalado
+Option,0,Con el comando $ npm init
+Option,0,Con el comando $ node install
+Option,0,Con el comando $ node install nodejs
+Option,0,Con el comando $ node init
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 9,
+QuestionText,Que es .gitignore?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Una carpeta donde se guardan los archivos a ignorar por git
+Option,0,Un comando que agrega archivos y carpetas a la lista de ignorados por git
+Option,100,Un archivo con la lista de ignorados por git
+Option,0,Una extension que se le agrega a las carpetas para que git las ignore
+Option,0,Un comando que te cura toda la vida en Counter Strike
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 10,
+QuestionText,Que es una branch?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Una linea de desarrollo independiente
+Option,0,Una copia de un repositorio
+Option,0,Una nueva funcionalidad siendo desarrollada
+Option,0,Lo que se le muestra al cliente
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 11,
+QuestionText,Cual es el proposito de la Main branch?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Mostrar a inversores
+Option,0,Juntar cambios
+Option,100,Desplegar para el usuario final
+Option,0,Realizar pruebas antes de mover el codigo al servidor de la aplicacion
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 12,
+QuestionText,Cual es el proposito de la Staging branch?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Juntar cambios de todos los desarrolladores antes de mandarlas a la main branch
+Option,100,Realizar pruebas y mostrar la aplicacion a lo largo de la empresa
+Option,0,Montar cambios para hacer commit
+Option,0,Mostrar avances de una tarea antes de mandarlas a la dev branch
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 13,
+QuestionText,Cual es el proposito de la dev branch?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Desarrollar las tareas de cada desarrollador individualmenteÂ 
+Option,100,Juntar varias tareas desarrolladas para revisar la funcionalidad
+Option,0,Mostrar los avances a inversores para buscar fondos
+Option,0,Desplegarla para hacer pruebas entre la comunidad de desarrolladores
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 14,
+QuestionText,Para que sirve un merge?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Para agregar los cambios de una branch a otra
+Option,0,Para evitar conflictos entre cambios
+Option,0,Para tener claro el responsable de algun cambio
+Option,0,Para disminuir la cantidad de branches activas
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 15,
+QuestionText,Que se hace si hice un commit en la branch equivocada?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,"Soft reset, cambio de branch, stage, commit"
+Option,0,"Hard reset, cambio de branch, stage, commit"
+Option,0,"Cambio de branch, stage, commit"
+Option,0,"Rebase, stage, commit"
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 16,
+QuestionText,Cuando se crea(n) una(s) branch(es)?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Cuando se crea un proyecto
+Option,100,Cuando se comience una tarea de desarrollo
+Option,0,Cuando los clientes se quejen del desorden del repositorio
+Option,0,"Los lunes, al iniciar el dia de trabajo"
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 17,
+QuestionText,"Usualmente, una nueva branch se crea donde?",
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,En el ultimo commit de la main branch
+Option,0,En el ultimo commit de la staging branch
+Option,100,En el ultimo commit de la dev branch
+Option,0,En el ultimo commit de la testing branch
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 18,
+QuestionText,Que funcion tiene las acciones push y pull?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,"Push empuja los cambios de remote a local Pull hala los cambios a remote, desde local"
+Option,100,Push empuja los cambios de local a remote Pull hala los cambios de remote a local
+Option,0,"Push mueve cambios de dev a staging, o de staging a main Pull mueve cambios de main a staging, o de staging a dev"
+Option,0,Push manda una notificacion al lider del equipo para realizar revision Pull busca y recibe los comentarios de una revision
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 19,
+QuestionText,Que puedo utilizar para actualizar el commit base de una branch?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,"Crear una nueva branch en el commit deseado, cherry pick los commits"
+Option,100,Rebase la branch al commit deseado
+Option,0,Checkout la branch al commit deseado
+Option,0,"Crear una nueva branch en el commit deseado, rebase los commits"
+Option,0,Cherry pick la branch al commit deseado
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 20,
+QuestionText,Que es una remote branch?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Una branch controlada de manera automatizada
+Option,0,"Una branch a la que no se accede directamente, como staging o main"
+Option,100,Una branch presente en la nube
+Option,0,Una branch que cuenta con los controles del repositorio
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 21,
+QuestionText,Cual es la diferencia entre un hard reset y un soft reset?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,"No hay diferencia, reset es reset"
+Option,0,"Hard reset automaticamente hace reset hasta el inicio de una branch, mientras que soft es hasta el commit indicado"
+Option,0,"Hard reset hace reset de la version local y remote de una branch, mientras que soft es solo la version local"
+Option,100,"Hard reset borra todos los cambios de los commits, mientras que soft deshace los commits pero se queda con los cambios"
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 22,
+QuestionText,Cuales son los pasos para realizar un commit?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Realizar cambio > Dar stage a los cambios > Dar commit
+Option,0,Realizar cambio > Dar commit
+Option,0,Realizar cambio > Dar merge a los cambios > Dar commit
+Option,0,Dar stage > Dar commit
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 23,
+QuestionText,Que es git?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Un lenguaje de programacion
+Option,0,Un sistema de manejo de bases de datos
+Option,100,Un sistema de control de versiones
+Option,0,Un sistema de orquestacion para trabajo colaborativo
+Option,0,Un sistema operativo basado en el kernel de Linux
+Option,0,"Te pasaste, es una de las de arriba"
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 24,
+QuestionText,Que error aparece si un metodo GET crea un elemento?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,No aparece ningun error
+Option,0,Invalid endpoint
+Option,0,Prohibited action
+Option,0,Invalid action
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 25,
+QuestionText,Una operacion basica de almacenamiento UPDATE enviarÃ­a datos al backend por que medio?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Query
+Option,100,Body
+Option,0,Params
+Option,0,Response
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 26,
+QuestionText,Donde envia el backend los datos de un metodo POST para el frontend?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Query
+Option,0,Body
+Option,0,Params
+Option,100,Response
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 27,
+QuestionText,Donde estan los datos para filtros y paginacion?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Query
+Option,0,Body
+Option,0,Params
+Option,0,Response
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 28,
+QuestionText,"Si un endpoint es un metodo POST, que se espera que haga el endpoint?",
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Busque un elemento
+Option,0,Actualice un elemento
+Option,100,Cree un elemento
+Option,0,Borre un elemento
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MS,
+ID,,
+Title,Parcial 3 > Pregunta 29,
+QuestionText,Que cosas juntas forman un endpoint?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,1,Metodo HTTP
+Option,1,Ruta
+Option,0,Operacion basica de almacenamiento
+Option,0,Direccion a base de datos
+Option,0,Nombre de modelo de base de datos
+Option,0,Credenciales a servidor de API
+Option,1,Implementación
+Option,0,URL de la API
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 30,
+QuestionText,Donde envia el frontend los datos de una operacion CREATE para el backend?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Query
+Option,100,Body
+Option,0,Params
+Option,0,Response
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 31,
+QuestionText,Cuales son los metodos HTTP?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,"Create, Read, Update, Delete"
+Option,100,"Post, Get, Patch, Delete"
+Option,0,"Create, Read, Update, Remove"
+Option,0,"Post, Get, Update, Delete"
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 32,
+QuestionText,"Que codigo significa ""OK""?",
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,200
+Option,0,400
+Option,0,500
+Option,0,100
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 33,
+QuestionText,Un endpoint que retorna los usuarios mayores a cierta edad serÃ­aÂ ,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Get
+Option,0,Create
+Option,0,Delete
+Option,0,Post
+Option,0,Put
+Option,0,Update
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 34,
+QuestionText,Cual es el uso de un soft delete?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Poder recuperar informacion en caso que se haya realizado un borrado por error
+Option,0,Reducir el peso de conciencia del usuario al enviar un elemento al reino de las sombras
+Option,0,Implementar una papelera en la aplicacion
+Option,0,Agrupar archivos a borrar para el borrado automatico y reducir las operaciones en el servidor
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MS,
+ID,,
+Title,Parcial 3 > Pregunta 35,
+QuestionText,Cuales de estas afirmaciones son correctas?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,1,Un codigo 1XX es informativo
+Option,0,Un codigo 2XX es desinformativo
+Option,0,Un codigo 0XX es exitoso
+Option,0,Un codigo 4XX es un error de servidor
+Option,1,Un codigo 4XX es un error de cliente
+Option,1,Un codigo 2XX es exitoso
+Option,1,Un codigo 5XX es un error
+Option,0,Un codigo 3XX es error de cliente
+Option,0,Un codigo 3XX es error de servidor
+Option,0,Un codigo 1XX es de redireccion
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 36,
+QuestionText,Que formato utiliza el body?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,JSON
+Option,0,BSON
+Option,0,REST
+Option,0,JSX
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 37,
+QuestionText,El metodo HTTP PATCH corresponde a que operacion basica de almacenamiento?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,0,Create
+Option,0,Read
+Option,100,Update
+Option,0,Delete
+Option,0,Post
+Option,0,Put
+Option,0,Delete
+Option,0,Get
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 38,
+QuestionText,Que error aparece si los datos de filtracion o paginacion son enviados por el canal incorrecto?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,No aparece ningun error
+Option,0,Invalid channel
+Option,0,No such channel
+Option,0,Channel unavailable
+Option,0,Undefined channel
+Option,0,Invalid values
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 39,
+QuestionText,Un endpoint que retorna los usuarios mayores a cierta edad recibirÃ­a la edad en...,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Query
+Option,0,Params
+Option,0,Body
+Option,0,Response
+Hint,,
+Feedback,,
+,,
+//MULTIPLE CHOICE QUESTION TYPE,,
+//Options must include text in column3,,
+NewQuestion,MC,
+ID,,
+Title,Parcial 3 > Pregunta 40,
+QuestionText,Cual de estas no es un metodo HTTP?,
+Points,1,
+Difficulty,1,
+Image,,
+Option,100,Create
+Option,0,Put
+Option,0,Delete
+Hint,,
+Feedback,,

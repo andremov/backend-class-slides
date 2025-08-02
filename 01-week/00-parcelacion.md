@@ -7,7 +7,7 @@ math: mathjax
 
 <div class="header">
 
-![img](../assets/week-01/uninorte.jpg)
+![img](./assets/uninorte.jpg)
 
 </div>
 
@@ -82,11 +82,11 @@ Las 3 primeras evaluaciones serán realizadas en el salón de clase de manera vi
 
 | Evaluación       | %   | Fecha                           | Descripción                                 |
 | ---------------- | --- | ------------------------------- | ------------------------------------------- |
-| Evaluación 1     | 20  | 16 Agosto 2024                  | Evaluación de Javascript Basico             |
-| Evaluación 2     | 20  | 6 Septiembre 2024               | Evaluación de Javascript Avanzado           |
-| Evaluación 3     | 10  | 4 Octubre 2024                  | Evaluación Teórica Git, Node, NPM           |
-| Evaluación 4     | 20  | 25 Octubre - 15 Noviembre 2024  | Construcción de REST API desplegada sin BD  |
-| Evaluación final | 20  | 15 Noviembre - 6 Diciembre 2024 | Construcción de REST API desplegada con BD  |
+| Evaluación 1     | 20  | 15 Agosto 2025                  | Evaluación de Javascript Basico             |
+| Evaluación 2     | 20  | 12 Septiembre 2025               | Evaluación de Javascript Avanzado           |
+| Evaluación 3     | 10  | 3 Octubre 2025                  | Evaluación Teórica Git, Node, NPM           |
+| Evaluación 4     | 20  | 24 Octubre - 14 Noviembre 2025  | Construcción de REST API  |
+| Evaluación final | 20  | 14 Noviembre - 5 Diciembre 2025 | Construcción de REST API con arquitectura de microservicios  |
 | Talleres         | 10  | N/A                             | Talleres realizados a lo largo del semestre |
 
 ---

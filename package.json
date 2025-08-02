@@ -6,7 +6,6 @@
   "scripts": {
     "marp-slide-pdf": "marp --pdf --html --allow-local-files --theme-set ./themes/ -p",
     "marp-doc-pdf": "marp --pdf --html --allow-local-files --theme-set ./themes/ -p",
-    "build": "slidev build",
     "dev": "slidev --open",
     "export": "slidev export --dark"
   },

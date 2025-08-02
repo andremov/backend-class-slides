@@ -1,27 +1,22 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
 title: Javascript Basico
-_class: invert title
-header: Semana 2: Javascript Basico
-_header: ""
-math: mathjax
+theme: ../theme
+transition: none
+layout: cover
+exportFilename: 06-javascript-basico
 ---
 
 # Javascript Básico
 
-:pencil: 2025-01 :heavy_minus_sign: :stopwatch: 15 min.
+✏️ 2025-01 ➖ ⏱️ 15 min.
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Comentarios
 
+::contents::
 ```js
 // una linea
 
@@ -31,16 +26,20 @@ lineas
 */
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Declaración
 
+::contents::
 ```js
 
 let variable1;
@@ -49,58 +48,74 @@ const variable2;
 
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center align-center
- -->
+layout: default-center
+---
 
 ## Punto y coma
 
+::contents::
 Es opcional.
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Inicialización
 
+::contents::
 ```js
 variable1 = 1;
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Declaración e Inicialización
 
+::contents::
 ```js
 let variable1 = 1;
 
 const variable2 = 1;
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Tipos
 
+::contents::
 ```js
 let variable1 = 1;
 console.log(typeof variable1); // "number"
@@ -109,16 +124,19 @@ let variable2 = "1";
 console.log(typeof variable2); // "string"
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Sencillo
 
+::contents::
 ```js
 const horasEnDia = 24;
 
@@ -127,16 +145,20 @@ let horasDurmiendo = 8;
 horasEnDia = horasEnDia - horasDurmiendo; // ?
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Sencillo
 
+::contents::
 ```js
 const horasEnDia = 24;
 
@@ -145,16 +167,20 @@ let horasDurmiendo = 8;
 horasEnDia = horasEnDia - horasDurmiendo; // ⚠️
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+## Asignación & Operación
 
-## Asignacion & Operacion
-
+::contents::
 ```js
 let horasEnDia = 24;
 
@@ -163,17 +189,21 @@ let horasDurmiendo = 8;
 horasEnDia = horasEnDia - horasDurmiendo; // 16
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center align-center
- -->
+## Asignación & Operación
 
-## Asignacion & Operacion
-
-| Operador | Ejemplo   | Traduccion   |
+::contents::
+| Operador | Ejemplo   | Traducción   |
 | -------- | --------- | ------------ |
 | +=       | x += y    | x = x + y    |
 | -=       | x -= y    | x = x - y    |
@@ -182,16 +212,20 @@ _class: body-center align-center
 | %=       | x %= y    | x = x % y    |
 | \*\*=    | x \*\*= y | x = x \*\* y |
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## "Debugging"
 
+::contents::
 ```js
 let hoursInDay = 24;
 let hoursSleeping = 8;
@@ -203,16 +237,20 @@ hoursInDay -= hoursSleeping;
 console.log(hoursInDay); // 16
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Strings
 
+::contents::
 ```js
 let nombre = "Andres";
 let apellido = "Movilla";
@@ -220,16 +258,20 @@ let apellido = "Movilla";
 console.log(nombre + apellido); // ?
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Strings
 
+::contents::
 ```js
 let nombre = "Andres";
 let apellido = "Movilla";
@@ -237,16 +279,20 @@ let apellido = "Movilla";
 console.log(nombre + apellido); // "AndresMovilla"
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Strings
 
+::contents::
 ```js
 let nombre = "Andres";
 let apellido = "Movilla";
@@ -254,16 +300,19 @@ let apellido = "Movilla";
 console.log(nombre + " " + apellido); // "Andres Movilla"
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Strings
 
+::contents::
 ```js
 let F = "Formula";
 let uno = 1;
@@ -272,16 +321,20 @@ console.log(F + uno); // ?
 console.log(uno + F); // ?
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Strings
 
+::contents::
 ```js
 let F = "Formula";
 let uno = 1;
@@ -290,16 +343,20 @@ console.log(F + uno); // "Formula1"
 console.log(uno + F); // ?
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Strings
 
+::contents::
 ```js
 let F = "Formula";
 let uno = 1;
@@ -308,25 +365,27 @@ console.log(F + uno); // "Formula1"
 console.log(uno + F); // "1Formula"
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
+layout: cover
+---
 
-<!--
-_class: title
- -->
+# Funciones
+
+---
+layout: default-y-center
+---
 
 ## Funciones
 
----
-
-<!--
-_class: body-center
- -->
-
-## Funciones
-
-Una funcion es una variable.
+::contents::
+Una función es una variable.
 
 ```js
 function suma(a, b) {
@@ -336,16 +395,20 @@ function suma(a, b) {
 console.log(suma(1, 2)); // 3
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Declarar Funciones
 
+::contents::
 ```js
 function suma1(a, b) {
   return a + b;
@@ -360,24 +423,26 @@ const suma3 = (a, b) => {
 };
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: title
- -->
-
-## Condicionales y Ciclos
-
+layout: cover
 ---
 
-<!--
-_class: body-center
- -->
+# Condicionales y Ciclos
+
+---
+layout: default-y-center
+---
 
 ## Sintaxis If
 
+::contents::
 ```js
 let variableNoSospechosa = 19;
 
@@ -390,16 +455,20 @@ if (variableNoSospechosa > 18) {
 }
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Sintaxis If
 
+::contents::
 Que dice este codigo?
 
 ```js
@@ -412,19 +481,23 @@ if (cedula == "114284195") {
 }
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Sintaxis If
 
+::contents::
 Dice **acceso permitido**.
 
-```js
+```js{4}
 let cedula = 114284195;
 
 if (cedula == "114284195") {
@@ -434,18 +507,20 @@ if (cedula == "114284195") {
 }
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
 
-##
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center align-center
- -->
+layout: default-y-center
+---
 
 ## Operaciones Comparativas
 
+::contents::
 | Operador | Significado                    |
 | -------- | ------------------------------ |
 | ==       | Valor igual                    |
@@ -453,16 +528,20 @@ _class: body-center align-center
 | !=       | Valor no igual                 |
 | !==      | Valor no igual o tipo no igual |
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center align-center
- -->
+layout: default-y-center
+---
 
 ## Operaciones Comparativas
 
+::contents::
 | Operador | Significado         |
 | -------- | ------------------- |
 | >        | Valor mayor         |
@@ -470,17 +549,21 @@ _class: body-center align-center
 | >=       | Valor mayor o igual |
 | <=       | Valor menor o igual |
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Sintaxis If
 
-```js
+::contents::
+```js{2,4}
 let cedula = 1140879129;
 let accesoPermitido = cedula === 1140879129;
 
@@ -491,16 +574,20 @@ if (accesoPermitido) {
 }
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Sintaxis For
 
+::contents::
 ```js
 const maxFactorial = 5;
 let factorial = 1;
@@ -512,16 +599,20 @@ for (let i = 1; i <= maxFactorial; i++) {
 console.log(factorial); // 120
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
-
-<!--
-_class: body-center
- -->
+layout: default-y-center
+---
 
 ## Sintaxis While
 
+::contents::
 ```js
 const acelerando = true;
 let distanciaRecorrida = 0;
@@ -531,14 +622,17 @@ while (acelerando) {
 }
 ```
 
-##
+::header::
+Semana 2: Javascript Basico
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
 
 ---
+layout: cover
+---
 
-<!--
-_class: title
- -->
-
-# :tada:
+# 🎉
 
 # Hora del Taller 1!

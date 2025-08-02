@@ -1,32 +1,23 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Introduccion al curso
-_class: invert title
-header: Semana 1: Introduccion
-_header: ""
+exportFilename: 01-introduccion-curso
 ---
 
 # Introducción al curso
 
-:pencil: 2025-01 :heavy_minus_sign: :stopwatch: 3 min.
+✏️ 2025-03 ➖ ⏱️ 3 min.
 
 ---
-
-<!--
-_class: body-center
- -->
-<style scoped>
-h4 {
-  margin: 0;
-}
-</style>
+layout: default-y-center
+---
 
 ## Quien soy?
 
-#### Andrés Movilla
+::contents::
+### Andrés Movilla
 
 Egresado de la Universidad del Norte (2020).
 Junior Full Stack Web Developer (2021).
@@ -35,12 +26,19 @@ Senior Full Stack Web Developer / Tech Lead (2023)
 Plata en Valorant :cry: (2024)
 ??? (2025)
 
-##
+::header::
+Semana 1: Introduccion al curso
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Que temas vamos a dar?
 
+::contents::
 - Javascript y Typescript
 - MongoDB y paradigmas de bases de datos
 - Mongoose y Prisma
@@ -49,10 +47,19 @@ Plata en Valorant :cry: (2024)
 - Autenticacion y Autorizacion
 - Pruebas Unitarias y de Integracion
 
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Evaluaciones - Temas
 
+::contents::
 - (20%) Parcial 1 - Javascript + Algoritmia Basica
 - (20%) Parcial 2 - Javascript Avanzado
 - (10%) Parcial 3 - Git + Node + NPM
@@ -60,13 +67,28 @@ Plata en Valorant :cry: (2024)
 - (20%) Proyecto 2 - Backend grupal
 - (10%) Quices, Talleres, etc.
 
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Evaluaciones - Horario
 
+::contents::
 - (20%) Parcial 1 - Semana 3
 - (20%) Parcial 2 - Semana 6
 - (10%) Parcial 3 - Semana 10
 - (20%) Proyecto 1 - Semana 10 - 13
 - (20%) Proyecto 2 - Semana 13 - 16
 - (10%) Quices, Talleres, etc. - Todas las otras semanas
+
+::header::
+Semana 1: Introduccion al curso
+
+::footer::
+{{ $page }} / {{ $nav.total }}

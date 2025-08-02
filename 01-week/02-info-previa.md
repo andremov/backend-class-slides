@@ -1,143 +1,166 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
-_class: title
+theme: ../theme
+transition: none
+layout: cover
 title: Informacion Previa del Campo
-header: Semana 1: Introduccion
-_header: ""
+exportFilename: 02-info-previa
 ---
 
-# Que es dificil?
+# Que es difícil?
 
-:pencil: 2025-01 :heavy_minus_sign: :stopwatch: 8 min.
-
----
-
-<!--
-_class: body-center
- -->
-
-## Que es dificil?
-
-- Que es dificil en backend?
-- Que es dificil en desarrollo web?
-
-##
+✏️ 2025-03 ➖ ⏱️ 8 min.
 
 ---
+layout: default-y-center
+---
 
-<!--
-_class: body-center
- -->
+## Que es difícil?
 
-## Que es dificil?
+::contents::
+- Que es difícil en backend?
+- Que es difícil en desarrollo web?
 
-- Es dificil hacer...
+::header::
+Semana 1: Info Previa
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
+---
+
+## Que es difícil?
+
+::contents::
+Es difícil hacer...
   - Rappi?
   - Amazon/Mercado Libre?
   - Twitter?
   - Instagram?
 
-##
+::header::
+Semana 1: Info Previa
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: invert title
-_footer: https://survey.stackoverflow.co/2023/
--->
+layout: cover
+---
 
 # Informacion previa del campo
 
+https://survey.stackoverflow.co/2023/
+
+---
+layout: default-y-center
 ---
 
 ## Importancia del Inglés
 
-##
-
----
-
-<!--
-_class: body-center
- -->
-
-## Importancia del Inglés
-
+::contents::
 1. Diferencia Salarial
 2. Actualización de Conocimiento
 
-##
+::header::
+Semana 1: Info Previa
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<!--
-_class: body-center
-_footer: https://survey.stackoverflow.co/2023/#key-territories-all-countries
--->
-<style scoped>
-  section {
-    color: rgba(var(--text-color), 0.4);
-  }
-</style>
+layout: default-y-center
+---
 
 ## Descargo de responsabilidad
 
+::contents::
 La siguiente informacion viene mayormente de desarrolladores ubicados en Estados Unidos (21%).
 
-##
+https://survey.stackoverflow.co/2023/#key-territories-all-countries
 
+::header::
+Semana 1: Info Previa
+
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Info previa: Educacion
 
+::contents::
 1. El 68% de los devs profesionales tienen al menos un diploma de pregrado.
 
-##
+::header::
+Semana 1: Info Previa
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Info previa: Roles de Desarrollador
 
+::contents::
 1. El 33% de los desarrolladores son full-stack.
 2. El 17% de los desarrolladores son back-end.
 3. El 6% de los desarrolladores son front-end.
 
-##
+::header::
+Semana 1: Info Previa
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Info previa: Tecnologias
 
+::contents::
 1. La tecnologia con mayor cantidad de profesionales (65%) es JavaScript.
 2. La tecnologia #5 en cantidad de profesionales (43%) es TypeScript.
 3. Los puestos #2 y #3 son lenguajes relacionados al desarrollo web, HTML+CSS y SQL con 52% y 51% respectivamente.
 
-##
+::header::
+Semana 1: Info Previa
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Info previa: Bases de Datos
 
+::contents::
 1. PostgreSQL - 45%
 2. MySQL - 41%
 3. SQLite - 30%
 4. MongoDB - 25%
 5. Microsoft SQL Server - 25%
 
-##
+::header::
+Semana 1: Info Previa
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
-
-<style scoped>
-li:nth-child(7) {
-  color: rgba(var(--gross-color),1);
-}
-</style>
+layout: default-y-center
+---
 
 ## Info previa: Cloud Platforms
 
+::contents::
 1. AWS - 48%
 2. Azure - 26%
 3. Google Cloud - 23%
@@ -148,79 +171,128 @@ li:nth-child(7) {
 8. Vercel - 10%
 9. Netlify - 9%
 
-##
+
+::header::
+Semana 1: Info Previa
+
+::footer::
+{{ $page }} / {{ $nav.total }}
 
 ---
+layout: default-y-center
+---
 
-<style scoped>
-li:nth-child(3) {
-  color: rgba(var(--gross-color),1);
-}
-</style>
 
 ## Info previa: Tecnologias Web
 
+::contents::
 1. NodeJS - 42%
 2. React - 40%
 3. jQuery - 21% :vomiting_face:
 4. Express - 19%
 
-##
+::header::
+Semana 1: Info Previa
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Info previa: Otras tecnologias
 
+::contents::
 1. Docker - 51%
 2. npm - 49%
 
-##
+::header::
+Semana 1: Info Previa
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Info previa: IDEs
 
+::contents::
 1. VS Code - 73%
 
-##
+::header::
+Semana 1: Info Previa
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Info previa: Salarios por Tecnologias
 
+::contents::
 - TypeScript - $77,104 (antes $70,276)
 - JavaScript - $74,034 (antes $65,580)
 - HTML/CSS - $70,148 (antes $63,984)
 
-##
+::header::
+Semana 1: Info Previa
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Info previa: Modalidad de Trabajo
 
+::contents::
 1. Hibrido - 42%
 2. Remoto - 41%
 3. Presencial - 16%
 
-##
+::header::
+Semana 1: Info Previa
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Info previa: Salarios por Puesto
 
+::contents::
 - Developer, back-end - $76,034
 - Developer, full-stack - $71,140
 - Developer, front-end - $59,970
 
-##
+::header::
+Semana 1: Info Previa
 
+::footer::
+{{ $page }} / {{ $nav.total }}
+
+---
+layout: default-y-center
 ---
 
 ## Info previa: Programacion Fuera del Trabajo
 
+::contents::
 1. Hobby - 70%
 2. Desarrollo profesional - 36%
 3. Open-source - 24%
 4. Freelance - 19%
 
-##
+::header::
+Semana 1: Info Previa
+
+::footer::
+{{ $page }} / {{ $nav.total }}

@@ -10,12 +10,6 @@ exportFilename: 05-git-basico
 
 ✏️ 2025-01 ➖ ⏱️ 10 min.
 
-::header::
-Semana 2: Git Basico
-
-::footer::
-{{ $page }} / {{ $nav.total }}
-
 ---
 layout: default-center
 ---

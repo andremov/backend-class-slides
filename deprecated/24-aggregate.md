@@ -1,13 +1,9 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Aggregate
-_class: invert title
-class: body-center
-header: Semana 10: Aggregate
-_header: ""
+exportFilename: 24-aggregate
 ---
 
 # Aggregate

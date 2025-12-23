@@ -1,18 +1,14 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Autenticación
-_class: invert title
-class: body-center
-header: Semana 9: Autenticación
-_header: ""
+exportFilename: 28-autenticacion
 ---
 
 # Autenticacion y JWT
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 35 min.
+✏️ 2024-03 ➖ ⏱️ 35 min.
 
 ---
 

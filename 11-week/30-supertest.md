@@ -1,18 +1,14 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Supertest
-_class: invert title
-class: body-center
-header: Semana 11: Supertest
-_header: ""
+exportFilename: 30-supertest
 ---
 
 # Supertest
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 10 min.
+✏️ 2024-03 ➖ ⏱️ 10 min.
 
 ---
 

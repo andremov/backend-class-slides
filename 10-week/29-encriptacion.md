@@ -1,18 +1,14 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Encriptación
-_class: invert title
-class: body-center
-header: Semana 10: Encriptación
-_header: ""
+exportFilename: 29-encriptacion
 ---
 
 # Hqfulswdflrq
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 60 min.
+✏️ 2024-03 ➖ ⏱️ 60 min.
 
 ---
 

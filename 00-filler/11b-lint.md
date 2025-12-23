@@ -1,13 +1,9 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Lint
-_class: invert title
-class: body-center
-header: Relleno: Lint
-_header: ""
+exportFilename: 11b-lint
 ---
 
 # Lint

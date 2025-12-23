@@ -1,12 +1,9 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Pipelines
-_class: invert title
-header: Relleno: Pipelines
-_header: ""
+exportFilename: 12b-pipelines
 ---
 
 # Pipelines

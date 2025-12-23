@@ -1,13 +1,9 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Agile
-_class: invert title
-class: body-center
-header: Relleno: Agile
-_header: ""
+exportFilename: 09b-agile
 ---
 
 # Agile

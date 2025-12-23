@@ -1,18 +1,14 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Documentos Embebidos
-_class: invert title
-class: body-center
-header: Semana 9: Documentos Embebidos
-_header: ""
+exportFilename: 27-embedidos
 ---
 
 # Documentos Embebidos
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 10 min.
+✏️ 2024-03 ➖ ⏱️ 10 min.
 
 ---
 

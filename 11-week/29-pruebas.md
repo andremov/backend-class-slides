@@ -1,18 +1,14 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Pruebas
-_class: invert title
-class: body-center
-header: Semana 11: Pruebas
-_header: ""
+exportFilename: 29-pruebas
 ---
 
 # Pruebas
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 30 min.
+✏️ 2024-03 ➖ ⏱️ 30 min.
 
 ---
 

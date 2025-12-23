@@ -1,13 +1,9 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: WET vs DRY
-_class: invert title
-class: body-center
-header: Relleno: DRY vs WET
-_header: ""
+exportFilename: 10b-dry-vs-wet
 ---
 
 <style>

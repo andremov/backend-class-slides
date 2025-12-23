@@ -1,18 +1,14 @@
 ---
-marp: true
-theme: slides-theme
-paginate: true
-_paginate: skip
+theme: ../theme
+transition: none
+layout: cover
 title: Equipo
-_class: invert title
-class: body-center
-header: Relleno: Equipo
-_header: ""
+exportFilename: 08b-equipo
 ---
 
 # Equipo de Desarrollo
 
-:pencil: 2024-03 :heavy_minus_sign: :stopwatch: 15 min.
+✏️ 2024-03 ➖ ⏱️ 15 min.
 
 ---
 

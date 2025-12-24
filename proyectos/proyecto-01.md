@@ -23,7 +23,7 @@ _header: ""
 Desarrollen el backend para la plataforma de una biblioteca, donde usuarios pueden ingresar y reservar de manera digital los libros presentes en ella.
 
 - La API debe crearse como repositorio en Github y debe ser "entregada" al profesor utilizando el enlace en el catalogo, donde **se enviará únicamente el enlace al repositorio.**
-- El proyecto se desarrolla de manera individual, con fecha de entrega **viernes, 8 de noviembre a las 23:59.**
+- El proyecto se desarrolla de manera individual, con fecha de entrega **viernes, 7 de noviembre a las 23:59.**
 
 ### Modelos a Desarrollar
 
@@ -32,17 +32,25 @@ Desarrollen el backend para la plataforma de una biblioteca, donde usuarios pued
 
 ### Operaciones Basicas de Almacenamiento a Desarrollar
 
-- Create (Usuario)
-  - Debe crear un usuario en la base de datos con los datos enviados al backend. (Registro)
+- Create (Usuario) (Registro)
+  - Debe crear un usuario en la base de datos con los datos enviados al backend.
 - Create (Libro)
   - Debe crear un libro en la base de datos con los datos enviados al backend.
   - Debe permitirse solo para usuarios con permiso de crear libros.
+- Read (Usuario) (Login)
+  - Debe buscar un usuario con correo y contraseña.
+  - Debe ser seguro.
 - Read (Usuario)
-  - Debe buscar un usuario con correo y contraseña. (Login)
-- Read (Libro)
-  - Debe poderse buscar en unidad (con id) o en cantidad (con filtros).
-  - La busqueda en unidad o cantidad pueden estar juntos en un endpoint o separados en dos endpoints.
-  - Debe poderse filtrar por genero, fecha de publicación, casa editorial, autor, nombre y disponibilidad. Cualquier combinación de estos filtros.
+  - Retorna la información de un usuario.
+  - Debe ser seguro.
+- Read (1 Libro)
+  - Debe retornar toda la información del libro.
+- Read (* Libros)
+  - Debe retornar varios libros, y permitir usar filtros.
+    - Debe poderse filtrar por genero, fecha de publicación, casa editorial, autor, nombre y disponibilidad. Cualquier combinación de estos filtros.
+  - Debe tener paginación.
+  - Debe tener unicamente el nombre de los libros.
+  - Debe tener información relacionada a la paginación (pagina actual, pagina maxima, libros por pagina).
 - Update (Usuario)
   - Debe modificar un usuario en la base de datos con los datos enviados al backend.
   - Un usuario solo puede ser modificado por el mismo, o por un usuario con permiso de modificar usuarios.
@@ -56,7 +64,7 @@ Desarrollen el backend para la plataforma de una biblioteca, donde usuarios pued
   - Por motivos de seguridad, se debe realizar "soft deletes", es decir, inhabilitar la entrada en la base de datos, en vez de borrarlo de la base de datos.
   - Debe permitirse solo para usuarios con permiso de inhabilitar libros.
 
-La implementación de estas operaciones queda a libertad del estudiante, pero las 4 operaciones deben existir y cumplir con lo descrito.
+La implementación de estas operaciones queda a libertad del estudiante, pero las operaciones deben existir y cumplir con lo descrito.
 
 ---
 
@@ -65,11 +73,13 @@ La implementación de estas operaciones queda a libertad del estudiante, pero la
 - A excepción del CREATE de usuario y el READ de libros y usuario, **todos** los endpoints requieren autenticación.
 - Todo endpoint que necesite identificar a un usuario, **debe** identificarlo usando la autenticación.
 - La biblioteca necesita el historial de reserva de un libro (informacion como nombre de quien lo reservó, fecha de reserva, fecha de entrega).
+- La biblioteca necesita el historial de reserva de un usuario (informacion como nombre de libro reservado, fecha de reserva, fecha de entrega).
 - Todo READ **debe** excluir las entradas inhabilitadas, a menos que se las pidan explicitamente.
 - Los permisos de usuario pueden venir en cualquier combinación.
-- La biblioteca necesita el historial de reserva de un usuario (informacion como nombre de libro reservado, fecha de reserva, fecha de entrega).
-- El estudiante puede elegir si una entrada de libro en la base de datos equivale a una unidad, o a todas las unidades.
-- No hay limitación de cuantos libros puede reserver un usuario.
+- Para mantener el proyecto simple, un libro es una unidad, y no hay libros repetidos.
+- No hay limitación de cuantos libros puede reservar un usuario.
+- Cualquier usuario puede reservar un libro.
+
 
 # Rúbrica
 
